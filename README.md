@@ -17,6 +17,10 @@ This is the front-end repository of this app. Please see [HERE](https://github.c
 - Ruby 3.2.2
 - Rails 7.0.8
 - RSpec 3.12
+
+## Branch Naming Conventions
+When branching on this repo please use the conventions of `sprint#_name_feature`
+
 ## API Usage
 ## System dependencies
 
