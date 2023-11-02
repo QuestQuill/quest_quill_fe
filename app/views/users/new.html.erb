@@ -1,0 +1,24 @@
+<center><div class="welcome"><h1>Create an Account<h1></div></center>
+
+
+<div class="form-center">
+  <%= form_with url: users_path, method: :post, data: { turbo: false } do |form|  %>
+    <div class="form-group">
+      <%= form.label :username, "Username" %>
+      <%= form.text_field :username, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= form.label :email, "Email" %>
+      <%= form.text_field :email, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= form.label :password, "Password" %>
+      <%= form.password_field :password, class: "form-control" %>
+    </div>
+    <center>
+      <%= form.submit "Create my account", class: "button-style" %>
+    </center>
+  <% end %>
+</div>
+
+

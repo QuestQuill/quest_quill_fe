@@ -1,0 +1,16 @@
+<center><div class="welcome">
+  <h1>Welcome to QuestQuill<h1>
+</div></center>
+
+<div class="landing-icons">
+  <div class="card" id="login">
+    <%= image_tag "d20_2.jpg" %>
+    <h3>Already have an account?</h3>
+    <%= link_to "", login_path, method: :get , class: 'card-click', id: "loginclick"%>
+  </div>
+  <div class="card" id="register">
+    <%= image_tag "d20_1.jpg" %>
+    <h3>Need to make an account?</h3>
+    <%= link_to "", new_user_path, method: :get, class: 'card-click', id: "registerclick" %>
+  </div>
+</div>

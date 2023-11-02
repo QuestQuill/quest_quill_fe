@@ -1,0 +1,126 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_self
+ */
+
+ @import "bootstrap";
+
+body {
+  font-family: "Newsreader";
+  position: relative;
+}
+
+.navbar {
+  padding-bottom: 30px;
+}
+
+.navbar a {
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar a:hover {
+  color: #0b6d2a;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 10px;
+  margin-left: -100px;
+  left: 50%
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+}
+
+.welcome {
+  width: 50%;
+  border-bottom: 1px solid black;
+  margin-bottom: 30px;
+}
+
+.card {
+  overflow: hidden;
+  background: #EBEBEB;
+  position: relative;
+  width: 425px;
+  border-radius: 30px;
+  margin: 25px;
+}
+
+.card img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 50px;
+  font-size: 18px;
+  font-family: 'Inter';
+  text-align: center;
+  font-weight: 500;
+}
+
+.card-click {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.landing-icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 150px;
+}
+
+.form-center form {
+  width: 25%;
+}
+
+.form-center input {
+  border: 1px solid black;
+  border-radius: 0;
+}
+
+.button-style {
+  background-color: #0b6d2a;
+  color: white;
+  font-weight: bold;
+  padding: 7px 12px;
+}
+
+.button-style[type="submit"] {
+  border-radius: 20px;
+  border: none;
+}

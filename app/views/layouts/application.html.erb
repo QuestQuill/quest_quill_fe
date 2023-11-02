@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>QuestQuillFe</title>
+    <link href='https://fonts.googleapis.com/css?family=Inter:500' rel='stylesheet'>
+    <title>QuestQuill</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +12,26 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container-fluid">
+      <nav class="navbar">
+        <div class="home-link">
+          <%= link_to "QuestQuill", root_path %>
+        </div>
+          <% if current_user %>
+          <div>
+            <%= link_to  "Log Out", "/", data: { turbo_method: :delete } %>
+          </div>
+          <% end %>
+      </nav>
+      <% flash.each do |type, msg| %>
+        <div class="alert-info">
+          <%= msg %>
+        </div>
+      <% end %>
+      <%= yield %>
+      <div class="logo">
+        <%= image_tag "logo.png" %>
+      </div>
+    </div>
   </body>
 </html>
