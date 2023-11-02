@@ -3,4 +3,12 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  root "welcome#index"
+
+  get "/login", to: "users#login_form"
+  post "/login", to: "users#login"
+
+  delete "/", to: "users#logout"
+  
+  resources :users, only: [:show, :new, :create]
 end
