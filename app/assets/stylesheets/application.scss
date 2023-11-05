@@ -25,7 +25,7 @@ body {
 }
 
 .navbar a {
-  font-size: 30px;
+  font-size: 40px;
   text-decoration: none;
   color: black;
 }
@@ -34,17 +34,17 @@ body {
   color: #0b6d2a;
 }
 
-.logo {
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  bottom: 10px;
-  margin-left: -100px;
-  left: 50%
-}
+// .logo {
+//   display: flex;
+//   justify-content: center;
+//   // position: fixed;
+//   bottom: 10px;
+//   margin-left: -100px;
+//   left: 50%
+// }
 
 .logo img {
-  width: 200px;
+  width: 80px;
   height: auto;
 }
 
@@ -125,13 +125,3 @@ body {
   border-radius: 20px;
   border: none;
 }
-
-// @include media-breakpoint-up(sm) { 
-//   .landing-icons {
-//     width: 100%;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-//     margin-top: 70px;
-//   }
-//  }
