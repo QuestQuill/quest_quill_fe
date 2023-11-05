@@ -88,6 +88,7 @@ body {
 .landing-icons {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin-top: 70px;
 }
@@ -124,3 +125,13 @@ body {
   border-radius: 20px;
   border: none;
 }
+
+// @include media-breakpoint-up(sm) { 
+//   .landing-icons {
+//     width: 100%;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     margin-top: 70px;
+//   }
+//  }
