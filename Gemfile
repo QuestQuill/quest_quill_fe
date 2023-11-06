@@ -75,3 +75,4 @@ end
 
 gem 'bootstrap', '~> 5.3.2'
 gem 'jquery-rails'
+gem 'faraday'
