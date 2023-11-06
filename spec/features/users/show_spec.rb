@@ -32,11 +32,15 @@ RSpec.describe "User Dashboard/ show page" do
     user = User.last
 
     expect(current_path).to eq("/users/#{user.id}")
-    save_and_open_page
+
 
     within(".navbar") do
       expect(page).to have_link "Log Out"
       expect(page).to have_button "+ New Campaign"
+
+      click_button "+ New Campaign"
+
+      expect(current_path).to eq("/users/#{user.id}/campaigns/new")
     end
   end
 

@@ -23,7 +23,7 @@
         </div>
           <% if current_user %>
           <div class="generator-button">
-            <%= button_to "+ New Campaign", "/users/#{@user.id}/campaigns/new", method: :get %>
+            <%= button_to "+ New Campaign", "/users/#{params[:id]}/campaigns/new" , method: :get, class: "d-flex" %>
           </div>
           <div>
             <%= link_to  "Log Out", "/", data: { turbo_method: :delete } %>
