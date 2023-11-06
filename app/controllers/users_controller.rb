@@ -3,12 +3,13 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:id])
+    @user = facade.user
   end
 
   def create
-    user = User.new(user_params)
-    if user.save
+    user = facade.create_user(user_params)
+
+    if !user.nil?
       session[:user_id] = user.id
       redirect_to user_path(user.id)
     else
@@ -21,10 +22,11 @@ class UsersController < ApplicationController
   end
 
   def login
-    user = User.find_by(email: params[:email])
-    if user.authenticate(params[:password])
-      session[:user_id] = user.id
-      redirect_to user_path(user.id)
+    user_id = facade.login_user(user_params)
+
+    if user_id
+      session[:user_id] = user_id
+      redirect_to user_path(user_id)
     else
       flash[:error] = "Your credentials were incorrect, please try again."
       redirect_to login_path
@@ -33,12 +35,16 @@ class UsersController < ApplicationController
 
   def logout
     session[:user_id] = nil
-    redirect_to "/"
+    redirect_to root_path
   end
 
   private
 
   def user_params
     params.permit(:username, :email, :password)
+  end
+
+  def facade
+    UserFacade.new(params[:id])
   end
 end

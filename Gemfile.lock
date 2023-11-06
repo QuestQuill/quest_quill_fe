@@ -70,6 +70,7 @@ GEM
       public_suffix (>= 2.0.2, < 6.0)
     autoprefixer-rails (10.4.15.0)
       execjs (~> 2)
+    base64 (0.1.1)
     bcrypt (3.1.19)
     bindex (0.8.1)
     bootsnap (1.17.0)
@@ -108,6 +109,11 @@ GEM
     docile (1.4.0)
     erubi (1.12.0)
     execjs (2.9.1)
+    faraday (2.7.11)
+      base64
+      faraday-net_http (>= 2.0, < 3.1)
+      ruby2_keywords (>= 0.0.4)
+    faraday-net_http (3.0.2)
     globalid (1.2.1)
       activesupport (>= 6.1)
     google-protobuf (3.25.0-arm64-darwin)
@@ -226,6 +232,7 @@ GEM
       rspec-mocks (~> 3.12)
       rspec-support (~> 3.12)
     rspec-support (3.12.1)
+    ruby2_keywords (0.0.5)
     sass-embedded (1.66.1-arm64-darwin)
       google-protobuf (~> 3.23)
     sass-embedded (1.66.1-x86_64-linux-gnu)
@@ -286,6 +293,7 @@ DEPENDENCIES
   capybara
   dartsass-sprockets
   debug
+  faraday
   importmap-rails
   jbuilder
   jquery-rails
