@@ -12,8 +12,11 @@
       <%= form.number_field :player_num, class: "form-control" %>
     </div>
     <div class="form-group">
-      <%= form.label :themes, "Campaign Themes" %>
-      <%= form.text_field :themes, class: "form-control" %>
+      <p>Campaign Themes</p>
+      <% @themes.each do |theme| %>
+        <%= form.check_box :themes, { multiple: true }, theme, nil %>
+        <%= form.label theme %>
+      <% end %>
     </div>
     <center>
       <%= form.submit "Create my Campaign", class: "button-style" %>

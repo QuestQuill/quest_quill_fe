@@ -3,13 +3,13 @@ class ApplicationController < ActionController::Base
 
   def current_user
     if session[:user_id]
-      facade.user
+      user_facade.user
     end
   end
 
   private
 
-  def facade
+  def user_facade
     UserFacade.new(session[:user_id])
   end
 end

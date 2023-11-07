@@ -34,4 +34,19 @@ class DndService
   def conn
     Faraday.new(url: "https://quest-quill-api.onrender.com")
   end
+
+  def post_campaign(params)
+    response = conn.post("/api/v1/users/#{params[:user_id]}/campaigns") do |req|
+      req.params["name"] = params[:name]
+      req.params["player_num"] = params[:player_num]
+      req.params["themes"] = params[:themes]
+      req.params["user_id"] = params[:user_id]
+    end
+
+    if response.status == 200
+      JSON.parse(response.body, symbolize_names: true)
+    else
+      nil
+    end
+  end
 end

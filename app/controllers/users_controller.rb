@@ -3,11 +3,11 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = facade.user
+    @user = user_facade.user
   end
 
   def create
-    user = facade.create_user(user_params)
+    user = user_facade.create_user(user_params)
 
     if !user.nil?
       session[:user_id] = user.id
@@ -22,7 +22,7 @@ class UsersController < ApplicationController
   end
 
   def login
-    user_id = facade.login_user(user_params)
+    user_id = user_facade.login_user(user_params)
 
     if user_id
       session[:user_id] = user_id
@@ -44,7 +44,7 @@ class UsersController < ApplicationController
     params.permit(:username, :email, :password)
   end
 
-  def facade
+  def user_facade
     UserFacade.new(params[:id])
   end
 end
