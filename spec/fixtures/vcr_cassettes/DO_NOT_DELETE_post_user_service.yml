@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://quest-quill-api.onrender.com/api/v1/users?email=scooby@doo.com&password=ruhroh&username=scoobydoo
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 06 Nov 2023 22:24:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8220bf5a4e79537f-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"b622b5e14033fd4b56ea53a9cb2027ee"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 52becae8-38da-404b
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 72593a39-b515-43db-9107-18db2d8eb4f4
+      X-Runtime:
+      - '1.537655'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":6,"username":"scoobydoo","email":"scooby@doo.com","password_digest":"$2a$12$y2eAK7rbfEu5JX01HamIReVeGCH6.gJDFrIZn6sVDkC4g1pSwxhhW","created_at":"2023-11-06T22:24:36.461Z","updated_at":"2023-11-06T22:24:36.461Z"}'
+  recorded_at: Mon, 06 Nov 2023 22:24:36 GMT
+recorded_with: VCR 6.2.0

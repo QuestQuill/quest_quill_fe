@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://quest-quill-api.onrender.com/api/v1/users/login?email=bobsmith@gmail.com&password=1234
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 06 Nov 2023 22:22:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8220bb8c8c1c51e2-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"c9118a080931800d1fbeaab4ef61ca67"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - b1ffb43f-6c96-4146
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 638b5a08-28d5-4b69-bcb8-8910e0aec3e2
+      X-Runtime:
+      - '1.491048'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Login successful","user_id":1}'
+  recorded_at: Mon, 06 Nov 2023 22:22:00 GMT
+recorded_with: VCR 6.2.0
