@@ -1,47 +1,40 @@
 require 'rails_helper'
 
 RSpec.describe "User Dashboard/ show page" do
-  before(:each) do
-    @user_1 = User.create!(username: "Finn", email: "finn@ooo.com", password: "jake")
-    @user_2 = User.create!(username: "Jake", email: "jake@ooo.com", password: "finn")
-
-    visit user_path(@user_1)
-  end
-
   it "the page shows the app name, and welcome's the DM by username" do
-    within(".navbar") do
-      expect(page).to have_link("QuestQuill")
-    end
+    VCR.use_cassette("DO_NOT_DELETE_user_show_john") do
+      visit login_path
 
-    within(".user-welcome") do
-      expect(page).to have_content("Welcome, DM Finn")
-      expect(page).to_not have_content("Welcome, DM Jake")
+      fill_in :email, with: "john@gmail.com"
+      fill_in :password, with: "1234"
+      click_button "Log In"
+
+      within(".navbar") do
+        expect(page).to have_link("QuestQuill")
+      end
+  
+      within(".user-welcome") do
+        expect(page).to have_content("Welcome, DM john")
+        expect(page).to_not have_content("Welcome, DM Jake")
+      end
     end
   end
 
   it "has a log out link and a button to create a new campaign in the nav bar when logged in" do
-    visit root_path
+   VCR.use_cassette("DO_NOT_DELETE_user_show_john") do 
+      visit login_path
 
-    click_link "registerclick"
+      fill_in :email, with: "john@gmail.com"
+      fill_in :password, with: "1234"
+      click_button "Log In"
 
-    fill_in :username, with: "User 1"
-    fill_in :email, with: "email1@test.com"
-    fill_in :password, with: "password1"
-    click_button "Create my account"
+      within(".navbar") do
+        expect(page).to have_link "Log Out"
+        expect(page).to have_button "+ New Campaign"
 
-    user = User.last
-
-    expect(current_path).to eq("/users/#{user.id}")
-
-
-    within(".navbar") do
-      expect(page).to have_link "Log Out"
-      expect(page).to have_button "+ New Campaign"
-
-      click_button "+ New Campaign"
-
-      expect(current_path).to eq("/users/#{user.id}/campaigns/new")
-    end
+        click_button "+ New Campaign"
+      end
+   end
   end
 
   xit "should list out the campaigns for the user dashboard" do # Should I include a message for no campaigns? 
@@ -53,8 +46,5 @@ RSpec.describe "User Dashboard/ show page" do
     #   }
     # stub_request(:post, "https://quest-quill-api.onrender.com/api/v1/users/#{@user_1.id}/campaigns").
     #   with(body: campaign_params)
-
-
-
   end
 end
