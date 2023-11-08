@@ -7,7 +7,7 @@ class CampaignFacade
     json = service.post_campaign(params)
     
     if !json.nil?
-     Campaign.new(json)
+     Campaign.new(json[:data])
     else
       nil
     end
