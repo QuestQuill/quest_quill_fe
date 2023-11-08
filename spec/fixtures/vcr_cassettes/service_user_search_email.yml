@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/search?email=rhys@acotar.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 17:12:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822f71776d2c5345-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"e798e167c58ef1de361c7821c397f9a4"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 1df2b3c6-7582-40bd
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - a4a8d9ed-a7de-405e-bdeb-936551b9f9cb
+      X-Runtime:
+      - '0.009594'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"14","type":"user","attributes":{"username":"rhys","email":"rhys@acotar.com","user_photo":{"name":"user_photo","record":{"id":14,"username":"rhys","email":"rhys@acotar.com","password_digest":"$2a$12$ipokEzrLfV62zPrakqONRuTeFamVBm/b2oMordKxVdNTYmxbBiaGa","created_at":"2023-11-08T03:21:18.643Z","updated_at":"2023-11-08T03:21:18.643Z","token":"abcdefgh","token_expiration":"2023-11-08T17:21:03.884Z"}},"token":"abcdefgh","token_expiration":"2023-11-08T17:21:03.884Z","campaigns":[]}}]}'
+  recorded_at: Wed, 08 Nov 2023 17:12:51 GMT
+recorded_with: VCR 6.2.0

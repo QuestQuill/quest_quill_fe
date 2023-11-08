@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/search?email=rhys@acotar.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 16:55:03 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822f57655de051f7-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"924870080f962329bac889e54fc4c6da"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 4090cf78-837c-403d
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - e6fc0c10-30ca-467a-9fab-de58246d7ec0
+      X-Runtime:
+      - '0.019042'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"14","type":"user","attributes":{"username":"rhys","email":"rhys@acotar.com","user_photo":{"name":"user_photo","record":{"id":14,"username":"rhys","email":"rhys@acotar.com","password_digest":"$2a$12$ipokEzrLfV62zPrakqONRuTeFamVBm/b2oMordKxVdNTYmxbBiaGa","created_at":"2023-11-08T03:21:18.643Z","updated_at":"2023-11-08T03:21:18.643Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[]}}]}'
+  recorded_at: Wed, 08 Nov 2023 16:55:03 GMT
+recorded_with: VCR 6.2.0
