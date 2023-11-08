@@ -44,5 +44,45 @@ RSpec.describe UserFacade do
         end
       end
     end
+
+    describe "#search_user" do
+      it "returns a user based on search by email" do
+        VCR.use_cassette("DO_NOT_DELETE_user_search_email_rhys") do
+          user = @facade.search_user(email: "rhys@acotar.com")
+
+          expect(user).to be_a(User)
+          expect(user.id).to be_an(String)
+          expect(user.email).to be_a(String)
+          expect(user.username).to be_a(String)
+        end
+      end
+
+      it "returns a user based on search by token" do
+        VCR.use_cassette("DO_NOT_DELETE_user_search_token_rhys") do
+          @facade.update_token(@facade.search_user(email: "rhys@acotar.com"), "abcdefgh")
+          user = @facade.search_user(token: "abcdefgh")
+
+          expect(user).to be_a(User)
+          expect(user.id).to be_an(String)
+          expect(user.email).to be_a(String)
+          expect(user.username).to be_a(String)
+        end
+      end
+    end
+
+    describe "#update_token" do
+      it "updates a user's token" do
+        VCR.use_cassette("DO_NOT_DELETE_user_update_token_rhys") do
+          user = @facade.update_token(@facade.search_user(email: "rhys@acotar.com"), "abcdefgh")
+
+          expect(user).to be_a(User)
+          expect(user.id).to be_an(String)
+          expect(user.email).to be_a(String)
+          expect(user.username).to be_a(String)
+          expect(user.token).to be_a(String)
+          expect(user.token_expiration).to be_a(String)
+        end
+      end
+    end
   end
 end

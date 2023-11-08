@@ -1,0 +1,269 @@
+---
+http_interactions:
+- request:
+    method: patch
+    uri: https://quest-quill-api.onrender.com/api/v1/users/update_token?token=abcdefg&user=1
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 07:28:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822c198a4c2d5346-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"0a95f248572b9c90c3c8ef5ad3651db6"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 637b09f3-84d1-4530
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 6a87cf7e-c78c-4ba7-99d0-3589fa607a4e
+      X-Runtime:
+      - '0.022656'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"1","type":"user","attributes":{"username":"bobsmith","email":"bobsmith@gmail.com","user_photo":{"name":"user_photo","record":{"id":1,"username":"bobsmith","email":"bobsmith@gmail.com","password_digest":"$2a$12$YsrT9OKtuGf9a1k.B2t6CurMaPE9fkbDjGhZI/gv846TIeMqYEAa.","created_at":"2023-11-05T20:27:40.595Z","updated_at":"2023-11-05T20:27:40.595Z","token":"abcdefg","token_expiration":"2023-11-08T07:38:32.429Z"}},"token":"abcdefg","token_expiration":"2023-11-08T07:38:32.429Z","campaigns":[{"id":1,"name":"\"Campaign
+        1\"","player_num":5,"themes":"\"spooky\"","created_at":"2023-11-06T20:15:02.528Z","updated_at":"2023-11-06T20:15:02.528Z","user_id":1},{"id":2,"name":"Campaign
+        2","player_num":5,"themes":"Spooky","created_at":"2023-11-06T20:15:35.487Z","updated_at":"2023-11-06T20:15:35.487Z","user_id":1}]}}}'
+  recorded_at: Wed, 08 Nov 2023 07:28:32 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/search?token=abcdefg
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 07:28:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822c198bcbef51f5-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"0935c15402a0fb4725c7e8dd1b8cb672"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - da6d118e-dd95-4e71
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - '0976e9aa-90a2-4e6a-8cf0-d7afbcd1aa30'
+      X-Runtime:
+      - '0.018556'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"bobsmith","email":"bobsmith@gmail.com","user_photo":{"name":"user_photo","record":{"id":1,"username":"bobsmith","email":"bobsmith@gmail.com","password_digest":"$2a$12$YsrT9OKtuGf9a1k.B2t6CurMaPE9fkbDjGhZI/gv846TIeMqYEAa.","created_at":"2023-11-05T20:27:40.595Z","updated_at":"2023-11-05T20:27:40.595Z","token":"abcdefg","token_expiration":"2023-11-08T07:38:32.429Z"}},"token":"abcdefg","token_expiration":"2023-11-08T07:38:32.429Z","campaigns":[{"id":1,"name":"\"Campaign
+        1\"","player_num":5,"themes":"\"spooky\"","created_at":"2023-11-06T20:15:02.528Z","updated_at":"2023-11-06T20:15:02.528Z","user_id":1},{"id":2,"name":"Campaign
+        2","player_num":5,"themes":"Spooky","created_at":"2023-11-06T20:15:35.487Z","updated_at":"2023-11-06T20:15:35.487Z","user_id":1}]}}]}'
+  recorded_at: Wed, 08 Nov 2023 07:28:32 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 07:28:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822c198d0ac65207-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"0a95f248572b9c90c3c8ef5ad3651db6"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - e28a9170-012b-4989
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 2a9c1258-511f-47ec-bc61-9449c231d73c
+      X-Runtime:
+      - '0.008061'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"1","type":"user","attributes":{"username":"bobsmith","email":"bobsmith@gmail.com","user_photo":{"name":"user_photo","record":{"id":1,"username":"bobsmith","email":"bobsmith@gmail.com","password_digest":"$2a$12$YsrT9OKtuGf9a1k.B2t6CurMaPE9fkbDjGhZI/gv846TIeMqYEAa.","created_at":"2023-11-05T20:27:40.595Z","updated_at":"2023-11-05T20:27:40.595Z","token":"abcdefg","token_expiration":"2023-11-08T07:38:32.429Z"}},"token":"abcdefg","token_expiration":"2023-11-08T07:38:32.429Z","campaigns":[{"id":1,"name":"\"Campaign
+        1\"","player_num":5,"themes":"\"spooky\"","created_at":"2023-11-06T20:15:02.528Z","updated_at":"2023-11-06T20:15:02.528Z","user_id":1},{"id":2,"name":"Campaign
+        2","player_num":5,"themes":"Spooky","created_at":"2023-11-06T20:15:35.487Z","updated_at":"2023-11-06T20:15:35.487Z","user_id":1}]}}}'
+  recorded_at: Wed, 08 Nov 2023 07:28:32 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 07:28:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822c19937fc251e8-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"0a95f248572b9c90c3c8ef5ad3651db6"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 0ea63b82-3cc4-46e1
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 034d4241-6781-4d5b-8bec-de7402817cc2
+      X-Runtime:
+      - '0.008949'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"1","type":"user","attributes":{"username":"bobsmith","email":"bobsmith@gmail.com","user_photo":{"name":"user_photo","record":{"id":1,"username":"bobsmith","email":"bobsmith@gmail.com","password_digest":"$2a$12$YsrT9OKtuGf9a1k.B2t6CurMaPE9fkbDjGhZI/gv846TIeMqYEAa.","created_at":"2023-11-05T20:27:40.595Z","updated_at":"2023-11-05T20:27:40.595Z","token":"abcdefg","token_expiration":"2023-11-08T07:38:32.429Z"}},"token":"abcdefg","token_expiration":"2023-11-08T07:38:32.429Z","campaigns":[{"id":1,"name":"\"Campaign
+        1\"","player_num":5,"themes":"\"spooky\"","created_at":"2023-11-06T20:15:02.528Z","updated_at":"2023-11-06T20:15:02.528Z","user_id":1},{"id":2,"name":"Campaign
+        2","player_num":5,"themes":"Spooky","created_at":"2023-11-06T20:15:35.487Z","updated_at":"2023-11-06T20:15:35.487Z","user_id":1}]}}}'
+  recorded_at: Wed, 08 Nov 2023 07:28:33 GMT
+recorded_with: VCR 6.2.0
