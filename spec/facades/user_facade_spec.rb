@@ -84,5 +84,29 @@ RSpec.describe UserFacade do
         end
       end
     end
+
+    describe "#github_auth" do
+     it "returns user info of github login" do
+       VCR.use_cassette("DO_NOT_DELETE_eliza_user_github") do
+        user = @facade.github_auth(
+          {
+            login: "elizakeating",
+            uid: "134974541",
+            access_token: "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"
+          }
+        )
+
+        expect(user).to be_a(User)
+        expect(user.id).to be_a(String)
+        expect(user.uid).to be_a(String)
+        expect(user.email).to be_a(String)
+        expect(user.username).to be_a(String)
+        expect(user.token).to eq(nil)
+        expect(user.token_expiration).to eq(nil)
+        expect(user.auth_token).to be_a(String)
+        expect(user.campaigns).to be_an(Array)
+       end
+     end
+    end
   end
 end

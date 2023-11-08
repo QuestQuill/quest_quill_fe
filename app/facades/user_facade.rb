@@ -41,6 +41,12 @@ class UserFacade
     User.new(json[:data])
   end
 
+  def github_auth(params)
+    json = service.github_auth(params)
+
+    User.new(json[:data])
+  end
+
   def service
     DndService.new
   end
