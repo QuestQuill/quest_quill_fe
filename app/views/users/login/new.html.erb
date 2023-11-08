@@ -1,5 +1,19 @@
 <center><div class="welcome"><h1>Log In</h1></div></center>
 
+<div class="form-center" id="passwordless">
+  <%= form_with url: email_login_path, method: :get, data: { turbo: false } do |form| %>
+    <div class="form-group">
+      <%= form.label :email_passwordless, "Email" %>
+      <%= form.text_field :email_passwordless, class: "form-control" %>
+    </div>
+    <center>
+      <%= form.submit "Get Passwordless Link", class: "button-style" %>
+    </center>
+  <% end %>
+</div>
+
+<center><h3 class="or-divider">OR</h3></center>
+
 <div class="form-center">
   <%= form_with url: login_path, method: :post, data: { turbo: false } do |form| %>
     <div class="form-group">
@@ -18,13 +32,8 @@
 
 <center><h3 class="or-divider">OR</h3></center>
 
-<div class="form-center" id="passwordless">
-<%= form_with url: email_login_path, method: :get, data: { turbo: false } do |form| %>
-  <div class="form-group">
-  <%= form.label :email_passwordless, "Email" %>
-  <%= form.text_field :email_passwordless, class: "form-control" %>
-  </div>
-  <center><%= form.submit "Get Passwordless Link", class: "button-style" %></center>
-<% end %>
-</div>
+<center><%= link_to "Github Login", "https://github.com/login/oauth/authorize?client_id=a410938a038ee6341547&scope=repo", class: "button-style-link" %>
+
+
+
 
