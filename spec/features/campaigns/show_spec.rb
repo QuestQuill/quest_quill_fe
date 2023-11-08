@@ -15,6 +15,8 @@ RSpec.describe "Campaign show page" do
       expect(page).to have_content("Boo's first campaign")
       expect(page).to have_link("Generate Town")
       expect(page).to have_link("Generate NPC") 
+      expect(page).to have_link("My Towns") 
+      expect(page).to have_link("My NPCs") 
     end
   end
 end
