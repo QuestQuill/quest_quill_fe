@@ -3,7 +3,7 @@
 </div></left>
 
 <div class="user_campaigns">
-  <% cache(action: "index", action_suffix: "campaign_index") do %>
+  <% cache("users_campaigns") do %>
     <table class="table">
       <thead>
         <tr>
@@ -22,5 +22,5 @@
         </tr>
       </tbody>
     </table>
-    <% end %>
+  <% end %>
 </div>
