@@ -3,7 +3,7 @@
 </div></left>
 
 <div class="user_campaigns">
-  <% cache("users_campaigns") do %>
+  <% cache("users_campaigns-#{@user.id}") do %>
     <table class="table">
       <thead>
         <tr>
