@@ -73,6 +73,6 @@ class DndService
   end
 
   def get_campaign(campaign)
-    get_url("/api/v1/users/#{user}/campaigns#{campaign}")
+    get_url("/api/v1/users/#{campaign[:user_id]}/campaigns/#{campaign[:id]}")
   end
 end

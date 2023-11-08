@@ -30,8 +30,11 @@ RSpec.describe "User Dashboard/ show page" do
 
       within(".navbar") do
         expect(page).to have_link "Log Out"
+      end
+      
+      within(".user-welcome") do
         expect(page).to have_button "+ New Campaign"
-
+  
         click_button "+ New Campaign"
       end
 
@@ -50,6 +53,9 @@ RSpec.describe "User Dashboard/ show page" do
 
       within(".navbar") do
         expect(page).to have_link "Log Out"
+      end
+
+      within(".user-welcome") do
         expect(page).to have_button "+ New Campaign"
       end
     

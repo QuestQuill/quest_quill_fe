@@ -13,8 +13,12 @@ class CampaignsController < ApplicationController
     end
   end
 
+  def show
+    @campaign =  facade.campaign(campaign_params)
+  end
+
   def campaign_params
-    params.permit(:name, :player_num, :user_id, themes: [])
+    params.permit(:id, :name, :player_num, :user_id, themes: [])
   end
 
   def facade

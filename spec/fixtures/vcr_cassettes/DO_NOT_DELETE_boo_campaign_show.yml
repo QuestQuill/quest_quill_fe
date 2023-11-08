@@ -1,0 +1,342 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://quest-quill-api.onrender.com/api/v1/users/login?email=boo@gmail.com&password=12345
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 23:03:13 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 823172accdac533f-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"401fc1a040cbfb9658b058062e3e1b66"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 2986dd64-f2f6-4439
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 29c376fe-e63b-41ab-8fef-2edb356478e7
+      X-Runtime:
+      - '1.347356'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Login successful","user_id":22}'
+  recorded_at: Wed, 08 Nov 2023 23:03:13 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 23:03:13 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 823172b69e6d5380-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"a5d552251e1a40843fabb526394d4621"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - c6c68130-014e-43a4
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 5e6b3f48-9c86-4d9b-a6d9-503857bdbbf5
+      X-Runtime:
+      - '0.007547'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"22","type":"user","attributes":{"uid":null,"username":"boo","email":"boo@gmail.com","user_photo":{"name":"user_photo","record":{"id":22,"username":"boo","email":"boo@gmail.com","password_digest":"$2a$12$6zajARNnQDIhl91QknYsB.ja2GZbicGoRN7MDCoPhtfGtHqjE8BKG","created_at":"2023-11-08T04:34:04.490Z","updated_at":"2023-11-08T04:34:04.490Z","token":null,"token_expiration":null,"uid":null,"auth_token":null}},"token":null,"token_expiration":null,"auth_token":null,"campaigns":[{"id":4,"name":"boo''s
+        First Campaign","player_num":4,"themes":"[\"sci_fi\", \"low_magic\", \"space_opera\"]","created_at":"2023-11-08T04:34:08.029Z","updated_at":"2023-11-08T04:34:08.029Z","user_id":22},{"id":11,"name":"screaming","player_num":5,"themes":"[\"sci_fi\",
+        \"high_magic\"]","created_at":"2023-11-08T16:43:16.257Z","updated_at":"2023-11-08T16:43:16.257Z","user_id":22},{"id":12,"name":"yellin","player_num":6,"themes":"[\"space_opera\",
+        \"high_magic\"]","created_at":"2023-11-08T17:27:15.942Z","updated_at":"2023-11-08T17:27:15.942Z","user_id":22},{"id":13,"name":"cryin","player_num":7,"themes":"[\"space_opera\",
+        \"high_magic\", \"low_magic\"]","created_at":"2023-11-08T17:40:32.250Z","updated_at":"2023-11-08T17:40:32.250Z","user_id":22},{"id":15,"name":"sadclub","player_num":7,"themes":"[\"high_magic\",
+        \"space_opera\"]","created_at":"2023-11-08T17:48:23.462Z","updated_at":"2023-11-08T17:48:23.462Z","user_id":22}]}}}'
+  recorded_at: Wed, 08 Nov 2023 23:03:13 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 23:03:14 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 823172b7fd4e518e-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"a5d552251e1a40843fabb526394d4621"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 978a79d4-8505-4a04
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - baf6a721-a52c-4e84-b705-ba1e02ed033c
+      X-Runtime:
+      - '0.007419'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"22","type":"user","attributes":{"uid":null,"username":"boo","email":"boo@gmail.com","user_photo":{"name":"user_photo","record":{"id":22,"username":"boo","email":"boo@gmail.com","password_digest":"$2a$12$6zajARNnQDIhl91QknYsB.ja2GZbicGoRN7MDCoPhtfGtHqjE8BKG","created_at":"2023-11-08T04:34:04.490Z","updated_at":"2023-11-08T04:34:04.490Z","token":null,"token_expiration":null,"uid":null,"auth_token":null}},"token":null,"token_expiration":null,"auth_token":null,"campaigns":[{"id":4,"name":"boo''s
+        First Campaign","player_num":4,"themes":"[\"sci_fi\", \"low_magic\", \"space_opera\"]","created_at":"2023-11-08T04:34:08.029Z","updated_at":"2023-11-08T04:34:08.029Z","user_id":22},{"id":11,"name":"screaming","player_num":5,"themes":"[\"sci_fi\",
+        \"high_magic\"]","created_at":"2023-11-08T16:43:16.257Z","updated_at":"2023-11-08T16:43:16.257Z","user_id":22},{"id":12,"name":"yellin","player_num":6,"themes":"[\"space_opera\",
+        \"high_magic\"]","created_at":"2023-11-08T17:27:15.942Z","updated_at":"2023-11-08T17:27:15.942Z","user_id":22},{"id":13,"name":"cryin","player_num":7,"themes":"[\"space_opera\",
+        \"high_magic\", \"low_magic\"]","created_at":"2023-11-08T17:40:32.250Z","updated_at":"2023-11-08T17:40:32.250Z","user_id":22},{"id":15,"name":"sadclub","player_num":7,"themes":"[\"high_magic\",
+        \"space_opera\"]","created_at":"2023-11-08T17:48:23.462Z","updated_at":"2023-11-08T17:48:23.462Z","user_id":22}]}}}'
+  recorded_at: Wed, 08 Nov 2023 23:03:14 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22/campaigns/4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 23:03:14 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 823172bbc8c51f46-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"f146cc2a075cdc6f55cb00d9781da723"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 9d9cd730-b3a7-4afe
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - ac834038-fa63-4cd8-8044-c3eab2b7895f
+      X-Runtime:
+      - '0.005489'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"4","type":"campaign","attributes":{"name":"boo''s First
+        Campaign","player_num":4,"themes":"[\"sci_fi\", \"low_magic\", \"space_opera\"]","user_id":22,"campaign_photo":{"name":"campaign_photo","record":{"id":4,"name":"boo''s
+        First Campaign","player_num":4,"themes":"[\"sci_fi\", \"low_magic\", \"space_opera\"]","created_at":"2023-11-08T04:34:08.029Z","updated_at":"2023-11-08T04:34:08.029Z","user_id":22}}}}}'
+  recorded_at: Wed, 08 Nov 2023 23:03:14 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 23:03:14 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 823172bd7bb71f29-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"a5d552251e1a40843fabb526394d4621"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 2e513843-12ae-49f9
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - acc4510c-0633-4007-b6a9-36cb458c69a9
+      X-Runtime:
+      - '0.007285'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"22","type":"user","attributes":{"uid":null,"username":"boo","email":"boo@gmail.com","user_photo":{"name":"user_photo","record":{"id":22,"username":"boo","email":"boo@gmail.com","password_digest":"$2a$12$6zajARNnQDIhl91QknYsB.ja2GZbicGoRN7MDCoPhtfGtHqjE8BKG","created_at":"2023-11-08T04:34:04.490Z","updated_at":"2023-11-08T04:34:04.490Z","token":null,"token_expiration":null,"uid":null,"auth_token":null}},"token":null,"token_expiration":null,"auth_token":null,"campaigns":[{"id":4,"name":"boo''s
+        First Campaign","player_num":4,"themes":"[\"sci_fi\", \"low_magic\", \"space_opera\"]","created_at":"2023-11-08T04:34:08.029Z","updated_at":"2023-11-08T04:34:08.029Z","user_id":22},{"id":11,"name":"screaming","player_num":5,"themes":"[\"sci_fi\",
+        \"high_magic\"]","created_at":"2023-11-08T16:43:16.257Z","updated_at":"2023-11-08T16:43:16.257Z","user_id":22},{"id":12,"name":"yellin","player_num":6,"themes":"[\"space_opera\",
+        \"high_magic\"]","created_at":"2023-11-08T17:27:15.942Z","updated_at":"2023-11-08T17:27:15.942Z","user_id":22},{"id":13,"name":"cryin","player_num":7,"themes":"[\"space_opera\",
+        \"high_magic\", \"low_magic\"]","created_at":"2023-11-08T17:40:32.250Z","updated_at":"2023-11-08T17:40:32.250Z","user_id":22},{"id":15,"name":"sadclub","player_num":7,"themes":"[\"high_magic\",
+        \"space_opera\"]","created_at":"2023-11-08T17:48:23.462Z","updated_at":"2023-11-08T17:48:23.462Z","user_id":22}]}}}'
+  recorded_at: Wed, 08 Nov 2023 23:03:14 GMT
+recorded_with: VCR 6.2.0

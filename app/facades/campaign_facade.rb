@@ -13,6 +13,10 @@ class CampaignFacade
     end
   end
 
+  def campaign(campaign)
+    json = service.get_campaign(campaign)
+    Campaign.new(json[:data])
+  end
 
   def service
     DndService.new
