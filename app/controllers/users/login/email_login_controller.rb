@@ -4,7 +4,7 @@ class Users::Login::EmailLoginController < ApplicationController
     if user
       token = SecureRandom.urlsafe_base64
       facade.update_token(user, token)
-      UserMailer.with(email: params[:email_login]).passwordless_login.deliver_now
+      UserMailer.with(email: params[:email_passwordless]).passwordless_login.deliver_now
     else
       flash[:error] = "This email does not exist in our database, please create a new account."
       redirect_to login_path
