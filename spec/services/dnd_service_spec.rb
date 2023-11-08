@@ -178,5 +178,47 @@ describe DndService do
         end
       end
     end
+
+    describe "#github_auth" do
+      it "returns user from github login" do
+        VCR.use_cassette("github_auth_service") do
+          user = DndService.new.github_auth({
+            login: "elizakeating",
+            uid: "134974541",
+            access_token: "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"
+          }
+          )
+
+          expect(user).to be_a(Hash)
+
+          expect(user[:data]).to have_key(:id)
+          expect(user[:data][:id]).to be_a(String)
+
+          expect(user[:data][:attributes]).to have_key(:uid)
+          expect(user[:data][:attributes][:uid]).to be_a(String)
+
+          expect(user[:data][:attributes]).to have_key(:username)
+          expect(user[:data][:attributes][:username]).to be_a(String)
+
+          expect(user[:data][:attributes]).to have_key(:email)
+          expect(user[:data][:attributes][:email]).to be_a(String)
+
+          expect(user[:data][:attributes]).to have_key(:user_photo)
+          expect(user[:data][:attributes][:user_photo]).to be_a(Hash)
+
+          expect(user[:data][:attributes]).to have_key(:token)
+          expect(user[:data][:attributes][:token]).to eq(nil)
+
+          expect(user[:data][:attributes]).to have_key(:token_expiration)
+          expect(user[:data][:attributes][:token_expiration]).to eq(nil)
+
+          expect(user[:data][:attributes]).to have_key(:auth_token)
+          expect(user[:data][:attributes][:auth_token]).to be_a(String)
+
+          expect(user[:data][:attributes]).to have_key(:campaigns)
+          expect(user[:data][:attributes][:campaigns]).to be_an(Array)
+        end
+      end
+    end
   end
 end

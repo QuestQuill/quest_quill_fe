@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   # root "articles#index"
   root "welcome#index"
 
+  get "/auth/github/callback", to: "sessions#create"
+
   get "/login", to: "users/login#new"
   post "/login", to: "users/login#create"
 
