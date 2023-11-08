@@ -16,20 +16,20 @@ RSpec.describe "New User", type: :feature do
       end
 
       it "when I fill out my information correctly and click 'Create my account' I should be taken to my user dashboard" do
-        VCR.use_cassette("DO_NOT_DELETE_user_create_jill") do
-          fill_in :username, with: "jill"
-          fill_in :email, with: "jill@gmail.com"
+        VCR.use_cassette("DO_NOT_DELETE_user_create_rick") do
+          fill_in :username, with: "rick"
+          fill_in :email, with: "rick@gmail.com"
           fill_in :password, with: "1234"
 
           click_button("Create my account")
 
-          expect(page).to have_content("Welcome, DM jill")
+          expect(page).to have_content("Welcome, DM rick")
         end
       end
 
       it "when I don't fill out the form incorrectly and click 'Create my account' I should be given a message stating it didn't work and still be on the register form" do
-        VCR.use_cassette("DO_NOT_DELETE_user_create_jill_sad_path") do
-          fill_in :username, with: "jill"
+        VCR.use_cassette("DO_NOT_DELETE_user_create_rick_sad_path") do
+          fill_in :username, with: "rick"
           fill_in :password, with: "1234"
 
           click_button("Create my account")

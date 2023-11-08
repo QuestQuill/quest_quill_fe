@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://quest-quill-api.onrender.com/api/v1/users?email=scooby@doo.com&password=ruhroh&username=scoobydoo
+    uri: https://quest-quill-api.onrender.com/api/v1/users?email=ahhhh@gmail.com&password=helpme&username=AHHHHH
     body:
       encoding: UTF-8
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 06 Nov 2023 22:24:36 GMT
+      - Wed, 08 Nov 2023 03:33:15 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -29,19 +29,19 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 8220bf5a4e79537f-DEN
+      - 822ac0d5cea71f42-DEN
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"b622b5e14033fd4b56ea53a9cb2027ee"
+      - W/"41077fd7a95d1e13d9657828bd2100e2"
       Vary:
       - Accept-Encoding
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Rndr-Id:
-      - 52becae8-38da-404b
+      - e0816ad6-2081-4a66
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -53,9 +53,9 @@ http_interactions:
       X-Render-Origin-Server:
       - Render
       X-Request-Id:
-      - 72593a39-b515-43db-9107-18db2d8eb4f4
+      - cbaf763b-1791-4708-b9c4-bd58645bef55
       X-Runtime:
-      - '1.537655'
+      - '2.328250'
       X-Xss-Protection:
       - '0'
       Server:
@@ -64,6 +64,6 @@ http_interactions:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
-      string: '{"id":6,"username":"scoobydoo","email":"scooby@doo.com","password_digest":"$2a$12$y2eAK7rbfEu5JX01HamIReVeGCH6.gJDFrIZn6sVDkC4g1pSwxhhW","created_at":"2023-11-06T22:24:36.461Z","updated_at":"2023-11-06T22:24:36.461Z"}'
-  recorded_at: Mon, 06 Nov 2023 22:24:36 GMT
+      string: '{"data":{"id":"16","type":"user","attributes":{"username":"AHHHHH","email":"ahhhh@gmail.com","user_photo":{"name":"user_photo","record":{"id":16,"username":"AHHHHH","email":"ahhhh@gmail.com","password_digest":"$2a$12$gsWlnvdqIeI3wmtuQNFeMu.Swc7jaM0XuYlk6.Xp1znsKMLH1zZUq","created_at":"2023-11-08T03:33:15.558Z","updated_at":"2023-11-08T03:33:15.558Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[]}}}'
+  recorded_at: Wed, 08 Nov 2023 03:33:15 GMT
 recorded_with: VCR 6.2.0

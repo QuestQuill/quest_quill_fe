@@ -12,17 +12,33 @@ class UserFacade
   def user
     json = service.get_user(@user[:data])
 
-    User.new(json)
+    User.new(json[:data])
   end
 
   def create_user(params)
     json = service.post_user(params)
-    
+
     if !json.nil?
-      User.new(json)
+      User.new(json[:data])
     else
       nil
     end
+  end
+
+  def search_user(params)
+    json = service.search_user(params)
+    
+    if json
+      User.new(json[:data].first)
+    else
+      nil
+    end
+  end
+
+  def update_token(user, token)
+    json = service.update_token(user.id, token)
+    
+    User.new(json[:data])
   end
 
   def service

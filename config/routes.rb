@@ -5,10 +5,13 @@ Rails.application.routes.draw do
   # root "articles#index"
   root "welcome#index"
 
-  get "/login", to: "users#login_form"
-  post "/login", to: "users#login"
+  get "/login", to: "users/login#new"
+  post "/login", to: "users/login#create"
 
-  delete "/", to: "users#logout"
+  get "/email_login", to: "users/login/email_login#new"
+  get "/email_login_success", to: "users/login/email_login#create"
+
+  delete "/", to: "users/logout#destroy"
   
   resources :users, only: [:show, :new, :create] do 
     resources :campaigns, only: [:show, :new, :create]

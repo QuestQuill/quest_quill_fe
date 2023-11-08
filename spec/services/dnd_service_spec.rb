@@ -9,17 +9,26 @@ describe DndService do
 
           expect(user).to be_a Hash
 
-          expect(user).to have_key(:id)
-          expect(user[:id]).to be_an(Integer)
+          expect(user[:data]).to have_key(:id)
+          expect(user[:data][:id]).to be_a(String)
 
-          expect(user).to have_key(:username)
-          expect(user[:username]).to be_a(String)
+          expect(user[:data][:attributes]).to have_key(:username)
+          expect(user[:data][:attributes][:username]).to be_a(String)
 
-          expect(user).to have_key(:email)
-          expect(user[:email]).to be_a(String)
+          expect(user[:data][:attributes]).to have_key(:email)
+          expect(user[:data][:attributes][:email]).to be_a(String)
 
-          expect(user).to have_key(:password_digest)
-          expect(user[:password_digest]).to be_a(String)
+          expect(user[:data][:attributes]).to have_key(:user_photo)
+          expect(user[:data][:attributes][:user_photo]).to be_a(Hash)
+
+          expect(user[:data][:attributes]).to have_key(:token)
+          expect(user[:data][:attributes][:token]).to eq(nil)
+
+          expect(user[:data][:attributes]).to have_key(:token_expiration)
+          expect(user[:data][:attributes][:token_expiration]).to eq(nil)
+
+          expect(user[:data][:attributes]).to have_key(:campaigns)
+          expect(user[:data][:attributes][:campaigns]).to be_an(Array)
         end
       end
     end
@@ -43,21 +52,30 @@ describe DndService do
     describe "#post_user" do
       it "returns response of creating a user" do
         VCR.use_cassette("DO_NOT_DELETE_post_user_service") do
-          user = DndService.new.post_user(email: "scooby@doo.com", username: "scoobydoo", password: "ruhroh")
+          user = DndService.new.post_user(email: "ahhhh@gmail.com", username: "AHHHHH", password: "helpme")
 
           expect(user).to be_a(Hash)
 
-          expect(user).to have_key(:id)
-          expect(user[:id]).to be_an(Integer)
+          expect(user[:data]).to have_key(:id)
+          expect(user[:data][:id]).to be_a(String)
 
-          expect(user).to have_key(:username)
-          expect(user[:username]).to be_a(String)
+          expect(user[:data][:attributes]).to have_key(:username)
+          expect(user[:data][:attributes][:username]).to be_a(String)
 
-          expect(user).to have_key(:email)
-          expect(user[:email]).to be_a(String)
+          expect(user[:data][:attributes]).to have_key(:email)
+          expect(user[:data][:attributes][:email]).to be_a(String)
 
-          expect(user).to have_key(:password_digest)
-          expect(user[:password_digest]).to be_a(String)
+          expect(user[:data][:attributes]).to have_key(:user_photo)
+          expect(user[:data][:attributes][:user_photo]).to be_a(Hash)
+
+          expect(user[:data][:attributes]).to have_key(:token)
+          expect(user[:data][:attributes][:token]).to eq(nil)
+
+          expect(user[:data][:attributes]).to have_key(:token_expiration)
+          expect(user[:data][:attributes][:token_expiration]).to eq(nil)
+
+          expect(user[:data][:attributes]).to have_key(:campaigns)
+          expect(user[:data][:attributes][:campaigns]).to be_an(Array)
         end
       end
     end

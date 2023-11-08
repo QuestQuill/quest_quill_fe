@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://quest-quill-api.onrender.com/api/v1/users?email=feyre@acotar.com&password=rhys&username=feyre
+    uri: https://quest-quill-api.onrender.com/api/v1/users?email=rhys@acotar.com&password=feyre&username=rhys
     body:
       encoding: UTF-8
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 07 Nov 2023 00:22:18 GMT
+      - Wed, 08 Nov 2023 03:21:18 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -29,19 +29,19 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 82216bc2ec23518e-DEN
+      - 822aaf54693051f5-DEN
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"0074c507439ddb50179bf6bac70be5ca"
+      - W/"2c5c0967b843f54bbbcfa7de9c5c9431"
       Vary:
       - Accept-Encoding
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Rndr-Id:
-      - c7fd6008-4a1e-4505
+      - 84532b64-d815-4d01
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -53,9 +53,9 @@ http_interactions:
       X-Render-Origin-Server:
       - Render
       X-Request-Id:
-      - 06b80f25-4fe3-48e6-abad-6afa060b705a
+      - befc7dcc-864b-4e13-b4a1-ed1d18cc81a3
       X-Runtime:
-      - '1.539597'
+      - '2.381724'
       X-Xss-Protection:
       - '0'
       Server:
@@ -64,6 +64,6 @@ http_interactions:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
-      string: '{"id":7,"username":"feyre","email":"feyre@acotar.com","password_digest":"$2a$12$ZiBVsaY/n2wiFNLsLRA1gOXfh70EpjyQ.N03s9DapWetj6xcR.ANC","created_at":"2023-11-07T00:22:18.380Z","updated_at":"2023-11-07T00:22:18.380Z"}'
-  recorded_at: Tue, 07 Nov 2023 00:22:18 GMT
+      string: '{"data":{"id":"14","type":"user","attributes":{"username":"rhys","email":"rhys@acotar.com","user_photo":{"name":"user_photo","record":{"id":14,"username":"rhys","email":"rhys@acotar.com","password_digest":"$2a$12$ipokEzrLfV62zPrakqONRuTeFamVBm/b2oMordKxVdNTYmxbBiaGa","created_at":"2023-11-08T03:21:18.643Z","updated_at":"2023-11-08T03:21:18.643Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[]}}}'
+  recorded_at: Wed, 08 Nov 2023 03:21:18 GMT
 recorded_with: VCR 6.2.0
