@@ -34,17 +34,35 @@ RSpec.describe "User Dashboard/ show page" do
 
         click_button "+ New Campaign"
       end
+
+      expect(page).to have_field("Campaign Name")
+      expect(page).to have_field("Number of Players")
    end
   end
 
-  xit "should list out the campaigns for the user dashboard" do # Should I include a message for no campaigns? 
-    # campaign_params: {
-    #   name: "Campaign 1",
-    #   player_num: 5, 
-    #   themes: "spooky",
-    #   user_id: @user_1.id
-    #   }
-    # stub_request(:post, "https://quest-quill-api.onrender.com/api/v1/users/#{@user_1.id}/campaigns").
-    #   with(body: campaign_params)
+  it "should list out the campaigns for the user dashboard" do 
+    VCR.use_cassette("DO_NOT_DELETE_user_show_boo") do 
+      visit login_path
+
+      fill_in :email, with: "boo@gmail.com"
+      fill_in :password, with: "12345"
+      click_button "Log In"
+
+      within(".navbar") do
+        expect(page).to have_link "Log Out"
+        expect(page).to have_button "+ New Campaign"
+      end
+    
+      expect(page).to have_content("Welcome, DM boo")
+
+      within(".user_campaigns") do
+        expect(page).to have_content("Campaign Name")
+        expect(page).to have_content("Number of Players")
+        expect(page).to have_content("Themes")
+        expect(page).to have_content("Boo's first campaign")
+        expect(page).to have_content(4)
+        expect(page).to have_content(["sci_fi", "low_magic", "space_opera"])
+      end
+   end
   end
 end
