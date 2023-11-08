@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 03:25:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822ab5c24dae51ef-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d3ca170efd350dfb40a3fb2d86aec3d7"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - a3be257a-9bea-4af0
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 3a736605-44f3-44af-92a4-570a3e1d736e
+      X-Runtime:
+      - '0.017350'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"1","type":"user","attributes":{"username":"bobsmith","email":"bobsmith@gmail.com","user_photo":{"name":"user_photo","record":{"id":1,"username":"bobsmith","email":"bobsmith@gmail.com","password_digest":"$2a$12$YsrT9OKtuGf9a1k.B2t6CurMaPE9fkbDjGhZI/gv846TIeMqYEAa.","created_at":"2023-11-05T20:27:40.595Z","updated_at":"2023-11-05T20:27:40.595Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[{"id":1,"name":"\"Campaign
+        1\"","player_num":5,"themes":"\"spooky\"","created_at":"2023-11-06T20:15:02.528Z","updated_at":"2023-11-06T20:15:02.528Z","user_id":1},{"id":2,"name":"Campaign
+        2","player_num":5,"themes":"Spooky","created_at":"2023-11-06T20:15:35.487Z","updated_at":"2023-11-06T20:15:35.487Z","user_id":1}]}}}'
+  recorded_at: Wed, 08 Nov 2023 03:25:39 GMT
+recorded_with: VCR 6.2.0

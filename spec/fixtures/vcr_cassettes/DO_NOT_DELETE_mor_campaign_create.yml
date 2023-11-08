@@ -1,0 +1,525 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://quest-quill-api.onrender.com/api/v1/users?email=mor@test.com&password=12345&username=mor
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 06:23:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822bb9edcee35186-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"cfff55f8d68bbb0ee75ef144dfff1c19"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - a583cd59-e1a4-4cd1
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 488e00ee-404d-42cf-b309-8bfaab81d8cf
+      X-Runtime:
+      - '1.466983'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"24","type":"user","attributes":{"username":"mor","email":"mor@test.com","user_photo":{"name":"user_photo","record":{"id":24,"username":"mor","email":"mor@test.com","password_digest":"$2a$12$qjxQwCxBa7wmlToKiJWgSeKbnHxCiPi/UepkFFMfgmKtrchwB057S","created_at":"2023-11-08T06:23:17.548Z","updated_at":"2023-11-08T06:23:17.548Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[]}}}'
+  recorded_at: Wed, 08 Nov 2023 06:23:17 GMT
+- request:
+    method: post
+    uri: https://quest-quill-api.onrender.com/api/v1/users/login?email=mor@test.com&password=12345
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 06:23:19 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822bb9f81ddc5380-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"12a26880e8d6003cb437dcc35ce43ae1"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - d8a0855a-5abc-4f25
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 19be3307-9920-4dd0-a3d6-972192947578
+      X-Runtime:
+      - '1.497842'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Login successful","user_id":24}'
+  recorded_at: Wed, 08 Nov 2023 06:23:19 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/24
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 06:23:19 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822bba028fb869e0-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"cfff55f8d68bbb0ee75ef144dfff1c19"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - abed68ba-22a2-4b86
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 9407139b-e72f-4335-a80a-a3db376c2cd6
+      X-Runtime:
+      - '0.007627'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"24","type":"user","attributes":{"username":"mor","email":"mor@test.com","user_photo":{"name":"user_photo","record":{"id":24,"username":"mor","email":"mor@test.com","password_digest":"$2a$12$qjxQwCxBa7wmlToKiJWgSeKbnHxCiPi/UepkFFMfgmKtrchwB057S","created_at":"2023-11-08T06:23:17.548Z","updated_at":"2023-11-08T06:23:17.548Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[]}}}'
+  recorded_at: Wed, 08 Nov 2023 06:23:19 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/24
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 06:23:19 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822bba046c9851e9-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"cfff55f8d68bbb0ee75ef144dfff1c19"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 1fadb37e-f1aa-4ae0
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - d472b5f8-183a-473f-8c6e-44c10bae49bd
+      X-Runtime:
+      - '0.011391'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"24","type":"user","attributes":{"username":"mor","email":"mor@test.com","user_photo":{"name":"user_photo","record":{"id":24,"username":"mor","email":"mor@test.com","password_digest":"$2a$12$qjxQwCxBa7wmlToKiJWgSeKbnHxCiPi/UepkFFMfgmKtrchwB057S","created_at":"2023-11-08T06:23:17.548Z","updated_at":"2023-11-08T06:23:17.548Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[]}}}'
+  recorded_at: Wed, 08 Nov 2023 06:23:19 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/24
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 06:23:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822bba05ae015390-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"cfff55f8d68bbb0ee75ef144dfff1c19"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 43649cb6-9a84-437a
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 76c181c3-a3b4-480f-ad2c-8719ad42ed20
+      X-Runtime:
+      - '0.008640'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"24","type":"user","attributes":{"username":"mor","email":"mor@test.com","user_photo":{"name":"user_photo","record":{"id":24,"username":"mor","email":"mor@test.com","password_digest":"$2a$12$qjxQwCxBa7wmlToKiJWgSeKbnHxCiPi/UepkFFMfgmKtrchwB057S","created_at":"2023-11-08T06:23:17.548Z","updated_at":"2023-11-08T06:23:17.548Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[]}}}'
+  recorded_at: Wed, 08 Nov 2023 06:23:20 GMT
+- request:
+    method: post
+    uri: https://quest-quill-api.onrender.com/api/v1/users/24/campaigns?name=mor%27s%20First%20Campaign&player_num=4&themes%5B%5D=fantasy&themes%5B%5D=gods_and_monsters&themes%5B%5D=high_magic&user_id=24
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 06:23:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822bba071bcb1f46-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"2466f6830680c84a435011d538f13581"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 43b29b31-f4e5-4c05
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - '008e9040-de3e-4360-b7d9-46514dc51abb'
+      X-Runtime:
+      - '0.013445'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"8","type":"campaign","attributes":{"name":"mor''s First
+        Campaign","player_num":4,"themes":"[\"fantasy\", \"high_magic\", \"gods_and_monsters\"]","user_id":24,"campaign_photo":{"name":"campaign_photo","record":{"id":8,"name":"mor''s
+        First Campaign","player_num":4,"themes":"[\"fantasy\", \"high_magic\", \"gods_and_monsters\"]","created_at":"2023-11-08T06:23:20.248Z","updated_at":"2023-11-08T06:23:20.248Z","user_id":24}}}}}'
+  recorded_at: Wed, 08 Nov 2023 06:23:20 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/24
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 06:23:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822bba084c955203-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"8be4cfb760fe6fec20d3de18bd88d56e"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 6b53de8a-55b7-4374
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - f71a9695-05f2-4e94-8e53-995784dcd9eb
+      X-Runtime:
+      - '0.022633'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"24","type":"user","attributes":{"username":"mor","email":"mor@test.com","user_photo":{"name":"user_photo","record":{"id":24,"username":"mor","email":"mor@test.com","password_digest":"$2a$12$qjxQwCxBa7wmlToKiJWgSeKbnHxCiPi/UepkFFMfgmKtrchwB057S","created_at":"2023-11-08T06:23:17.548Z","updated_at":"2023-11-08T06:23:17.548Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[{"id":8,"name":"mor''s
+        First Campaign","player_num":4,"themes":"[\"fantasy\", \"high_magic\", \"gods_and_monsters\"]","created_at":"2023-11-08T06:23:20.248Z","updated_at":"2023-11-08T06:23:20.248Z","user_id":24}]}}}'
+  recorded_at: Wed, 08 Nov 2023 06:23:20 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/24
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 06:23:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822bba098b3a1f4a-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"8be4cfb760fe6fec20d3de18bd88d56e"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - a6a49cd4-91b9-4b8d
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - f75768de-0d67-409f-acc5-326f45f302d5
+      X-Runtime:
+      - '0.012397'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"24","type":"user","attributes":{"username":"mor","email":"mor@test.com","user_photo":{"name":"user_photo","record":{"id":24,"username":"mor","email":"mor@test.com","password_digest":"$2a$12$qjxQwCxBa7wmlToKiJWgSeKbnHxCiPi/UepkFFMfgmKtrchwB057S","created_at":"2023-11-08T06:23:17.548Z","updated_at":"2023-11-08T06:23:17.548Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[{"id":8,"name":"mor''s
+        First Campaign","player_num":4,"themes":"[\"fantasy\", \"high_magic\", \"gods_and_monsters\"]","created_at":"2023-11-08T06:23:20.248Z","updated_at":"2023-11-08T06:23:20.248Z","user_id":24}]}}}'
+  recorded_at: Wed, 08 Nov 2023 06:23:20 GMT
+recorded_with: VCR 6.2.0

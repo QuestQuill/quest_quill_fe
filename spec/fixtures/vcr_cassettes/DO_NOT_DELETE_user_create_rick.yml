@@ -1,0 +1,197 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://quest-quill-api.onrender.com/api/v1/users?email=rick@gmail.com&password=1234&username=rick
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 03:10:59 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822aa035481c51f4-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"076608bb786e23d9a97cb8c1d02a013f"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - fa0a32f3-b0f5-43bb
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - f07c3e21-4a72-4bee-a3eb-45b92fc53532
+      X-Runtime:
+      - '2.689884'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"13","type":"user","attributes":{"username":"rick","email":"rick@gmail.com","user_photo":{"name":"user_photo","record":{"id":13,"username":"rick","email":"rick@gmail.com","password_digest":"$2a$12$qU41GRI3R4X7cGE4/UioGO3LLHSsKSsi.K640VKtLrf1WYwc7jNEK","created_at":"2023-11-08T03:10:59.546Z","updated_at":"2023-11-08T03:10:59.546Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[]}}}'
+  recorded_at: Wed, 08 Nov 2023 03:10:59 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/13
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 03:10:59 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822aa047cad15201-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"076608bb786e23d9a97cb8c1d02a013f"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 7b775b9b-e568-457b
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - e2aef15a-6912-4d43-897c-74ac4934a9cb
+      X-Runtime:
+      - '0.027413'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"13","type":"user","attributes":{"username":"rick","email":"rick@gmail.com","user_photo":{"name":"user_photo","record":{"id":13,"username":"rick","email":"rick@gmail.com","password_digest":"$2a$12$qU41GRI3R4X7cGE4/UioGO3LLHSsKSsi.K640VKtLrf1WYwc7jNEK","created_at":"2023-11-08T03:10:59.546Z","updated_at":"2023-11-08T03:10:59.546Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[]}}}'
+  recorded_at: Wed, 08 Nov 2023 03:10:59 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/13
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 03:11:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822aa0493e895198-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"076608bb786e23d9a97cb8c1d02a013f"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - bff5a072-96b3-4445
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - b471c0f6-64d1-4704-bb93-4bc8f850cadf
+      X-Runtime:
+      - '0.026587'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"13","type":"user","attributes":{"username":"rick","email":"rick@gmail.com","user_photo":{"name":"user_photo","record":{"id":13,"username":"rick","email":"rick@gmail.com","password_digest":"$2a$12$qU41GRI3R4X7cGE4/UioGO3LLHSsKSsi.K640VKtLrf1WYwc7jNEK","created_at":"2023-11-08T03:10:59.546Z","updated_at":"2023-11-08T03:10:59.546Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[]}}}'
+  recorded_at: Wed, 08 Nov 2023 03:11:00 GMT
+recorded_with: VCR 6.2.0
