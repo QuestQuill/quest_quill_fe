@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://quest-quill-api.onrender.com/api/v1/users/login?email=john@gmail.com&password=5678
+    uri: https://quest-quill-api.onrender.com/api/v1/users/login?email=rick@gmail.com&password=1234
     body:
       encoding: UTF-8
       string: ''
@@ -17,11 +17,11 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 401
-      message: Unauthorized
+      code: 200
+      message: OK
     headers:
       Date:
-      - Mon, 06 Nov 2023 20:28:23 GMT
+      - Wed, 08 Nov 2023 03:21:16 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -29,17 +29,19 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 822015209e175209-DEN
+      - 822aaf451e1269db-DEN
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
-      - no-cache
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"0a177be635c545ce8260d5e7d70a19e1"
       Vary:
       - Accept-Encoding
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Rndr-Id:
-      - e7eae09e-0aff-47e3
+      - aa72dd92-c7ea-4572
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -51,9 +53,9 @@ http_interactions:
       X-Render-Origin-Server:
       - Render
       X-Request-Id:
-      - 0e9917d8-c54f-454d-8b06-84fc3d9ae335
+      - 6b4ca207-1a53-4748-adae-d2ae111dd352
       X-Runtime:
-      - '1.370690'
+      - '2.191023'
       X-Xss-Protection:
       - '0'
       Server:
@@ -62,6 +64,6 @@ http_interactions:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
-      string: '{"error":"Authentication failed"}'
-  recorded_at: Mon, 06 Nov 2023 20:28:23 GMT
+      string: '{"message":"Login successful","user_id":13}'
+  recorded_at: Wed, 08 Nov 2023 03:21:15 GMT
 recorded_with: VCR 6.2.0

@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 06 Nov 2023 22:07:26 GMT
+      - Wed, 08 Nov 2023 03:25:39 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -27,19 +27,19 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 8220a57a6c1a51dd-DEN
+      - 822ab5c24dae51ef-DEN
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"a3be2058125fe6f5c9727430b5604f53"
+      - W/"d3ca170efd350dfb40a3fb2d86aec3d7"
       Vary:
       - Accept-Encoding
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Rndr-Id:
-      - 93a901d4-301e-4d99
+      - a3be257a-9bea-4af0
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -51,9 +51,9 @@ http_interactions:
       X-Render-Origin-Server:
       - Render
       X-Request-Id:
-      - 2a8b9657-8e6d-4447-96dc-a5f45a45842a
+      - 3a736605-44f3-44af-92a4-570a3e1d736e
       X-Runtime:
-      - '0.520626'
+      - '0.017350'
       X-Xss-Protection:
       - '0'
       Server:
@@ -62,6 +62,8 @@ http_interactions:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
-      string: '{"id":1,"username":"bobsmith","email":"bobsmith@gmail.com","password_digest":"$2a$12$YsrT9OKtuGf9a1k.B2t6CurMaPE9fkbDjGhZI/gv846TIeMqYEAa.","created_at":"2023-11-05T20:27:40.595Z","updated_at":"2023-11-05T20:27:40.595Z"}'
-  recorded_at: Mon, 06 Nov 2023 22:07:26 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"username":"bobsmith","email":"bobsmith@gmail.com","user_photo":{"name":"user_photo","record":{"id":1,"username":"bobsmith","email":"bobsmith@gmail.com","password_digest":"$2a$12$YsrT9OKtuGf9a1k.B2t6CurMaPE9fkbDjGhZI/gv846TIeMqYEAa.","created_at":"2023-11-05T20:27:40.595Z","updated_at":"2023-11-05T20:27:40.595Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[{"id":1,"name":"\"Campaign
+        1\"","player_num":5,"themes":"\"spooky\"","created_at":"2023-11-06T20:15:02.528Z","updated_at":"2023-11-06T20:15:02.528Z","user_id":1},{"id":2,"name":"Campaign
+        2","player_num":5,"themes":"Spooky","created_at":"2023-11-06T20:15:35.487Z","updated_at":"2023-11-06T20:15:35.487Z","user_id":1}]}}}'
+  recorded_at: Wed, 08 Nov 2023 03:25:39 GMT
 recorded_with: VCR 6.2.0

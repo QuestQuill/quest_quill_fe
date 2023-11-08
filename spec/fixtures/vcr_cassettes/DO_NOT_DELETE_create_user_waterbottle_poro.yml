@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://quest-quill-api.onrender.com/api/v1/users/login?email=bobsmith@gmail.com&password=1234
+    uri: https://quest-quill-api.onrender.com/api/v1/users?email=waterbottle@gmail.com&password=water&username=waterbottle
     body:
       encoding: UTF-8
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 08 Nov 2023 03:31:41 GMT
+      - Wed, 08 Nov 2023 03:39:03 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -29,19 +29,19 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 822abe85789851eb-DEN
+      - 822ac950da315391-DEN
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"c9118a080931800d1fbeaab4ef61ca67"
+      - W/"1b3f06ecd8fe03b9472b4a5435ca6391"
       Vary:
       - Accept-Encoding
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Rndr-Id:
-      - '08e7d21f-2e8b-4922'
+      - 638e5233-d182-45ba
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -53,9 +53,9 @@ http_interactions:
       X-Render-Origin-Server:
       - Render
       X-Request-Id:
-      - 54770277-91c9-426b-b78f-4006bfd3f55f
+      - 073224e2-cdad-45b2-8919-8f33ab4c1978
       X-Runtime:
-      - '2.479938'
+      - '2.352489'
       X-Xss-Protection:
       - '0'
       Server:
@@ -64,6 +64,6 @@ http_interactions:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
-      string: '{"message":"Login successful","user_id":1}'
-  recorded_at: Wed, 08 Nov 2023 03:31:40 GMT
+      string: '{"data":{"id":"17","type":"user","attributes":{"username":"waterbottle","email":"waterbottle@gmail.com","user_photo":{"name":"user_photo","record":{"id":17,"username":"waterbottle","email":"waterbottle@gmail.com","password_digest":"$2a$12$pU3y.zEhiwC6pdf3H8Xmn.JSVH5XDtGzhtQls/rfNFns9pF0laniy","created_at":"2023-11-08T03:39:02.950Z","updated_at":"2023-11-08T03:39:02.950Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[]}}}'
+  recorded_at: Wed, 08 Nov 2023 03:39:02 GMT
 recorded_with: VCR 6.2.0

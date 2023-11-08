@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://quest-quill-api.onrender.com/api/v1/users?email=john@gmail.com&password=1234&username=john
+    uri: https://quest-quill-api.onrender.com/api/v1/users?email=rick@gmail.com&password=1234&username=rick
     body:
       encoding: UTF-8
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 06 Nov 2023 20:25:46 GMT
+      - Wed, 08 Nov 2023 03:10:59 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -29,19 +29,19 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 8220114918725202-DEN
+      - 822aa035481c51f4-DEN
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"a5ef20ae5f98552394f781953afa8d6a"
+      - W/"076608bb786e23d9a97cb8c1d02a013f"
       Vary:
       - Accept-Encoding
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Rndr-Id:
-      - 3fae4891-b032-4f57
+      - fa0a32f3-b0f5-43bb
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -53,9 +53,9 @@ http_interactions:
       X-Render-Origin-Server:
       - Render
       X-Request-Id:
-      - 8d99ed17-dda1-472d-9eec-a6d637872695
+      - f07c3e21-4a72-4bee-a3eb-45b92fc53532
       X-Runtime:
-      - '1.509815'
+      - '2.689884'
       X-Xss-Protection:
       - '0'
       Server:
@@ -64,77 +64,11 @@ http_interactions:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
-      string: '{"id":2,"username":"john","email":"john@gmail.com","password_digest":"$2a$12$WuoIM3Eq.jXVjNs2b6wJR.beacuqupHcH0BUJWnlb3Tq9IRbBGhNO","created_at":"2023-11-06T20:25:46.745Z","updated_at":"2023-11-06T20:25:46.745Z"}'
-  recorded_at: Mon, 06 Nov 2023 20:25:46 GMT
-- request:
-    method: post
-    uri: https://quest-quill-api.onrender.com/api/v1/users/login?email=john@gmail.com&password=1234
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.11
-      Content-Length:
-      - '0'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Mon, 06 Nov 2023 20:25:48 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Cf-Ray:
-      - 822011554a305209-DEN
-      Cf-Cache-Status:
-      - DYNAMIC
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Etag:
-      - W/"60d5b295781c0b711b4aa1cb61f2f691"
-      Vary:
-      - Accept-Encoding
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Rndr-Id:
-      - 6e2b329c-749c-4470
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      X-Render-Origin-Server:
-      - Render
-      X-Request-Id:
-      - 3acfeca8-26c6-4776-9263-ff4218a6bfb0
-      X-Runtime:
-      - '1.379985'
-      X-Xss-Protection:
-      - '0'
-      Server:
-      - cloudflare
-      Alt-Svc:
-      - h3=":443"; ma=86400
-    body:
-      encoding: ASCII-8BIT
-      string: '{"message":"Login successful","user_id":2}'
-  recorded_at: Mon, 06 Nov 2023 20:25:48 GMT
+      string: '{"data":{"id":"13","type":"user","attributes":{"username":"rick","email":"rick@gmail.com","user_photo":{"name":"user_photo","record":{"id":13,"username":"rick","email":"rick@gmail.com","password_digest":"$2a$12$qU41GRI3R4X7cGE4/UioGO3LLHSsKSsi.K640VKtLrf1WYwc7jNEK","created_at":"2023-11-08T03:10:59.546Z","updated_at":"2023-11-08T03:10:59.546Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[]}}}'
+  recorded_at: Wed, 08 Nov 2023 03:10:59 GMT
 - request:
     method: get
-    uri: https://quest-quill-api.onrender.com/api/v1/users/2
+    uri: https://quest-quill-api.onrender.com/api/v1/users/13
     body:
       encoding: US-ASCII
       string: ''
@@ -151,7 +85,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 06 Nov 2023 20:25:49 GMT
+      - Wed, 08 Nov 2023 03:10:59 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -159,19 +93,19 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 822011665b2d5211-DEN
+      - 822aa047cad15201-DEN
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"a5ef20ae5f98552394f781953afa8d6a"
+      - W/"076608bb786e23d9a97cb8c1d02a013f"
       Vary:
       - Accept-Encoding
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Rndr-Id:
-      - 2ba08587-c488-474d
+      - 7b775b9b-e568-457b
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -183,9 +117,9 @@ http_interactions:
       X-Render-Origin-Server:
       - Render
       X-Request-Id:
-      - 840bdd1b-528f-4afa-860f-3d5511f14d4d
+      - e2aef15a-6912-4d43-897c-74ac4934a9cb
       X-Runtime:
-      - '0.004326'
+      - '0.027413'
       X-Xss-Protection:
       - '0'
       Server:
@@ -194,11 +128,11 @@ http_interactions:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
-      string: '{"id":2,"username":"john","email":"john@gmail.com","password_digest":"$2a$12$WuoIM3Eq.jXVjNs2b6wJR.beacuqupHcH0BUJWnlb3Tq9IRbBGhNO","created_at":"2023-11-06T20:25:46.745Z","updated_at":"2023-11-06T20:25:46.745Z"}'
-  recorded_at: Mon, 06 Nov 2023 20:25:49 GMT
+      string: '{"data":{"id":"13","type":"user","attributes":{"username":"rick","email":"rick@gmail.com","user_photo":{"name":"user_photo","record":{"id":13,"username":"rick","email":"rick@gmail.com","password_digest":"$2a$12$qU41GRI3R4X7cGE4/UioGO3LLHSsKSsi.K640VKtLrf1WYwc7jNEK","created_at":"2023-11-08T03:10:59.546Z","updated_at":"2023-11-08T03:10:59.546Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[]}}}'
+  recorded_at: Wed, 08 Nov 2023 03:10:59 GMT
 - request:
     method: get
-    uri: https://quest-quill-api.onrender.com/api/v1/users/2
+    uri: https://quest-quill-api.onrender.com/api/v1/users/13
     body:
       encoding: US-ASCII
       string: ''
@@ -215,7 +149,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 06 Nov 2023 20:25:50 GMT
+      - Wed, 08 Nov 2023 03:11:00 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -223,19 +157,19 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 82201167b9981f3d-DEN
+      - 822aa0493e895198-DEN
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"a5ef20ae5f98552394f781953afa8d6a"
+      - W/"076608bb786e23d9a97cb8c1d02a013f"
       Vary:
       - Accept-Encoding
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Rndr-Id:
-      - 6427c00c-892a-44d8
+      - bff5a072-96b3-4445
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -247,9 +181,9 @@ http_interactions:
       X-Render-Origin-Server:
       - Render
       X-Request-Id:
-      - 35984a6e-4e24-4f08-894a-12ecdf4dd580
+      - b471c0f6-64d1-4704-bb93-4bc8f850cadf
       X-Runtime:
-      - '0.008692'
+      - '0.026587'
       X-Xss-Protection:
       - '0'
       Server:
@@ -258,6 +192,6 @@ http_interactions:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
-      string: '{"id":2,"username":"john","email":"john@gmail.com","password_digest":"$2a$12$WuoIM3Eq.jXVjNs2b6wJR.beacuqupHcH0BUJWnlb3Tq9IRbBGhNO","created_at":"2023-11-06T20:25:46.745Z","updated_at":"2023-11-06T20:25:46.745Z"}'
-  recorded_at: Mon, 06 Nov 2023 20:25:50 GMT
+      string: '{"data":{"id":"13","type":"user","attributes":{"username":"rick","email":"rick@gmail.com","user_photo":{"name":"user_photo","record":{"id":13,"username":"rick","email":"rick@gmail.com","password_digest":"$2a$12$qU41GRI3R4X7cGE4/UioGO3LLHSsKSsi.K640VKtLrf1WYwc7jNEK","created_at":"2023-11-08T03:10:59.546Z","updated_at":"2023-11-08T03:10:59.546Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[]}}}'
+  recorded_at: Wed, 08 Nov 2023 03:11:00 GMT
 recorded_with: VCR 6.2.0
