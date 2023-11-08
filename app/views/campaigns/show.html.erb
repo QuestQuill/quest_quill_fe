@@ -1,0 +1,16 @@
+<left><div class="campaign_header d-flex align-items-baseline border-bottom mx-5 justify-content-between">
+  <h1 class="me-2"><%= @campaign.name.capitalize %></h1><p><%= "Number of Players: #{@campaign.player_num}" %>
+</div></left>
+
+<section class="generators">
+  <p><%= link_to "Generate Town" %></p>
+
+  <p><%= link_to "Generate NPC" %></p>
+
+</section>
+
+<section class="indexes">
+  <p><%= link_to "My Towns" %></p>
+
+  <p><%= link_to "My NPCs" %></p>
+</section>
