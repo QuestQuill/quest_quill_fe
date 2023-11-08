@@ -46,33 +46,43 @@ class DndService
     JSON.parse(response.body, symbolize_names: true)
   end
   
-  def get_url(url)
-    response = conn.get(url)
-    
-    JSON.parse(response.body, symbolize_names: true)
-  end
-
-  def conn
-    Faraday.new(url: "https://quest-quill-api.onrender.com")
-    # Faraday.new(url: "http://localhost:3000")
-  end
-
   def post_campaign(params)
     response = conn.post("/api/v1/users/#{params[:user_id]}/campaigns") do |req|
-      req.params["name"] = params[:name]
-      req.params["player_num"] = params[:player_num]
-      req.params["themes"] = params[:themes]
-      req.params["user_id"] = params[:user_id]
-    end
+    req.params["name"] = params[:name]
+    req.params["player_num"] = params[:player_num]
+    req.params["themes"] = params[:themes]
+    req.params["user_id"] = params[:user_id]
+  end
+  
+  if response.status == 200
+    JSON.parse(response.body, symbolize_names: true)
+  else
+    nil
+  end
+end
 
-    if response.status == 200
-      JSON.parse(response.body, symbolize_names: true)
-    else
-      nil
-    end
+def get_campaign(campaign)
+  get_url("/api/v1/users/#{campaign[:user_id]}/campaigns/#{campaign[:id]}")
+end
+
+def github_auth(params)
+  response = conn.post("/api/v1/users/auth") do |req|
+    req.params["login"] = params[:login]
+    req.params["uid"] = params[:uid]
+    req.params["access_token"] = params[:access_token]
   end
 
-  def get_campaign(campaign)
-    get_url("/api/v1/users/#{campaign[:user_id]}/campaigns/#{campaign[:id]}")
-  end
+  JSON.parse(response.body, symbolize_names: true)
+end
+
+def get_url(url)
+  response = conn.get(url)
+  
+  JSON.parse(response.body, symbolize_names: true)
+end
+
+def conn
+  Faraday.new(url: "https://quest-quill-api.onrender.com")
+  # Faraday.new(url: "http://localhost:5000")
+end
 end
