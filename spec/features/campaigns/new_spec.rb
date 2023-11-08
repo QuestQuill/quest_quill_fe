@@ -30,9 +30,7 @@ RSpec.describe "Create a campaign page" do
           check :themes_gods_and_monsters
           check :themes_high_magic
           click_button "Create my Campaign"
-          require 'pry';binding.pry
         end
-
       end
     end
   end

@@ -14,8 +14,8 @@
     <strong><p>Campaign Themes</p></strong>
     <div class="form-group">
       <% @themes.each do |theme| %>
-        <p><%= form.label theme %>
-        <%= form.check_box :themes, { multiple: true }, theme, nil %></p>
+        <p> <%= form.check_box :themes, { multiple: true }, theme, nil %>
+        <%= form.label theme %></p>
       <% end %>
     </div>
     <center>

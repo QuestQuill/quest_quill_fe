@@ -10,7 +10,7 @@ class UserFacade
   end
 
   def user
-    json = service.get_user(@user)
+    json = service.get_user(@user[:data])
 
     User.new(json)
   end

@@ -5,6 +5,12 @@ class CampaignsController < ApplicationController
 
   def create
     campaign = facade.create_campaign(campaign_params) 
+    if !campaign.nil?
+      redirect_to user_path(user.id)
+    else
+      flash[:error] = "Your campaign could not be created, please try again."
+      redirect_to new_user_campaign_path
+    end
   end
 
   def campaign_params

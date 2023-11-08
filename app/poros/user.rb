@@ -7,5 +7,6 @@ class User
     @id = data[:id]
     @username = data[:username]
     @email = data[:email]
+    @campaigns = data[:attributes][:campaigns]
   end
 end

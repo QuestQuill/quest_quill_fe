@@ -49,4 +49,8 @@ class DndService
       nil
     end
   end
+
+  def get_campaign(campaign)
+    get_url("/api/v1/users/#{user}/campaigns#{campaign}")
+  end
 end
