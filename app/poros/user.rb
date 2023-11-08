@@ -3,7 +3,8 @@ class User
               :username,
               :email,
               :token,
-              :token_expiration
+              :token_expiration,
+              :campaigns
 
   def initialize(data)
     @id = data[:id]

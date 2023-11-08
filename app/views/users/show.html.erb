@@ -1,9 +1,26 @@
 <left><div class="user-welcome d-flex align-items-baseline border-bottom mx-5 justify-content-bewteen">
-  <h1 class="me-2">Welcome, DM <%= @user.username %></h1><p> Active Campaigns</p>
-  <div>
-  </div>
+  <h1 class="me-2">Welcome, DM <%= @user.username %></h1><p>Active Campaigns</p>
 </div></left>
 
-<div class="card">
-  <%= @user.campaigns %>
+<div class="user_campaigns">
+  <% cache(action: "index", action_suffix: "campaign_index") do %>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Campaign Name</th>
+          <th scope="col">Number of Players</th>
+          <th scope="col">Themes</th>
+        </tr>
+      </thead>
+      <tbody>
+          <% @user.campaigns.each do |campaign| %>
+        <tr>
+            <td><%= link_to campaign[:name].capitalize %></td>
+            <td><%= campaign[:player_num] %></td>
+            <td><%= campaign[:themes] %></td>
+          <% end %>
+        </tr>
+      </tbody>
+    </table>
+    <% end %>
 </div>

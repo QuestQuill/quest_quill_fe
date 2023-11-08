@@ -2,10 +2,10 @@ require 'rails_helper'
 
 RSpec.describe "User Dashboard/ show page" do
   it "the page shows the app name, and welcome's the DM by username" do
-    VCR.use_cassette("DO_NOT_DELETE_user_show_john") do
+    VCR.use_cassette("DO_NOT_DELETE_user_show_rick") do
       visit login_path
 
-      fill_in :email, with: "john@gmail.com"
+      fill_in :email, with: "rick@gmail.com"
       fill_in :password, with: "1234"
       click_button "Log In"
 
@@ -14,17 +14,17 @@ RSpec.describe "User Dashboard/ show page" do
       end
   
       within(".user-welcome") do
-        expect(page).to have_content("Welcome, DM john")
+        expect(page).to have_content("Welcome, DM rick")
         expect(page).to_not have_content("Welcome, DM Jake")
       end
     end
   end
 
   it "has a log out link and a button to create a new campaign in the nav bar when logged in" do
-   VCR.use_cassette("DO_NOT_DELETE_user_show_john") do 
+   VCR.use_cassette("DO_NOT_DELETE_user_show_rick") do 
       visit login_path
 
-      fill_in :email, with: "john@gmail.com"
+      fill_in :email, with: "rick@gmail.com"
       fill_in :password, with: "1234"
       click_button "Log In"
 

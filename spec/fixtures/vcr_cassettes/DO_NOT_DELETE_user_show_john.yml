@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://quest-quill-api.onrender.com/api/v1/users?email=jake@test.com&password=12345&username=JakeCakes
+    uri: https://quest-quill-api.onrender.com/api/v1/users/login?email=john@gmail.com&password=1234
     body:
       encoding: UTF-8
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 08 Nov 2023 03:25:07 GMT
+      - Wed, 08 Nov 2023 04:09:25 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -29,19 +29,19 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 822ab4ee4a155382-DEN
+      - 822af4d3db861f4d-DEN
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"2e283f40c19483392fd2b4ca45bf82d8"
+      - W/"60d5b295781c0b711b4aa1cb61f2f691"
       Vary:
       - Accept-Encoding
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Rndr-Id:
-      - 69f7aac8-de4d-4858
+      - 13d1e6e8-baa2-4f1d
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -53,9 +53,9 @@ http_interactions:
       X-Render-Origin-Server:
       - Render
       X-Request-Id:
-      - 3843027f-a274-40d0-b20a-6c56d6531190
+      - bd7012be-e02d-487e-be8d-355b3fdcac88
       X-Runtime:
-      - '2.240629'
+      - '1.544643'
       X-Xss-Protection:
       - '0'
       Server:
@@ -64,6 +64,6 @@ http_interactions:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
-      string: '{"data":{"id":"15","type":"user","attributes":{"username":"JakeCakes","email":"jake@test.com","user_photo":{"name":"user_photo","record":{"id":15,"username":"JakeCakes","email":"jake@test.com","password_digest":"$2a$12$YMeQJjSEdHKGg7Af5FXNV.SzK1.eizp1fT3Jf1e8cojA6ehmws9jS","created_at":"2023-11-08T03:25:07.941Z","updated_at":"2023-11-08T03:25:07.941Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[]}}}'
-  recorded_at: Wed, 08 Nov 2023 03:25:07 GMT
+      string: '{"message":"Login successful","user_id":2}'
+  recorded_at: Wed, 08 Nov 2023 04:09:25 GMT
 recorded_with: VCR 6.2.0
