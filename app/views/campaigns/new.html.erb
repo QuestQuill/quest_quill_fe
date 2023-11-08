@@ -1,0 +1,27 @@
+<center><div class="welcome"><h1>Create a New Campaign<h1></div></center>
+
+
+<div class="form-center">
+  <%= form_with url: user_campaigns_path(params[:user_id]), method: :post, data: { turbo: false } do |form|  %>
+    <div class="form-group">
+      <strong><%= form.label :name, "Campaign Name" %></strong>
+      <%= form.text_field :name, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <strong><%= form.label :player_num, "Number of Players" %></strong>
+      <%= form.number_field :player_num, class: "form-control" %>
+    </div>
+    <strong><p>Campaign Themes</p></strong>
+    <div class="form-group">
+      <% @themes.each do |theme| %>
+        <p> <%= form.check_box :themes, { multiple: true }, theme, nil %>
+        <%= form.label theme %></p>
+      <% end %>
+    </div>
+    <center>
+      <%= form.submit "Create my Campaign", class: "button-style" %>
+    </center>
+  <% end %>
+</div>
+
+

@@ -25,7 +25,7 @@ body {
 }
 
 .navbar a {
-  font-size: 30px;
+  font-size: 40px;
   text-decoration: none;
   color: black;
 }
@@ -34,17 +34,17 @@ body {
   color: #0b6d2a;
 }
 
-.logo {
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  bottom: 10px;
-  margin-left: -100px;
-  left: 50%
-}
+// .logo {
+//   display: flex;
+//   justify-content: center;
+//   // position: fixed;
+//   bottom: 10px;
+//   margin-left: -100px;
+//   left: 50%
+// }
 
 .logo img {
-  width: 200px;
+  width: 80px;
   height: auto;
 }
 
@@ -52,6 +52,10 @@ body {
   width: 50%;
   border-bottom: 1px solid black;
   margin-bottom: 30px;
+}
+
+.user-welcome {
+  width: 95%;
 }
 
 .card {
@@ -88,6 +92,7 @@ body {
 .landing-icons {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin-top: 70px;
 }
@@ -124,6 +129,11 @@ body {
   border-radius: 20px;
   border: none;
 }
+
+.logout {
+  width: 264px
+}
+
 
 .or-divider {
   margin-top: 40px;

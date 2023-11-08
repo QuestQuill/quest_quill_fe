@@ -1,0 +1,525 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://quest-quill-api.onrender.com/api/v1/users?email=amren@test.com&password=12345&username=Amren
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 06:18:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822bb2a0aa171f44-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"c3dd104d99b30de6cd40b8a5763e1b66"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 5a4afd11-e526-4617
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - cc235865-026c-4597-ab8b-6b8336441305
+      X-Runtime:
+      - '1.421792'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"23","type":"user","attributes":{"username":"Amren","email":"amren@test.com","user_photo":{"name":"user_photo","record":{"id":23,"username":"Amren","email":"amren@test.com","password_digest":"$2a$12$R0/ZUT8DE/FFRpF.o.3Qu.0JYpdLkl5yKhSR2KjXE3mApltCXqMna","created_at":"2023-11-08T06:18:18.535Z","updated_at":"2023-11-08T06:18:18.535Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[]}}}'
+  recorded_at: Wed, 08 Nov 2023 06:18:18 GMT
+- request:
+    method: post
+    uri: https://quest-quill-api.onrender.com/api/v1/users/login?email=amren@test.com&password=12345
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 06:18:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822bb2ab9c665209-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"6e93bfe0c4b05bfd5f058b04b5027207"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - f1bc2858-c4e9-4ef3
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - b9150ab9-3f69-40ca-b0fa-d13f5c0da876
+      X-Runtime:
+      - '1.374435'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Login successful","user_id":23}'
+  recorded_at: Wed, 08 Nov 2023 06:18:20 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/23
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 06:18:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822bb2b52d481f30-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"c3dd104d99b30de6cd40b8a5763e1b66"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - eafa5ac6-5f3c-4ce1
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 9e7e4946-15b7-4862-a179-0d22504a56c7
+      X-Runtime:
+      - '0.017844'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"23","type":"user","attributes":{"username":"Amren","email":"amren@test.com","user_photo":{"name":"user_photo","record":{"id":23,"username":"Amren","email":"amren@test.com","password_digest":"$2a$12$R0/ZUT8DE/FFRpF.o.3Qu.0JYpdLkl5yKhSR2KjXE3mApltCXqMna","created_at":"2023-11-08T06:18:18.535Z","updated_at":"2023-11-08T06:18:18.535Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[]}}}'
+  recorded_at: Wed, 08 Nov 2023 06:18:20 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/23
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 06:18:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822bb2b69c941f29-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"c3dd104d99b30de6cd40b8a5763e1b66"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 3ad5232d-5c09-4de7
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 90403f24-7185-4b44-9b85-b6494f2afdf5
+      X-Runtime:
+      - '0.007560'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"23","type":"user","attributes":{"username":"Amren","email":"amren@test.com","user_photo":{"name":"user_photo","record":{"id":23,"username":"Amren","email":"amren@test.com","password_digest":"$2a$12$R0/ZUT8DE/FFRpF.o.3Qu.0JYpdLkl5yKhSR2KjXE3mApltCXqMna","created_at":"2023-11-08T06:18:18.535Z","updated_at":"2023-11-08T06:18:18.535Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[]}}}'
+  recorded_at: Wed, 08 Nov 2023 06:18:20 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/23
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 06:18:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822bb2b8ff351f4e-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"c3dd104d99b30de6cd40b8a5763e1b66"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 93a3a73b-9be1-44b7
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - a624e256-2974-4e6a-bfe5-20c9f43de7a6
+      X-Runtime:
+      - '0.010976'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"23","type":"user","attributes":{"username":"Amren","email":"amren@test.com","user_photo":{"name":"user_photo","record":{"id":23,"username":"Amren","email":"amren@test.com","password_digest":"$2a$12$R0/ZUT8DE/FFRpF.o.3Qu.0JYpdLkl5yKhSR2KjXE3mApltCXqMna","created_at":"2023-11-08T06:18:18.535Z","updated_at":"2023-11-08T06:18:18.535Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[]}}}'
+  recorded_at: Wed, 08 Nov 2023 06:18:21 GMT
+- request:
+    method: post
+    uri: https://quest-quill-api.onrender.com/api/v1/users/23/campaigns?name=Amren%27s%20First%20Campaign&player_num=4&themes%5B%5D=fantasy&themes%5B%5D=gods_and_monsters&themes%5B%5D=high_magic&user_id=23
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 06:18:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822bb2ba2bb51f35-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"332a06853eef37f4796741f61fd2d6d9"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - cf26089e-a484-4b73
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - f2427127-430f-421b-bb61-80783da40c40
+      X-Runtime:
+      - '0.012307'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"6","type":"campaign","attributes":{"name":"Amren''s
+        First Campaign","player_num":4,"themes":"[\"fantasy\", \"high_magic\", \"gods_and_monsters\"]","user_id":23,"campaign_photo":{"name":"campaign_photo","record":{"id":6,"name":"Amren''s
+        First Campaign","player_num":4,"themes":"[\"fantasy\", \"high_magic\", \"gods_and_monsters\"]","created_at":"2023-11-08T06:18:21.184Z","updated_at":"2023-11-08T06:18:21.184Z","user_id":23}}}}}'
+  recorded_at: Wed, 08 Nov 2023 06:18:21 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/23
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 06:18:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822bb2bb2a615186-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"36309a7db525a3675ee63ab1797bae15"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 19343436-1924-4e66
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - e1bc86ef-0b19-454b-ac0a-2d465e00b652
+      X-Runtime:
+      - '0.007969'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"23","type":"user","attributes":{"username":"Amren","email":"amren@test.com","user_photo":{"name":"user_photo","record":{"id":23,"username":"Amren","email":"amren@test.com","password_digest":"$2a$12$R0/ZUT8DE/FFRpF.o.3Qu.0JYpdLkl5yKhSR2KjXE3mApltCXqMna","created_at":"2023-11-08T06:18:18.535Z","updated_at":"2023-11-08T06:18:18.535Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[{"id":6,"name":"Amren''s
+        First Campaign","player_num":4,"themes":"[\"fantasy\", \"high_magic\", \"gods_and_monsters\"]","created_at":"2023-11-08T06:18:21.184Z","updated_at":"2023-11-08T06:18:21.184Z","user_id":23}]}}}'
+  recorded_at: Wed, 08 Nov 2023 06:18:21 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/23
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 06:18:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822bb2bc8a2b1f29-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"36309a7db525a3675ee63ab1797bae15"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 675759ba-d17a-48e6
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 55a127e2-1998-4472-8ed7-b055c2580ca9
+      X-Runtime:
+      - '0.013636'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"23","type":"user","attributes":{"username":"Amren","email":"amren@test.com","user_photo":{"name":"user_photo","record":{"id":23,"username":"Amren","email":"amren@test.com","password_digest":"$2a$12$R0/ZUT8DE/FFRpF.o.3Qu.0JYpdLkl5yKhSR2KjXE3mApltCXqMna","created_at":"2023-11-08T06:18:18.535Z","updated_at":"2023-11-08T06:18:18.535Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[{"id":6,"name":"Amren''s
+        First Campaign","player_num":4,"themes":"[\"fantasy\", \"high_magic\", \"gods_and_monsters\"]","created_at":"2023-11-08T06:18:21.184Z","updated_at":"2023-11-08T06:18:21.184Z","user_id":23}]}}}'
+  recorded_at: Wed, 08 Nov 2023 06:18:21 GMT
+recorded_with: VCR 6.2.0

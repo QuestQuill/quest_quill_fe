@@ -3,7 +3,8 @@ class User
               :username,
               :email,
               :token,
-              :token_expiration
+              :token_expiration,
+              :campaigns
 
   def initialize(data)
     @id = data[:id]
@@ -11,5 +12,6 @@ class User
     @email = data[:attributes][:email]
     @token = data[:attributes][:token]
     @token_expiration = data[:attributes][:token]
+    @campaigns = data[:attributes][:campaigns]
   end
 end
