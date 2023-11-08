@@ -1,0 +1,133 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/search?email=rhys@acotar.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 17:02:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822f62a7f893516e-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"924870080f962329bac889e54fc4c6da"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - a7b6f666-32e3-4cac
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 70f2cca3-6f95-4228-b9a1-2a971903be70
+      X-Runtime:
+      - '0.169498'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"14","type":"user","attributes":{"username":"rhys","email":"rhys@acotar.com","user_photo":{"name":"user_photo","record":{"id":14,"username":"rhys","email":"rhys@acotar.com","password_digest":"$2a$12$ipokEzrLfV62zPrakqONRuTeFamVBm/b2oMordKxVdNTYmxbBiaGa","created_at":"2023-11-08T03:21:18.643Z","updated_at":"2023-11-08T03:21:18.643Z","token":null,"token_expiration":null}},"token":null,"token_expiration":null,"campaigns":[]}}]}'
+  recorded_at: Wed, 08 Nov 2023 17:02:44 GMT
+- request:
+    method: patch
+    uri: https://quest-quill-api.onrender.com/api/v1/users/update_token?token=abcdefgh&user=14
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Nov 2023 17:02:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 822f62aa4a7b5380-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"27dbe3eeb3316b94021217f749a90151"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - e750c729-bab3-4d32
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - cf77bc4e-c59d-4fe7-b3a9-941f4b7586b8
+      X-Runtime:
+      - '0.051895'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"14","type":"user","attributes":{"username":"rhys","email":"rhys@acotar.com","user_photo":{"name":"user_photo","record":{"id":14,"username":"rhys","email":"rhys@acotar.com","password_digest":"$2a$12$ipokEzrLfV62zPrakqONRuTeFamVBm/b2oMordKxVdNTYmxbBiaGa","created_at":"2023-11-08T03:21:18.643Z","updated_at":"2023-11-08T03:21:18.643Z","token":"abcdefgh","token_expiration":"2023-11-08T17:12:44.979Z"}},"token":"abcdefgh","token_expiration":"2023-11-08T17:12:44.979Z","campaigns":[]}}}'
+  recorded_at: Wed, 08 Nov 2023 17:02:44 GMT
+recorded_with: VCR 6.2.0
