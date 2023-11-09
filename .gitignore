@@ -31,3 +31,5 @@
 /config/master.key
 
 /coverage
+
+/spec/fixtures/vcr_cassettes/bob_passwordless_login_dns.yml
