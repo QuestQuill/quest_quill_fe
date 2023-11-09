@@ -61,8 +61,45 @@ class DndService
     end
   end
 
-  def get_campaign(campaign)
-    get_url("/api/v1/users/#{campaign[:user_id]}/campaigns/#{campaign[:id]}")
+    def get_campaign(campaign)
+      get_url("/api/v1/users/#{campaign[:user_id]}/campaigns/#{campaign[:id]}")
+    end
+
+  def post_npc(params)
+    response = conn.post("/api/v1/users/#{params[:user_id]}/campaigns/#{params[:campaign_id]}/npcs") do |req|
+      req.params["user_id"] = params[:user_id]
+      req.params["campaign_id"] = params[:campaign_id]
+      req.params["message"] = "create a new fantasy npc with the following unique attributes:
+      name:
+      gender:
+      race:
+      klass:
+      description:
+      attitude:"
+    end
+
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def get_npcs(params)
+    get_url("api/v1/users/#{params[:user_id]}/campaigns/#{params[:campaign_id]}/npcs")
+  end
+
+  def post_quest(params)
+    response = conn.post("/api/v1/users/#{params[:user_id]}/campaigns/#{params[:campaign_id]}/quests") do |req|
+      req.params["user_id"] = params[:user_id]
+      req.params["campaign_id"] = params[:campaign_id]
+      req.params["message"] = "create a new PG-13 fantasy quest with the following unique attributes keep it short:
+      name:
+      description:
+      goal:"
+    end
+
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def get_quests(params)
+    get_url("api/v1/users/#{params[:user_id]}/campaigns/#{params[:campaign_id]}/quests")
   end
 
   def post_town(params)
