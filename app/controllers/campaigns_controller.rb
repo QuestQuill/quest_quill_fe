@@ -15,6 +15,7 @@ class CampaignsController < ApplicationController
 
   def show
     @campaign =  facade.campaign(campaign_params)
+    @user_id = campaign_params[:user_id]
   end
 
   def campaign_params
