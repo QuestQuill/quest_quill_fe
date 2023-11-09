@@ -1,5 +1,11 @@
-<% @quests.each do |quest| %>
-  <p><%= quest.name %></p>
-  <p><%= quest.description %></p>
-  <p><%= quest.goal %></p>
-<% end %>
+<left><div class=" d-flex align-items-baseline border-bottom justify-content-center mb-5">
+  <h1>My Quests</h1>
+</div></left>
+
+<section class="quests_index">
+  <% @quests.each do |quest| %>
+    <h3 class="border-bottom"><%= quest.name %></h3>
+    <p><%= quest.description %></p>
+    <p class="mb-5"><%= quest.goal %></p>
+  <% end %>
+</section>

@@ -1,17 +1,17 @@
 <left><div class="campaign_header d-flex align-items-baseline border-bottom mx-5 justify-content-between">
-  <h1 class="me-2"><%= @campaign.name.capitalize %></h1><p><%= "Number of Players: #{@campaign.player_num}" %>
+  <h1 class="me-2"><%= @campaign.name.capitalize %></h1><p><%= "Number of Players: #{@campaign.player_num}" %></p>
 </div></left>
 
-<section class="generators">
-  <p><%= button_to "Generate Town", user_campaign_towns_path(user_id: @user_id, campaign_id: @campaign.id)  %></p>
-  <p><%= button_to "Generate NPC", user_campaign_npcs_path(user_id: @user_id, campaign_id: @campaign.id) %></p>
-  <p><%= button_to "Generate Quests", user_campaign_quests_path(user_id: @user_id, campaign_id: @campaign.id) %></p>
+<section class="campaign_buttons d-flex justify-content-around">
+  <section class="generators">
+    <p><%= button_to "Generate Town", user_campaign_towns_path(user_id: @user_id, campaign_id: @campaign.id), class: "button-style-link"  %></p>
+    <p><%= button_to "Generate NPC", user_campaign_npcs_path(user_id: @user_id, campaign_id: @campaign.id), class: "button-style-link" %></p>
+    <p><%= button_to "Generate Quest", user_campaign_quests_path(user_id: @user_id, campaign_id: @campaign.id), class: "button-style-link" %></p>
+  </section>
 
-</section>
-
-<section class="indexes">
-  <p><%= link_to "My Towns", user_campaign_towns_path(user_id: @user_id, campaign_id: @campaign.id) %></p>
-
-  <p><%= link_to "My NPCs", user_campaign_npcs_path(user_id: @user_id, campaign_id: @campaign.id) %></p>
-  <p><%= link_to "My Quests", user_campaign_quests_path(user_id: @user_id, campaign_id: @campaign.id) %></p>
+  <section class="indexes">
+    <p><%= button_to "My Towns", user_campaign_towns_path(user_id: @user_id, campaign_id: @campaign.id), method: :get, class: "button-style-link" %></p>
+    <p><%= button_to "My NPCs", user_campaign_npcs_path(user_id: @user_id, campaign_id: @campaign.id), method: :get, class: "button-style-link" %></p>
+    <p><%= button_to "My Quests", user_campaign_quests_path(user_id: @user_id, campaign_id: @campaign.id), method: :get, class: "button-style-link" %></p>
+  </section>
 </section>

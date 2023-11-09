@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22/campaigns//npcs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 07:08:35 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 823439af9eaf5197-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Vary:
+      - Accept-Encoding
+      Rndr-Id:
+      - 3f79d907-8205-4c06
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - e5ec51b0-99d1-4321-924e-66f8efd36640
+      X-Runtime:
+      - '0.004013'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+  recorded_at: Thu, 09 Nov 2023 07:08:35 GMT
+recorded_with: VCR 6.2.0

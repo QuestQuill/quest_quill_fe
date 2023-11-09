@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22/campaigns/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 05:18:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 823398df38541f3d-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"33bf67a50a97d712504a6f897cd0cf45"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 7cd7256a-4b3f-4967
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - ab447f02-3901-4678-921a-524a5f6a044b
+      X-Runtime:
+      - '0.014738'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"4","type":"campaign","attributes":{"name":"boo''s First
+        Campaign","player_num":4,"themes":"[\"sci_fi\", \"low_magic\", \"space_opera\"]","user_id":22,"campaign_photo":{"name":"campaign_photo","record":{"id":4,"name":"boo''s
+        First Campaign","player_num":4,"themes":"[\"sci_fi\", \"low_magic\", \"space_opera\"]","created_at":"2023-11-08T04:34:08.029Z","updated_at":"2023-11-08T04:34:08.029Z","user_id":22}}}},{"id":"11","type":"campaign","attributes":{"name":"screaming","player_num":5,"themes":"[\"sci_fi\",
+        \"high_magic\"]","user_id":22,"campaign_photo":{"name":"campaign_photo","record":{"id":11,"name":"screaming","player_num":5,"themes":"[\"sci_fi\",
+        \"high_magic\"]","created_at":"2023-11-08T16:43:16.257Z","updated_at":"2023-11-08T16:43:16.257Z","user_id":22}}}},{"id":"12","type":"campaign","attributes":{"name":"yellin","player_num":6,"themes":"[\"space_opera\",
+        \"high_magic\"]","user_id":22,"campaign_photo":{"name":"campaign_photo","record":{"id":12,"name":"yellin","player_num":6,"themes":"[\"space_opera\",
+        \"high_magic\"]","created_at":"2023-11-08T17:27:15.942Z","updated_at":"2023-11-08T17:27:15.942Z","user_id":22}}}},{"id":"13","type":"campaign","attributes":{"name":"cryin","player_num":7,"themes":"[\"space_opera\",
+        \"high_magic\", \"low_magic\"]","user_id":22,"campaign_photo":{"name":"campaign_photo","record":{"id":13,"name":"cryin","player_num":7,"themes":"[\"space_opera\",
+        \"high_magic\", \"low_magic\"]","created_at":"2023-11-08T17:40:32.250Z","updated_at":"2023-11-08T17:40:32.250Z","user_id":22}}}},{"id":"15","type":"campaign","attributes":{"name":"sadclub","player_num":7,"themes":"[\"high_magic\",
+        \"space_opera\"]","user_id":22,"campaign_photo":{"name":"campaign_photo","record":{"id":15,"name":"sadclub","player_num":7,"themes":"[\"high_magic\",
+        \"space_opera\"]","created_at":"2023-11-08T17:48:23.462Z","updated_at":"2023-11-08T17:48:23.462Z","user_id":22}}}},{"id":"19","type":"campaign","attributes":{"name":"hollar","player_num":19,"themes":"[\"sci_fi\",
+        \"space_opera\"]","user_id":22,"campaign_photo":{"name":"campaign_photo","record":{"id":19,"name":"hollar","player_num":19,"themes":"[\"sci_fi\",
+        \"space_opera\"]","created_at":"2023-11-08T23:44:49.132Z","updated_at":"2023-11-08T23:44:49.132Z","user_id":22}}}},{"id":"23","type":"campaign","attributes":{"name":"ACOTAR","player_num":7,"themes":"[\"high_magic\",
+        \"space_opera\"]","user_id":22,"campaign_photo":{"name":"campaign_photo","record":{"id":23,"name":"ACOTAR","player_num":7,"themes":"[\"high_magic\",
+        \"space_opera\"]","created_at":"2023-11-09T05:12:30.040Z","updated_at":"2023-11-09T05:12:30.040Z","user_id":22}}}}]}'
+  recorded_at: Thu, 09 Nov 2023 05:18:48 GMT
+recorded_with: VCR 6.2.0

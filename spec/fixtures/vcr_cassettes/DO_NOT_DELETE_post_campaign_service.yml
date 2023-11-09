@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22/campaigns?name=ACOTAR&player_num=7&themes%5B%5D=high_magic&themes%5B%5D=space_opera&user_id=22
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 05:12:30 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 82338fa09c7f5188-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"a7b90eaf8e4a5cb9f557adaa8ed21128"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 1efa0b7f-db89-464b
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - b1cbd397-8c25-4bd9-bbce-f0f31e3ed9eb
+      X-Runtime:
+      - '0.506154'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"23","type":"campaign","attributes":{"name":"ACOTAR","player_num":7,"themes":"[\"high_magic\",
+        \"space_opera\"]","user_id":22,"campaign_photo":{"name":"campaign_photo","record":{"id":23,"name":"ACOTAR","player_num":7,"themes":"[\"high_magic\",
+        \"space_opera\"]","created_at":"2023-11-09T05:12:30.040Z","updated_at":"2023-11-09T05:12:30.040Z","user_id":22}}}}}'
+  recorded_at: Thu, 09 Nov 2023 05:12:30 GMT
+recorded_with: VCR 6.2.0
