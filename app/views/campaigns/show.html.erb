@@ -3,14 +3,14 @@
 </div></left>
 
 <section class="generators">
-  <p><%= link_to "Generate Town" %></p>
+  <p><%= button_to "Generate Town", user_campaign_towns_path(user_id: @user_id, campaign_id: @campaign.id)  %></p>
 
   <p><%= link_to "Generate NPC" %></p>
 
 </section>
 
 <section class="indexes">
-  <p><%= link_to "My Towns" %></p>
+  <p><%= link_to "My Towns", user_campaign_towns_path(user_id: @user_id, campaign_id: @campaign.id) %></p>
 
   <p><%= link_to "My NPCs" %></p>
 </section>
