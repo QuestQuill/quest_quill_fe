@@ -1,0 +1,109 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22/campaigns/4/towns?campaign_id=4&message=create%20a%20new%20fantasy%20town%20with%20the%20following%20unique%20attributes:%0A%20%20%20%20%20%20name:%0A%20%20%20%20%20%20description:%0A%20%20%20%20%20%20leadership:%0A%20%20%20%20%20%20shops:%0A%20%20%20%20%20%20taverns:&user_id=22
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 06:59:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 82342aec2e645202-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"2b47771e722756e06e0bab40b297b738"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 5f04b909-d004-43c3
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 9d984a6a-66c2-48db-af2b-a684414f62a0
+      X-Runtime:
+      - '37.350867'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"9","type":"town","attributes":{"name":"Eldoria","description":"Eldoria
+        is a mystical and enchanting town nestled within a lush, ancient forest. With
+        vibrant flora, cascading waterfalls, and ethereal creatures that roam its
+        streets, Eldoria is truly a sight to behold. The buildings are built with
+        natural materials, blending seamlessly with their surroundings, creating a
+        harmonious and magical atmosphere.","leadership":"Eldoria is led by a council
+        of wise and powerful elders known as the Guardians of Harmony. These individuals
+        are chosen for their deep connection to nature and their ability to maintain
+        peace and balance within the town. They are revered and respected by the townsfolk,
+        who strive to follow their guidance and teachings.","shops":"The town of Eldoria
+        boasts unique shops that cater to the needs of both its inhabitants and visitors.
+        The Enchanted Emporium is a mysterious shop filled with artifacts and magical
+        items. Run by a centuries-old sorcerer, it offers a wide range of enchanted
+        items, potions, and spellbooks, making it a favorite among adventurers and
+        magical practitioners. The Mystic Apothecary specializes in herbal remedies,
+        potions, and salves crafted from the bountiful herbs and plants found in the
+        forest surrounding Eldoria. The Fluttering Feather is an elegant boutique
+        selling exquisite handmade clothing and accessories woven from the feathers
+        of magical birds.","taverns":"Eldoria offers an array of cozy taverns, each
+        with its own mystical charm. The Moonlit Grove is a tranquil tavern where
+        patrons can enjoy the soothing","campaign_id":4,"town_photo":{"name":"town_photo","record":{"id":9,"name":"Eldoria","description":"Eldoria
+        is a mystical and enchanting town nestled within a lush, ancient forest. With
+        vibrant flora, cascading waterfalls, and ethereal creatures that roam its
+        streets, Eldoria is truly a sight to behold. The buildings are built with
+        natural materials, blending seamlessly with their surroundings, creating a
+        harmonious and magical atmosphere.","leadership":"Eldoria is led by a council
+        of wise and powerful elders known as the Guardians of Harmony. These individuals
+        are chosen for their deep connection to nature and their ability to maintain
+        peace and balance within the town. They are revered and respected by the townsfolk,
+        who strive to follow their guidance and teachings.","taverns":"Eldoria offers
+        an array of cozy taverns, each with its own mystical charm. The Moonlit Grove
+        is a tranquil tavern where patrons can enjoy the soothing","shops":"The town
+        of Eldoria boasts unique shops that cater to the needs of both its inhabitants
+        and visitors. The Enchanted Emporium is a mysterious shop filled with artifacts
+        and magical items. Run by a centuries-old sorcerer, it offers a wide range
+        of enchanted items, potions, and spellbooks, making it a favorite among adventurers
+        and magical practitioners. The Mystic Apothecary specializes in herbal remedies,
+        potions, and salves crafted from the bountiful herbs and plants found in the
+        forest surrounding Eldoria. The Fluttering Feather is an elegant boutique
+        selling exquisite handmade clothing and accessories woven from the feathers
+        of magical birds.","campaign_id":4,"created_at":"2023-11-09T06:59:07.881Z","updated_at":"2023-11-09T06:59:07.881Z"}}}}}'
+  recorded_at: Thu, 09 Nov 2023 06:59:07 GMT
+recorded_with: VCR 6.2.0

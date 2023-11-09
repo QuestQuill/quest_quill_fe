@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22/campaigns//quests?campaign_id&message=create%20a%20new%20PG-13%20fantasy%20quest%20with%20the%20following%20unique%20attributes%20keep%20it%20short:%0A%20%20%20%20%20%20name:%0A%20%20%20%20%20%20description:%0A%20%20%20%20%20%20goal:&user_id=22
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 07:08:35 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 823439b2ea121f4c-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Vary:
+      - Accept-Encoding
+      Rndr-Id:
+      - 67d83fca-798b-4ccf
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 6509ebf8-ad79-4e52-82bf-f3fd7b22828f
+      X-Runtime:
+      - '0.001370'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+  recorded_at: Thu, 09 Nov 2023 07:08:36 GMT
+recorded_with: VCR 6.2.0

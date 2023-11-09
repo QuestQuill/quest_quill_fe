@@ -1,0 +1,121 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22/campaigns/4/quests
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 07:06:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 823437027efa51ef-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"1d644cd9b77cf282fdfa58cf3ed78824"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 72aef86b-edac-484d
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 0bcb1935-2d39-4717-831e-2c30795090c5
+      X-Runtime:
+      - '0.009489'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"2","type":"quest","attributes":{"name":"Quest for the
+        Whispering Blade","description":"In a mystical realm filled with creatures
+        of magic and wonder, an ancient artifact known as the Whispering Blade has
+        been taken by an enigmatic sorcerer. Legend has it that this blade possesses
+        the power to open portals to other dimensions, and its misuse could bring
+        chaos to the entire realm. The fate of the entire land hangs in the balance,
+        and it is up to a brave group of adventurers to retrieve the Whispering Blade
+        before it falls into the wrong hands.","goal":"Embark on a perilous journey
+        through treacherous terrains, encounter mythical creatures, and decipher cryptic
+        riddles to locate and reclaim the stolen Whispering Blade. Along the way,
+        the adventurers must face moral dilemmas, forge alliances, and harness their
+        unique abilities to overcome obstacles and outsmart the sorcerer''s minions.
+        Will they succeed in their quest and safeguard the delicate balance of the
+        realm, or will their failure plunge the mystical lands into darkness forever?
+        The fate of the realm rests in their hands.","campaign_id":4,"quest_photo":{"name":"quest_photo","record":{"id":2,"name":"Quest
+        for the Whispering Blade","description":"In a mystical realm filled with creatures
+        of magic and wonder, an ancient artifact known as the Whispering Blade has
+        been taken by an enigmatic sorcerer. Legend has it that this blade possesses
+        the power to open portals to other dimensions, and its misuse could bring
+        chaos to the entire realm. The fate of the entire land hangs in the balance,
+        and it is up to a brave group of adventurers to retrieve the Whispering Blade
+        before it falls into the wrong hands.","goal":"Embark on a perilous journey
+        through treacherous terrains, encounter mythical creatures, and decipher cryptic
+        riddles to locate and reclaim the stolen Whispering Blade. Along the way,
+        the adventurers must face moral dilemmas, forge alliances, and harness their
+        unique abilities to overcome obstacles and outsmart the sorcerer''s minions.
+        Will they succeed in their quest and safeguard the delicate balance of the
+        realm, or will their failure plunge the mystical lands into darkness forever?
+        The fate of the realm rests in their hands.","campaign_id":4,"created_at":"2023-11-09T04:00:36.494Z","updated_at":"2023-11-09T04:00:36.494Z"}}}},{"id":"3","type":"quest","attributes":{"name":"The
+        Lost Scrolls","description":"In the enchanting land of Aetheria, an ancient
+        and powerful library has been hidden away for centuries. Legends speak of
+        the precious Lost Scrolls that hold the key to unlocking magical knowledge
+        and bringing balance to the realm. However, the library''s location is shrouded
+        in mystery, and only the chosen few can embark on this perilous quest.","goal":"Join
+        a group of brave heroes as they journey through treacherous forests, treks
+        across desolate deserts, and traverse dangerous mountains in search of the
+        Lost Scrolls. Along the way, they must decipher hidden riddles, overcome puzzling
+        obstacles, and conquer cunning enemies. Their ultimate goal is to find the
+        library and retrieve the Lost Scrolls before an evil sorcerer can obtain them,
+        as their power could tip the delicate scales of Aetheria''s magic towards
+        darkness. Success in this quest would ensure the safety and prosperity of
+        the realm for generations to come.","campaign_id":4,"quest_photo":{"name":"quest_photo","record":{"id":3,"name":"The
+        Lost Scrolls","description":"In the enchanting land of Aetheria, an ancient
+        and powerful library has been hidden away for centuries. Legends speak of
+        the precious Lost Scrolls that hold the key to unlocking magical knowledge
+        and bringing balance to the realm. However, the library''s location is shrouded
+        in mystery, and only the chosen few can embark on this perilous quest.","goal":"Join
+        a group of brave heroes as they journey through treacherous forests, treks
+        across desolate deserts, and traverse dangerous mountains in search of the
+        Lost Scrolls. Along the way, they must decipher hidden riddles, overcome puzzling
+        obstacles, and conquer cunning enemies. Their ultimate goal is to find the
+        library and retrieve the Lost Scrolls before an evil sorcerer can obtain them,
+        as their power could tip the delicate scales of Aetheria''s magic towards
+        darkness. Success in this quest would ensure the safety and prosperity of
+        the realm for generations to come.","campaign_id":4,"created_at":"2023-11-09T04:07:27.158Z","updated_at":"2023-11-09T04:07:27.158Z"}}}}]}'
+  recorded_at: Thu, 09 Nov 2023 07:06:45 GMT
+recorded_with: VCR 6.2.0
