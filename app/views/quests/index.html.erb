@@ -3,9 +3,11 @@
 </div></left>
 
 <section class="quests_index">
-  <% @quests.each do |quest| %>
-    <h3 class="border-bottom"><%= quest.name %></h3>
-    <p><%= quest.description %></p>
-    <p class="mb-5"><%= quest.goal %></p>
+  <% cache("campaigns-quests-#{@quests.count}") do %>
+    <% @quests.each do |quest| %>
+      <h3 class="border-bottom"><%= quest.name %></h3>
+      <p><%= quest.description %></p>
+      <p class="mb-5"><%= quest.goal %></p>
+    <% end %>
   <% end %>
 </section>

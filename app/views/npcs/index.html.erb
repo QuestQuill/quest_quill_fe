@@ -3,14 +3,16 @@
 </div></left>
 
 <section class="npcs_index">
-  <% @npcs.each do |npc| %>
-    <section class="npc-attributes d-flex border-bottom justify-content-between align-items-baseline">
-      <h3><%= npc.name %></h3><p><strong>Gender: </strong><%= npc.gender%><p><strong>Race: </strong><%= npc.race %><p><strong>Class: </strong><%= npc.klass %></p>
-    </section>
-    <p><%= npc.description %></p>
+  <% cache("campaigns-npcs-#{@npcs.count}") do %>
+    <% @npcs.each do |npc| %>
+      <section class="npc-attributes d-flex border-bottom justify-content-between align-items-baseline">
+        <h3><%= npc.name %></h3><p><strong>Gender: </strong><%= npc.gender%><p><strong>Race: </strong><%= npc.race %><p><strong>Class: </strong><%= npc.klass %></p>
+      </section>
+      <p><%= npc.description %></p>
 
-    
-    
-    <p class="mb-5"><%= npc.attitude %></p>
+      
+      
+      <p class="mb-5"><%= npc.attitude %></p>
+    <% end %>
   <% end %>
 </section>

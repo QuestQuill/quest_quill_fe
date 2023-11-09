@@ -3,11 +3,13 @@
 </div></left>
 
 <section class="towns_index">
-  <% @towns.each do |town| %>
-    <h3 class="border-bottom"><%= town.name %></h3>
-    <p><%= town.description %></p>
-    <p><%= town.leadership %></p>
-    <p><%= town.shops %></p>
-    <p class="mb-5"><%= town.taverns %></p>
+  <% cache("campaigns-towns-#{@towns.count}") do %>
+    <% @towns.each do |town| %>
+      <h3 class="border-bottom"><%= town.name %></h3>
+      <p><%= town.description %></p>
+      <p><%= town.leadership %></p>
+      <p><%= town.shops %></p>
+      <p class="mb-5"><%= town.taverns %></p>
+    <% end %>
   <% end %>
 </section>
