@@ -1,0 +1,93 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://quest-quill-api.onrender.com/api/v1/users/1/campaigns/1/quests?campaign_id=1&message=create%20a%20new%20PG-13%20fantasy%20quest%20with%20the%20following%20unique%20attributes%20keep%20it%20short:%0A%20%20%20%20%20%20name:%0A%20%20%20%20%20%20description:%0A%20%20%20%20%20%20goal:&user_id=1
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 06:08:22 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8233e0e279a51f4a-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"35598b81626b07a98b611a120a78949f"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 0c52618e-6288-4d63
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 387fa541-be37-4d6b-8cc6-3f0a12e85e93
+      X-Runtime:
+      - '24.430035'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"7","type":"quest","attributes":{"name":"The Enchanted
+        Medallion","description":"In a mystical realm called Eldoria, where mythical
+        creatures and elemental magic exist, a young hero named Alex embarks on a
+        quest to find the legendary Enchanted Medallion. Rumored to possess immense
+        power and the ability to restore balance to the realm, the medallion has been
+        lost for centuries.","goal":"Alex must gather a group of loyal companions
+        and navigate through treacherous forests, mystical caves, and ancient ruins
+        to find the scattered fragments of the medallion. Along their journey, they
+        will encounter dangerous creatures, solve riddles, and face deception from
+        cunning adversaries. Ultimately, their goal is to reunite the medallion''s
+        pieces and protect it from falling into the wrong hands. Only then can they
+        bring harmony back to Eldoria and prevent the rise of darkness that threatens
+        to engulf the realm forever.","campaign_id":1,"quest_photo":{"name":"quest_photo","record":{"id":7,"name":"The
+        Enchanted Medallion","description":"In a mystical realm called Eldoria, where
+        mythical creatures and elemental magic exist, a young hero named Alex embarks
+        on a quest to find the legendary Enchanted Medallion. Rumored to possess immense
+        power and the ability to restore balance to the realm, the medallion has been
+        lost for centuries.","goal":"Alex must gather a group of loyal companions
+        and navigate through treacherous forests, mystical caves, and ancient ruins
+        to find the scattered fragments of the medallion. Along their journey, they
+        will encounter dangerous creatures, solve riddles, and face deception from
+        cunning adversaries. Ultimately, their goal is to reunite the medallion''s
+        pieces and protect it from falling into the wrong hands. Only then can they
+        bring harmony back to Eldoria and prevent the rise of darkness that threatens
+        to engulf the realm forever.","campaign_id":1,"created_at":"2023-11-09T06:08:22.317Z","updated_at":"2023-11-09T06:08:22.317Z"}}}}}'
+  recorded_at: Thu, 09 Nov 2023 06:08:22 GMT
+recorded_with: VCR 6.2.0

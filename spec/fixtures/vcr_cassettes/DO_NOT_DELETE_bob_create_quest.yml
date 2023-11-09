@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://quest-quill-api.onrender.com/api/v1/users/1/campaigns?name=A%20cool%20campaign&player_num=3&themes%5B%5D=high_magic&themes%5B%5D=spooky&user_id=1
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 05:01:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 82337ffdbd705341-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"2b702455e420a69c489585c8c066fee9"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 7771480d-c011-4d4c
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - da0f3979-9574-4d82-99c2-2302df951d1a
+      X-Runtime:
+      - '0.087401'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"22","type":"campaign","attributes":{"name":"A cool campaign","player_num":3,"themes":"[\"spooky\",
+        \"high_magic\"]","user_id":1,"campaign_photo":{"name":"campaign_photo","record":{"id":22,"name":"A
+        cool campaign","player_num":3,"themes":"[\"spooky\", \"high_magic\"]","created_at":"2023-11-09T05:01:49.232Z","updated_at":"2023-11-09T05:01:49.232Z","user_id":1}}}}}'
+  recorded_at: Thu, 09 Nov 2023 05:01:49 GMT
+recorded_with: VCR 6.2.0

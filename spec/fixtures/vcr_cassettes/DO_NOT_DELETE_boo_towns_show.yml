@@ -1,0 +1,584 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://quest-quill-api.onrender.com/api/v1/users/login?email=boo@gmail.com&password=12345
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 04:02:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8233296968771f3e-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"401fc1a040cbfb9658b058062e3e1b66"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - d63d510f-0a97-40e3
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 9b0151e8-f2fa-43e4-aaf0-b1361540d725
+      X-Runtime:
+      - '1.339124'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Login successful","user_id":22}'
+  recorded_at: Thu, 09 Nov 2023 04:02:44 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 04:02:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 82332972e93351e8-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"377f13b55094a54595a1d583e37c3459"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - bf515b73-8375-47c3
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - a9fd4caf-8920-4369-b596-7e8da6afa359
+      X-Runtime:
+      - '0.008267'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"22","type":"user","attributes":{"uid":null,"username":"boo","email":"boo@gmail.com","user_photo":{"name":"user_photo","record":{"id":22,"username":"boo","email":"boo@gmail.com","password_digest":"$2a$12$6zajARNnQDIhl91QknYsB.ja2GZbicGoRN7MDCoPhtfGtHqjE8BKG","created_at":"2023-11-08T04:34:04.490Z","updated_at":"2023-11-08T04:34:04.490Z","token":null,"token_expiration":null,"uid":null,"auth_token":null}},"token":null,"token_expiration":null,"auth_token":null,"campaigns":[{"id":4,"name":"boo''s
+        First Campaign","player_num":4,"themes":"[\"sci_fi\", \"low_magic\", \"space_opera\"]","created_at":"2023-11-08T04:34:08.029Z","updated_at":"2023-11-08T04:34:08.029Z","user_id":22},{"id":11,"name":"screaming","player_num":5,"themes":"[\"sci_fi\",
+        \"high_magic\"]","created_at":"2023-11-08T16:43:16.257Z","updated_at":"2023-11-08T16:43:16.257Z","user_id":22},{"id":12,"name":"yellin","player_num":6,"themes":"[\"space_opera\",
+        \"high_magic\"]","created_at":"2023-11-08T17:27:15.942Z","updated_at":"2023-11-08T17:27:15.942Z","user_id":22},{"id":13,"name":"cryin","player_num":7,"themes":"[\"space_opera\",
+        \"high_magic\", \"low_magic\"]","created_at":"2023-11-08T17:40:32.250Z","updated_at":"2023-11-08T17:40:32.250Z","user_id":22},{"id":15,"name":"sadclub","player_num":7,"themes":"[\"high_magic\",
+        \"space_opera\"]","created_at":"2023-11-08T17:48:23.462Z","updated_at":"2023-11-08T17:48:23.462Z","user_id":22},{"id":19,"name":"hollar","player_num":19,"themes":"[\"sci_fi\",
+        \"space_opera\"]","created_at":"2023-11-08T23:44:49.132Z","updated_at":"2023-11-08T23:44:49.132Z","user_id":22}]}}}'
+  recorded_at: Thu, 09 Nov 2023 04:02:44 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 04:02:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 823329745ec95345-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"377f13b55094a54595a1d583e37c3459"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 4f46434a-781c-4f51
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - '00283219-7c8c-46cb-85ba-abaacc2add3a'
+      X-Runtime:
+      - '0.007321'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"22","type":"user","attributes":{"uid":null,"username":"boo","email":"boo@gmail.com","user_photo":{"name":"user_photo","record":{"id":22,"username":"boo","email":"boo@gmail.com","password_digest":"$2a$12$6zajARNnQDIhl91QknYsB.ja2GZbicGoRN7MDCoPhtfGtHqjE8BKG","created_at":"2023-11-08T04:34:04.490Z","updated_at":"2023-11-08T04:34:04.490Z","token":null,"token_expiration":null,"uid":null,"auth_token":null}},"token":null,"token_expiration":null,"auth_token":null,"campaigns":[{"id":4,"name":"boo''s
+        First Campaign","player_num":4,"themes":"[\"sci_fi\", \"low_magic\", \"space_opera\"]","created_at":"2023-11-08T04:34:08.029Z","updated_at":"2023-11-08T04:34:08.029Z","user_id":22},{"id":11,"name":"screaming","player_num":5,"themes":"[\"sci_fi\",
+        \"high_magic\"]","created_at":"2023-11-08T16:43:16.257Z","updated_at":"2023-11-08T16:43:16.257Z","user_id":22},{"id":12,"name":"yellin","player_num":6,"themes":"[\"space_opera\",
+        \"high_magic\"]","created_at":"2023-11-08T17:27:15.942Z","updated_at":"2023-11-08T17:27:15.942Z","user_id":22},{"id":13,"name":"cryin","player_num":7,"themes":"[\"space_opera\",
+        \"high_magic\", \"low_magic\"]","created_at":"2023-11-08T17:40:32.250Z","updated_at":"2023-11-08T17:40:32.250Z","user_id":22},{"id":15,"name":"sadclub","player_num":7,"themes":"[\"high_magic\",
+        \"space_opera\"]","created_at":"2023-11-08T17:48:23.462Z","updated_at":"2023-11-08T17:48:23.462Z","user_id":22},{"id":19,"name":"hollar","player_num":19,"themes":"[\"sci_fi\",
+        \"space_opera\"]","created_at":"2023-11-08T23:44:49.132Z","updated_at":"2023-11-08T23:44:49.132Z","user_id":22}]}}}'
+  recorded_at: Thu, 09 Nov 2023 04:02:44 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22/campaigns/4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 04:02:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 82332975b9631f24-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"f146cc2a075cdc6f55cb00d9781da723"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 07d41052-f142-4d15
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 2bafd099-c511-4c1f-a3a0-f106bd2aa95b
+      X-Runtime:
+      - '0.015829'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"4","type":"campaign","attributes":{"name":"boo''s First
+        Campaign","player_num":4,"themes":"[\"sci_fi\", \"low_magic\", \"space_opera\"]","user_id":22,"campaign_photo":{"name":"campaign_photo","record":{"id":4,"name":"boo''s
+        First Campaign","player_num":4,"themes":"[\"sci_fi\", \"low_magic\", \"space_opera\"]","created_at":"2023-11-08T04:34:08.029Z","updated_at":"2023-11-08T04:34:08.029Z","user_id":22}}}}}'
+  recorded_at: Thu, 09 Nov 2023 04:02:44 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 04:02:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 82332976f8f25342-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"377f13b55094a54595a1d583e37c3459"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 148a7288-c5cb-46b8
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - c377b68e-46a9-4ffb-b475-bc095b7207e7
+      X-Runtime:
+      - '0.009023'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"22","type":"user","attributes":{"uid":null,"username":"boo","email":"boo@gmail.com","user_photo":{"name":"user_photo","record":{"id":22,"username":"boo","email":"boo@gmail.com","password_digest":"$2a$12$6zajARNnQDIhl91QknYsB.ja2GZbicGoRN7MDCoPhtfGtHqjE8BKG","created_at":"2023-11-08T04:34:04.490Z","updated_at":"2023-11-08T04:34:04.490Z","token":null,"token_expiration":null,"uid":null,"auth_token":null}},"token":null,"token_expiration":null,"auth_token":null,"campaigns":[{"id":4,"name":"boo''s
+        First Campaign","player_num":4,"themes":"[\"sci_fi\", \"low_magic\", \"space_opera\"]","created_at":"2023-11-08T04:34:08.029Z","updated_at":"2023-11-08T04:34:08.029Z","user_id":22},{"id":11,"name":"screaming","player_num":5,"themes":"[\"sci_fi\",
+        \"high_magic\"]","created_at":"2023-11-08T16:43:16.257Z","updated_at":"2023-11-08T16:43:16.257Z","user_id":22},{"id":12,"name":"yellin","player_num":6,"themes":"[\"space_opera\",
+        \"high_magic\"]","created_at":"2023-11-08T17:27:15.942Z","updated_at":"2023-11-08T17:27:15.942Z","user_id":22},{"id":13,"name":"cryin","player_num":7,"themes":"[\"space_opera\",
+        \"high_magic\", \"low_magic\"]","created_at":"2023-11-08T17:40:32.250Z","updated_at":"2023-11-08T17:40:32.250Z","user_id":22},{"id":15,"name":"sadclub","player_num":7,"themes":"[\"high_magic\",
+        \"space_opera\"]","created_at":"2023-11-08T17:48:23.462Z","updated_at":"2023-11-08T17:48:23.462Z","user_id":22},{"id":19,"name":"hollar","player_num":19,"themes":"[\"sci_fi\",
+        \"space_opera\"]","created_at":"2023-11-08T23:44:49.132Z","updated_at":"2023-11-08T23:44:49.132Z","user_id":22}]}}}'
+  recorded_at: Thu, 09 Nov 2023 04:02:45 GMT
+- request:
+    method: post
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22/campaigns/4/towns?campaign_id=4&message=create%20a%20new%20fantasy%20town%20with%20the%20following%20unique%20attributes:%0A%20%20%20%20%20%20name:%0A%20%20%20%20%20%20description:%0A%20%20%20%20%20%20leadership:%0A%20%20%20%20%20%20shops:%0A%20%20%20%20%20%20taverns:&user_id=22
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 04:03:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 823329790ce65342-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"a910079fc47b88b8465c02e0358fd86c"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 7ce30398-01e0-466d
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - a22f1ff4-6ded-4597-b173-7b030e64a501
+      X-Runtime:
+      - '41.801047'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"3","type":"town","attributes":{"name":"Twilight Haven","description":"Twilight
+        Haven is a breathtaking fantasy town nestled in the heart of a lush enchanted
+        forest. The town''s ethereal beauty is enhanced by the soft glow of the setting
+        sun, casting a magical twilight ambiance over the landscape. Rich with vibrant
+        flora and fauna, the air is filled with the sweet scent of wildflowers and
+        the melodious songs of forest creatures.","leadership":"The town is governed
+        by a wise and just council known as the Council of Elders. Comprised of mystical
+        beings such as elves, druids, and sages, they are deeply connected to the
+        mystical energies of the forest. The Council ensures balance and harmony within
+        Twilight Haven, fostering a strong sense of community.","shops":"The unique
+        shops in Twilight Haven cater to the needs and desires of both the townsfolk
+        and traveling adventurers. The Enchanted Emporium offers an array of magical
+        artifacts, potions, and charms, providing the tools to harness the forces
+        of nature. The Fairytale Forge is a renowned blacksmith where skilled craftsmen
+        forge weaponry infused with magical properties. Skyward Alchemy specializes
+        in concocting potions and elixirs with healing and mystical powers.","taverns":"The
+        taverns in Twilight Haven are warmly illuminated havens where weary travelers
+        can find respite and revelry. The Moonlit Grove Tavern, with its rustic and
+        cozy atmosphere, is the go-to spot for storytelling, lively music, and delicious
+        traditional fare. The Starstruck Inn offers enchant","campaign_id":4,"town_photo":{"name":"town_photo","record":{"id":3,"name":"Twilight
+        Haven","description":"Twilight Haven is a breathtaking fantasy town nestled
+        in the heart of a lush enchanted forest. The town''s ethereal beauty is enhanced
+        by the soft glow of the setting sun, casting a magical twilight ambiance over
+        the landscape. Rich with vibrant flora and fauna, the air is filled with the
+        sweet scent of wildflowers and the melodious songs of forest creatures.","leadership":"The
+        town is governed by a wise and just council known as the Council of Elders.
+        Comprised of mystical beings such as elves, druids, and sages, they are deeply
+        connected to the mystical energies of the forest. The Council ensures balance
+        and harmony within Twilight Haven, fostering a strong sense of community.","taverns":"The
+        taverns in Twilight Haven are warmly illuminated havens where weary travelers
+        can find respite and revelry. The Moonlit Grove Tavern, with its rustic and
+        cozy atmosphere, is the go-to spot for storytelling, lively music, and delicious
+        traditional fare. The Starstruck Inn offers enchant","shops":"The unique shops
+        in Twilight Haven cater to the needs and desires of both the townsfolk and
+        traveling adventurers. The Enchanted Emporium offers an array of magical artifacts,
+        potions, and charms, providing the tools to harness the forces of nature.
+        The Fairytale Forge is a renowned blacksmith where skilled craftsmen forge
+        weaponry infused with magical properties. Skyward Alchemy specializes in concocting
+        potions and elixirs with healing and mystical powers.","campaign_id":4,"created_at":"2023-11-09T04:03:27.145Z","updated_at":"2023-11-09T04:03:27.145Z"}}}}}'
+  recorded_at: Thu, 09 Nov 2023 04:03:27 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22/campaigns/4/towns
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 04:03:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 82332a7fba721f32-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"38029118e157059aed86e714376f5b46"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 4875e628-409d-4711
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 27a852a4-2e8a-4e69-9bc7-42eedf6d0d73
+      X-Runtime:
+      - '0.029279'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjpbeyJpZCI6IjEiLCJ0eXBlIjoidG93biIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IkVsZG9yaWEiLCJkZXNjcmlwdGlvbiI6IkVsZG9yaWEgaXMgYSBteXN0aWNhbCB0b3duIG5lc3RsZWQgYW1pZHN0IGFuIGVuY2hhbnRlZCBmb3Jlc3QgYW5kIHN1cnJvdW5kZWQgYnkgc2hpbW1lcmluZyB3YXRlcmZhbGxzLiBJdHMgYnJlYXRodGFraW5nIHNjZW5lcnkgaXMgYSBibGVuZCBvZiB2aWJyYW50IGNvbG9ycywgd2l0aCBmbG93ZXJzIG9mIGFsbCBzaGFwZXMgYW5kIHNpemVzIGJsb29taW5nIHllYXItcm91bmQuIFRoZSBhaXIgY2FycmllcyBhIGhpbnQgb2YgbWFnaWMsIG1ha2luZyB0aGlzIHRvd24gYSBzYW5jdHVhcnkgZm9yIGJvdGggaHVtYW5zIGFuZCBtYWdpY2FsIGNyZWF0dXJlcyBhbGlrZS4iLCJsZWFkZXJzaGlwIjoiVGhlIGxlYWRlcnNoaXAgb2YgRWxkb3JpYSBjb25zaXN0cyBvZiBhIGNvdW5jaWwgY2FsbGVkIHRoZSBDaXJjbGUgb2YgRWxkZXJzLCBjb21wcmlzZWQgb2Ygd2lzZSBpbmRpdmlkdWFscyBjaG9zZW4gZnJvbSBkaWZmZXJlbnQgbWFnaWNhbCByYWNlcy4gVGhpcyBkaXZlcnNlIGNvdW5jaWwgZW5zdXJlcyB0aGF0IGRlY2lzaW9ucyBtYWRlIGFyZSBmYWlyIGFuZCB0aGF0IHRoZSBuZWVkcyBvZiBhbGwgcmVzaWRlbnRzIGFyZSBjb25zaWRlcmVkLiBUaGUgQ2lyY2xlIG9mIEVsZGVycyBpcyBrbm93biBmb3IgaXRzIG9wZW4tbWluZGVkbmVzcywgcHJvbW90aW5nIHVuaXR5IGFuZCBjb29wZXJhdGlvbiBhbW9uZyBhbGwgYmVpbmdzIGluIEVsZG9yaWEuIiwic2hvcHMiOiJFbGRvcmlhIGJvYXN0cyBhIHNlbGVjdGlvbiBvZiB1bmlxdWUgc2hvcHMgY2F0ZXJpbmcgdG8gYm90aCBodW1hbnMgYW5kIG1hZ2ljYWwgY3JlYXR1cmVzLiBUaGUgQ3J5c3RhbCBDYXVsZHJvbiBpcyBhIHJlbm93bmVkIG1hZ2ljYWwgZW1wb3JpdW0gd2hlcmUgb25lIGNhbiBmaW5kIHBvdGlvbnMsIGVuY2hhbnRlZCBhcnRpZmFjdHMsIGFuZCBteXN0aWNhbCBoZXJicy4gVGhlIEZsdXR0ZXJieSBCb3V0aXF1ZSBvZmZlcnMgYSByYW5nZSBvZiBiZWF1dGlmdWxseSBjcmFmdGVkIHdpbmdzLCB0YWlsIGFjY2Vzc29yaWVzLCBhbmQgb3RoZXIgbWFnaWNhbCBpdGVtcyBmb3IgY3JlYXR1cmVzIHdpdGggdGhlIGFiaWxpdHkgdG8gdHJhbnNmb3JtLiBUaGUgTXlzdGljIEJvb2sgTm9vayBpcyBhIHRyZWFzdXJlIHRyb3ZlIG9mIGFuY2llbnQgc3BlbGxib29rcyBhbmQgcmFyZSB0b21lcyBmaWxsZWQgd2l0aCBrbm93bGVkZ2Ugb2YgZm9yZ290dGVuIGxhbmRzLiIsInRhdmVybnMiOiJUaGUgdG93biBvZiBFbGRvcmlhIGlzIGtub3duIGZvciBpdHMgZXh0cmFvcmRpbmFyeSB0YXZlcm5zIHRoYXQgY2F0ZXIgdG8gdGhlIGRpdmVyc2UgdGFzdGVzIGFuZCBwcmVmZXJlbmNlcyBvZiB0aGUgcmVzaWRlbnRzLiBUaGUgRW5jaGFudGVkIENoYWxpY2UgaXMgYSBjb3p5IHRhdmVybiB3aXRoIHdvb2RlbiBiZWFtcyBhbmQgc29mdCBjYW5kbGVsaWdodCwgb2ZmZXJpbmcgYSB3aWRlIHNlbGVjdGlvbiBvZiBtZWFkcywgYWxlcywgYW5kIGVuY2hhbnRlZCBiZXZlcmFnZXMuIFRoZSBTZXIiLCJjYW1wYWlnbl9pZCI6NCwidG93bl9waG90byI6eyJuYW1lIjoidG93bl9waG90byIsInJlY29yZCI6eyJpZCI6MSwibmFtZSI6IkVsZG9yaWEiLCJkZXNjcmlwdGlvbiI6IkVsZG9yaWEgaXMgYSBteXN0aWNhbCB0b3duIG5lc3RsZWQgYW1pZHN0IGFuIGVuY2hhbnRlZCBmb3Jlc3QgYW5kIHN1cnJvdW5kZWQgYnkgc2hpbW1lcmluZyB3YXRlcmZhbGxzLiBJdHMgYnJlYXRodGFraW5nIHNjZW5lcnkgaXMgYSBibGVuZCBvZiB2aWJyYW50IGNvbG9ycywgd2l0aCBmbG93ZXJzIG9mIGFsbCBzaGFwZXMgYW5kIHNpemVzIGJsb29taW5nIHllYXItcm91bmQuIFRoZSBhaXIgY2FycmllcyBhIGhpbnQgb2YgbWFnaWMsIG1ha2luZyB0aGlzIHRvd24gYSBzYW5jdHVhcnkgZm9yIGJvdGggaHVtYW5zIGFuZCBtYWdpY2FsIGNyZWF0dXJlcyBhbGlrZS4iLCJsZWFkZXJzaGlwIjoiVGhlIGxlYWRlcnNoaXAgb2YgRWxkb3JpYSBjb25zaXN0cyBvZiBhIGNvdW5jaWwgY2FsbGVkIHRoZSBDaXJjbGUgb2YgRWxkZXJzLCBjb21wcmlzZWQgb2Ygd2lzZSBpbmRpdmlkdWFscyBjaG9zZW4gZnJvbSBkaWZmZXJlbnQgbWFnaWNhbCByYWNlcy4gVGhpcyBkaXZlcnNlIGNvdW5jaWwgZW5zdXJlcyB0aGF0IGRlY2lzaW9ucyBtYWRlIGFyZSBmYWlyIGFuZCB0aGF0IHRoZSBuZWVkcyBvZiBhbGwgcmVzaWRlbnRzIGFyZSBjb25zaWRlcmVkLiBUaGUgQ2lyY2xlIG9mIEVsZGVycyBpcyBrbm93biBmb3IgaXRzIG9wZW4tbWluZGVkbmVzcywgcHJvbW90aW5nIHVuaXR5IGFuZCBjb29wZXJhdGlvbiBhbW9uZyBhbGwgYmVpbmdzIGluIEVsZG9yaWEuIiwidGF2ZXJucyI6IlRoZSB0b3duIG9mIEVsZG9yaWEgaXMga25vd24gZm9yIGl0cyBleHRyYW9yZGluYXJ5IHRhdmVybnMgdGhhdCBjYXRlciB0byB0aGUgZGl2ZXJzZSB0YXN0ZXMgYW5kIHByZWZlcmVuY2VzIG9mIHRoZSByZXNpZGVudHMuIFRoZSBFbmNoYW50ZWQgQ2hhbGljZSBpcyBhIGNvenkgdGF2ZXJuIHdpdGggd29vZGVuIGJlYW1zIGFuZCBzb2Z0IGNhbmRsZWxpZ2h0LCBvZmZlcmluZyBhIHdpZGUgc2VsZWN0aW9uIG9mIG1lYWRzLCBhbGVzLCBhbmQgZW5jaGFudGVkIGJldmVyYWdlcy4gVGhlIFNlciIsInNob3BzIjoiRWxkb3JpYSBib2FzdHMgYSBzZWxlY3Rpb24gb2YgdW5pcXVlIHNob3BzIGNhdGVyaW5nIHRvIGJvdGggaHVtYW5zIGFuZCBtYWdpY2FsIGNyZWF0dXJlcy4gVGhlIENyeXN0YWwgQ2F1bGRyb24gaXMgYSByZW5vd25lZCBtYWdpY2FsIGVtcG9yaXVtIHdoZXJlIG9uZSBjYW4gZmluZCBwb3Rpb25zLCBlbmNoYW50ZWQgYXJ0aWZhY3RzLCBhbmQgbXlzdGljYWwgaGVyYnMuIFRoZSBGbHV0dGVyYnkgQm91dGlxdWUgb2ZmZXJzIGEgcmFuZ2Ugb2YgYmVhdXRpZnVsbHkgY3JhZnRlZCB3aW5ncywgdGFpbCBhY2Nlc3NvcmllcywgYW5kIG90aGVyIG1hZ2ljYWwgaXRlbXMgZm9yIGNyZWF0dXJlcyB3aXRoIHRoZSBhYmlsaXR5IHRvIHRyYW5zZm9ybS4gVGhlIE15c3RpYyBCb29rIE5vb2sgaXMgYSB0cmVhc3VyZSB0cm92ZSBvZiBhbmNpZW50IHNwZWxsYm9va3MgYW5kIHJhcmUgdG9tZXMgZmlsbGVkIHdpdGgga25vd2xlZGdlIG9mIGZvcmdvdHRlbiBsYW5kcy4iLCJjYW1wYWlnbl9pZCI6NCwiY3JlYXRlZF9hdCI6IjIwMjMtMTEtMDlUMDI6NDY6MzYuMTY4WiIsInVwZGF0ZWRfYXQiOiIyMDIzLTExLTA5VDAyOjQ2OjM2LjE2OFoifX19fSx7ImlkIjoiMiIsInR5cGUiOiJ0b3duIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiRWxkb3JpYSIsImRlc2NyaXB0aW9uIjoiTmVzdGxlZCBhbW9uZ3N0IHJvbGxpbmcgaGlsbHMgYW5kIGFuY2llbnQgZm9yZXN0cywgRWxkb3JpYSBpcyBhIG1hZ2ljYWwgdG93biB0aGF0IGV4dWRlcyBhbiBhaXIgb2YgZW5jaGFudG1lbnQuIFRoZSB0b3duIGlzIGtub3duIGZvciBpdHMgdmlicmFudCBnYXJkZW5zLCB3aGltc2ljYWwgYXJjaGl0ZWN0dXJlLCBhbmQgZXRoZXJlYWwgYXRtb3NwaGVyZS4gRWxkb3JpYSBpcyBhIHBsYWNlIHdoZXJlIG15dGhpY2FsIGNyZWF0dXJlcyByb2FtIGZyZWVseSwgYW5kIHRoZSByZXNpZGVudHMgbGl2ZSBpbiBoYXJtb255IHdpdGggbmF0dXJlLiIsImxlYWRlcnNoaXAiOiJUaGUgdG93biBpcyBnb3Zlcm5lZCBieSB0aGUgQ291bmNpbCBvZiBFbGRlcnMsIGEgZ3JvdXAgb2Ygd2lzZSBhbmQgZXhwZXJpZW5jZWQgaW5kaXZpZHVhbHMgd2hvIGhhdmUgaG9uZWQgdGhlaXIgbWFnaWNhbCBhYmlsaXRpZXMgb3ZlciB0aGUgeWVhcnMuIEVhY2ggRWxkZXIgcmVwcmVzZW50cyBhIGRpZmZlcmVudCBtYWdpY2FsIGRpc2NpcGxpbmUsIHN1Y2ggYXMgZWxlbWVudGFsIG1hc3RlcnksIGhlYWxpbmcgYXJ0cywgb3IgZGl2aW5hdGlvbi4gVGhlIENvdW5jaWwgZW5zdXJlcyB0aGF0IEVsZG9yaWEgcmVtYWlucyBhIHNhbmN0dWFyeSBmb3IgYWxsIGNyZWF0dXJlcyBhbmQgZm9zdGVycyBhIGJhbGFuY2UgYmV0d2VlbiB0aGUgaHVtYW4gYW5kIG1hZ2ljYWwgcmVhbG1zLiIsInNob3BzIjoiRWxkb3JpYSBib2FzdHMgYW4gYXJyYXkgb2YgZW5jaGFudGluZyBzaG9wcyB0aGF0IGNhdGVyIHRvIGJvdGggdGhlIG5lZWRzIG9mIHRoZSB0b3duc2ZvbGsgYW5kIHRoZSBjdXJpb3VzIHRyYXZlbGVycyB3aG8gdmlzaXQuIFRoZSBDcnlzdGFsIEVtcG9yaXVtIGlzIGEgaGF2ZW4gZm9yIG1hZ2ljYWwgYXJ0aWZhY3RzIGFuZCBjcnlzdGFscywgd2hlcmUgb25lIGNhbiBmaW5kIGFueXRoaW5nIGZyb20gaGVhbGluZyBzdG9uZXMgdG8gbXl0aGljYWwgdGFsaXNtYW5zLiBUaGUgUG90aW9ucyBcdTAwMjYgRWxpeGlycyBBcG90aGVjYXJ5IGlzIHJlbm93bmVkIGZvciBpdHMgcG90aW9ucyB0aGF0IGNhbiBjdXJlIGFpbG1lbnRzIG9yIGdyYW50IHRlbXBvcmFyeSBtYWdpY2FsIGFiaWxpdGllcy4gVGhlIE15c3RpYyBCb29rc3RvcmUgcHJvdmlkZXMgYSB2YXN0IGNvbGxlY3Rpb24gb2Ygc3BlbGxib29rcywgc2Nyb2xscywgYW5kIGFuY2llbnQgdGV4dHMsIHNlcnZpbmcgYXMgYSB0cmVhc3VyZSB0cm92ZSBvZiBtYWdpY2FsIGtub3dsZWRnZS4iLCJ0YXZlcm5zIjoiSW4gRWxkb3JpYSwgdGhlIHRhdmVybnMgYXJlIG1vcmUgdGhhbiBqdXN0IHBsYWNlcyB0byBlYXQgYW5kIGRyaW5rIOKAkyB0aGV5IGVtYm9keSB0aGUgc3Bpcml0IG9mIHRoZSB0b3duLiBUaGUgR29sZGVuIEdyaWZmaW4gSW5uIGlzIGEgcG9wdWxhciB0YXZlcm4gdGhhdCBleHVkZXMgd2FybXRoIGFuZCBob3NwaXRhbGl0eS4iLCJjYW1wYWlnbl9pZCI6NCwidG93bl9waG90byI6eyJuYW1lIjoidG93bl9waG90byIsInJlY29yZCI6eyJpZCI6MiwibmFtZSI6IkVsZG9yaWEiLCJkZXNjcmlwdGlvbiI6Ik5lc3RsZWQgYW1vbmdzdCByb2xsaW5nIGhpbGxzIGFuZCBhbmNpZW50IGZvcmVzdHMsIEVsZG9yaWEgaXMgYSBtYWdpY2FsIHRvd24gdGhhdCBleHVkZXMgYW4gYWlyIG9mIGVuY2hhbnRtZW50LiBUaGUgdG93biBpcyBrbm93biBmb3IgaXRzIHZpYnJhbnQgZ2FyZGVucywgd2hpbXNpY2FsIGFyY2hpdGVjdHVyZSwgYW5kIGV0aGVyZWFsIGF0bW9zcGhlcmUuIEVsZG9yaWEgaXMgYSBwbGFjZSB3aGVyZSBteXRoaWNhbCBjcmVhdHVyZXMgcm9hbSBmcmVlbHksIGFuZCB0aGUgcmVzaWRlbnRzIGxpdmUgaW4gaGFybW9ueSB3aXRoIG5hdHVyZS4iLCJsZWFkZXJzaGlwIjoiVGhlIHRvd24gaXMgZ292ZXJuZWQgYnkgdGhlIENvdW5jaWwgb2YgRWxkZXJzLCBhIGdyb3VwIG9mIHdpc2UgYW5kIGV4cGVyaWVuY2VkIGluZGl2aWR1YWxzIHdobyBoYXZlIGhvbmVkIHRoZWlyIG1hZ2ljYWwgYWJpbGl0aWVzIG92ZXIgdGhlIHllYXJzLiBFYWNoIEVsZGVyIHJlcHJlc2VudHMgYSBkaWZmZXJlbnQgbWFnaWNhbCBkaXNjaXBsaW5lLCBzdWNoIGFzIGVsZW1lbnRhbCBtYXN0ZXJ5LCBoZWFsaW5nIGFydHMsIG9yIGRpdmluYXRpb24uIFRoZSBDb3VuY2lsIGVuc3VyZXMgdGhhdCBFbGRvcmlhIHJlbWFpbnMgYSBzYW5jdHVhcnkgZm9yIGFsbCBjcmVhdHVyZXMgYW5kIGZvc3RlcnMgYSBiYWxhbmNlIGJldHdlZW4gdGhlIGh1bWFuIGFuZCBtYWdpY2FsIHJlYWxtcy4iLCJ0YXZlcm5zIjoiSW4gRWxkb3JpYSwgdGhlIHRhdmVybnMgYXJlIG1vcmUgdGhhbiBqdXN0IHBsYWNlcyB0byBlYXQgYW5kIGRyaW5rIOKAkyB0aGV5IGVtYm9keSB0aGUgc3Bpcml0IG9mIHRoZSB0b3duLiBUaGUgR29sZGVuIEdyaWZmaW4gSW5uIGlzIGEgcG9wdWxhciB0YXZlcm4gdGhhdCBleHVkZXMgd2FybXRoIGFuZCBob3NwaXRhbGl0eS4iLCJzaG9wcyI6IkVsZG9yaWEgYm9hc3RzIGFuIGFycmF5IG9mIGVuY2hhbnRpbmcgc2hvcHMgdGhhdCBjYXRlciB0byBib3RoIHRoZSBuZWVkcyBvZiB0aGUgdG93bnNmb2xrIGFuZCB0aGUgY3VyaW91cyB0cmF2ZWxlcnMgd2hvIHZpc2l0LiBUaGUgQ3J5c3RhbCBFbXBvcml1bSBpcyBhIGhhdmVuIGZvciBtYWdpY2FsIGFydGlmYWN0cyBhbmQgY3J5c3RhbHMsIHdoZXJlIG9uZSBjYW4gZmluZCBhbnl0aGluZyBmcm9tIGhlYWxpbmcgc3RvbmVzIHRvIG15dGhpY2FsIHRhbGlzbWFucy4gVGhlIFBvdGlvbnMgXHUwMDI2IEVsaXhpcnMgQXBvdGhlY2FyeSBpcyByZW5vd25lZCBmb3IgaXRzIHBvdGlvbnMgdGhhdCBjYW4gY3VyZSBhaWxtZW50cyBvciBncmFudCB0ZW1wb3JhcnkgbWFnaWNhbCBhYmlsaXRpZXMuIFRoZSBNeXN0aWMgQm9va3N0b3JlIHByb3ZpZGVzIGEgdmFzdCBjb2xsZWN0aW9uIG9mIHNwZWxsYm9va3MsIHNjcm9sbHMsIGFuZCBhbmNpZW50IHRleHRzLCBzZXJ2aW5nIGFzIGEgdHJlYXN1cmUgdHJvdmUgb2YgbWFnaWNhbCBrbm93bGVkZ2UuIiwiY2FtcGFpZ25faWQiOjQsImNyZWF0ZWRfYXQiOiIyMDIzLTExLTA5VDAyOjUxOjAxLjcwOFoiLCJ1cGRhdGVkX2F0IjoiMjAyMy0xMS0wOVQwMjo1MTowMS43MDhaIn19fX0seyJpZCI6IjMiLCJ0eXBlIjoidG93biIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IlR3aWxpZ2h0IEhhdmVuIiwiZGVzY3JpcHRpb24iOiJUd2lsaWdodCBIYXZlbiBpcyBhIGJyZWF0aHRha2luZyBmYW50YXN5IHRvd24gbmVzdGxlZCBpbiB0aGUgaGVhcnQgb2YgYSBsdXNoIGVuY2hhbnRlZCBmb3Jlc3QuIFRoZSB0b3duJ3MgZXRoZXJlYWwgYmVhdXR5IGlzIGVuaGFuY2VkIGJ5IHRoZSBzb2Z0IGdsb3cgb2YgdGhlIHNldHRpbmcgc3VuLCBjYXN0aW5nIGEgbWFnaWNhbCB0d2lsaWdodCBhbWJpYW5jZSBvdmVyIHRoZSBsYW5kc2NhcGUuIFJpY2ggd2l0aCB2aWJyYW50IGZsb3JhIGFuZCBmYXVuYSwgdGhlIGFpciBpcyBmaWxsZWQgd2l0aCB0aGUgc3dlZXQgc2NlbnQgb2Ygd2lsZGZsb3dlcnMgYW5kIHRoZSBtZWxvZGlvdXMgc29uZ3Mgb2YgZm9yZXN0IGNyZWF0dXJlcy4iLCJsZWFkZXJzaGlwIjoiVGhlIHRvd24gaXMgZ292ZXJuZWQgYnkgYSB3aXNlIGFuZCBqdXN0IGNvdW5jaWwga25vd24gYXMgdGhlIENvdW5jaWwgb2YgRWxkZXJzLiBDb21wcmlzZWQgb2YgbXlzdGljYWwgYmVpbmdzIHN1Y2ggYXMgZWx2ZXMsIGRydWlkcywgYW5kIHNhZ2VzLCB0aGV5IGFyZSBkZWVwbHkgY29ubmVjdGVkIHRvIHRoZSBteXN0aWNhbCBlbmVyZ2llcyBvZiB0aGUgZm9yZXN0LiBUaGUgQ291bmNpbCBlbnN1cmVzIGJhbGFuY2UgYW5kIGhhcm1vbnkgd2l0aGluIFR3aWxpZ2h0IEhhdmVuLCBmb3N0ZXJpbmcgYSBzdHJvbmcgc2Vuc2Ugb2YgY29tbXVuaXR5LiIsInNob3BzIjoiVGhlIHVuaXF1ZSBzaG9wcyBpbiBUd2lsaWdodCBIYXZlbiBjYXRlciB0byB0aGUgbmVlZHMgYW5kIGRlc2lyZXMgb2YgYm90aCB0aGUgdG93bnNmb2xrIGFuZCB0cmF2ZWxpbmcgYWR2ZW50dXJlcnMuIFRoZSBFbmNoYW50ZWQgRW1wb3JpdW0gb2ZmZXJzIGFuIGFycmF5IG9mIG1hZ2ljYWwgYXJ0aWZhY3RzLCBwb3Rpb25zLCBhbmQgY2hhcm1zLCBwcm92aWRpbmcgdGhlIHRvb2xzIHRvIGhhcm5lc3MgdGhlIGZvcmNlcyBvZiBuYXR1cmUuIFRoZSBGYWlyeXRhbGUgRm9yZ2UgaXMgYSByZW5vd25lZCBibGFja3NtaXRoIHdoZXJlIHNraWxsZWQgY3JhZnRzbWVuIGZvcmdlIHdlYXBvbnJ5IGluZnVzZWQgd2l0aCBtYWdpY2FsIHByb3BlcnRpZXMuIFNreXdhcmQgQWxjaGVteSBzcGVjaWFsaXplcyBpbiBjb25jb2N0aW5nIHBvdGlvbnMgYW5kIGVsaXhpcnMgd2l0aCBoZWFsaW5nIGFuZCBteXN0aWNhbCBwb3dlcnMuIiwidGF2ZXJucyI6IlRoZSB0YXZlcm5zIGluIFR3aWxpZ2h0IEhhdmVuIGFyZSB3YXJtbHkgaWxsdW1pbmF0ZWQgaGF2ZW5zIHdoZXJlIHdlYXJ5IHRyYXZlbGVycyBjYW4gZmluZCByZXNwaXRlIGFuZCByZXZlbHJ5LiBUaGUgTW9vbmxpdCBHcm92ZSBUYXZlcm4sIHdpdGggaXRzIHJ1c3RpYyBhbmQgY296eSBhdG1vc3BoZXJlLCBpcyB0aGUgZ28tdG8gc3BvdCBmb3Igc3Rvcnl0ZWxsaW5nLCBsaXZlbHkgbXVzaWMsIGFuZCBkZWxpY2lvdXMgdHJhZGl0aW9uYWwgZmFyZS4gVGhlIFN0YXJzdHJ1Y2sgSW5uIG9mZmVycyBlbmNoYW50IiwiY2FtcGFpZ25faWQiOjQsInRvd25fcGhvdG8iOnsibmFtZSI6InRvd25fcGhvdG8iLCJyZWNvcmQiOnsiaWQiOjMsIm5hbWUiOiJUd2lsaWdodCBIYXZlbiIsImRlc2NyaXB0aW9uIjoiVHdpbGlnaHQgSGF2ZW4gaXMgYSBicmVhdGh0YWtpbmcgZmFudGFzeSB0b3duIG5lc3RsZWQgaW4gdGhlIGhlYXJ0IG9mIGEgbHVzaCBlbmNoYW50ZWQgZm9yZXN0LiBUaGUgdG93bidzIGV0aGVyZWFsIGJlYXV0eSBpcyBlbmhhbmNlZCBieSB0aGUgc29mdCBnbG93IG9mIHRoZSBzZXR0aW5nIHN1biwgY2FzdGluZyBhIG1hZ2ljYWwgdHdpbGlnaHQgYW1iaWFuY2Ugb3ZlciB0aGUgbGFuZHNjYXBlLiBSaWNoIHdpdGggdmlicmFudCBmbG9yYSBhbmQgZmF1bmEsIHRoZSBhaXIgaXMgZmlsbGVkIHdpdGggdGhlIHN3ZWV0IHNjZW50IG9mIHdpbGRmbG93ZXJzIGFuZCB0aGUgbWVsb2Rpb3VzIHNvbmdzIG9mIGZvcmVzdCBjcmVhdHVyZXMuIiwibGVhZGVyc2hpcCI6IlRoZSB0b3duIGlzIGdvdmVybmVkIGJ5IGEgd2lzZSBhbmQganVzdCBjb3VuY2lsIGtub3duIGFzIHRoZSBDb3VuY2lsIG9mIEVsZGVycy4gQ29tcHJpc2VkIG9mIG15c3RpY2FsIGJlaW5ncyBzdWNoIGFzIGVsdmVzLCBkcnVpZHMsIGFuZCBzYWdlcywgdGhleSBhcmUgZGVlcGx5IGNvbm5lY3RlZCB0byB0aGUgbXlzdGljYWwgZW5lcmdpZXMgb2YgdGhlIGZvcmVzdC4gVGhlIENvdW5jaWwgZW5zdXJlcyBiYWxhbmNlIGFuZCBoYXJtb255IHdpdGhpbiBUd2lsaWdodCBIYXZlbiwgZm9zdGVyaW5nIGEgc3Ryb25nIHNlbnNlIG9mIGNvbW11bml0eS4iLCJ0YXZlcm5zIjoiVGhlIHRhdmVybnMgaW4gVHdpbGlnaHQgSGF2ZW4gYXJlIHdhcm1seSBpbGx1bWluYXRlZCBoYXZlbnMgd2hlcmUgd2VhcnkgdHJhdmVsZXJzIGNhbiBmaW5kIHJlc3BpdGUgYW5kIHJldmVscnkuIFRoZSBNb29ubGl0IEdyb3ZlIFRhdmVybiwgd2l0aCBpdHMgcnVzdGljIGFuZCBjb3p5IGF0bW9zcGhlcmUsIGlzIHRoZSBnby10byBzcG90IGZvciBzdG9yeXRlbGxpbmcsIGxpdmVseSBtdXNpYywgYW5kIGRlbGljaW91cyB0cmFkaXRpb25hbCBmYXJlLiBUaGUgU3RhcnN0cnVjayBJbm4gb2ZmZXJzIGVuY2hhbnQiLCJzaG9wcyI6IlRoZSB1bmlxdWUgc2hvcHMgaW4gVHdpbGlnaHQgSGF2ZW4gY2F0ZXIgdG8gdGhlIG5lZWRzIGFuZCBkZXNpcmVzIG9mIGJvdGggdGhlIHRvd25zZm9sayBhbmQgdHJhdmVsaW5nIGFkdmVudHVyZXJzLiBUaGUgRW5jaGFudGVkIEVtcG9yaXVtIG9mZmVycyBhbiBhcnJheSBvZiBtYWdpY2FsIGFydGlmYWN0cywgcG90aW9ucywgYW5kIGNoYXJtcywgcHJvdmlkaW5nIHRoZSB0b29scyB0byBoYXJuZXNzIHRoZSBmb3JjZXMgb2YgbmF0dXJlLiBUaGUgRmFpcnl0YWxlIEZvcmdlIGlzIGEgcmVub3duZWQgYmxhY2tzbWl0aCB3aGVyZSBza2lsbGVkIGNyYWZ0c21lbiBmb3JnZSB3ZWFwb25yeSBpbmZ1c2VkIHdpdGggbWFnaWNhbCBwcm9wZXJ0aWVzLiBTa3l3YXJkIEFsY2hlbXkgc3BlY2lhbGl6ZXMgaW4gY29uY29jdGluZyBwb3Rpb25zIGFuZCBlbGl4aXJzIHdpdGggaGVhbGluZyBhbmQgbXlzdGljYWwgcG93ZXJzLiIsImNhbXBhaWduX2lkIjo0LCJjcmVhdGVkX2F0IjoiMjAyMy0xMS0wOVQwNDowMzoyNy4xNDVaIiwidXBkYXRlZF9hdCI6IjIwMjMtMTEtMDlUMDQ6MDM6MjcuMTQ1WiJ9fX19XX0=
+  recorded_at: Thu, 09 Nov 2023 04:03:27 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 04:03:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 82332a813e46520c-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"377f13b55094a54595a1d583e37c3459"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 7d93b984-de35-444e
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 0c6d0360-3eda-43e9-957b-6d3ac6c5d067
+      X-Runtime:
+      - '0.009508'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"22","type":"user","attributes":{"uid":null,"username":"boo","email":"boo@gmail.com","user_photo":{"name":"user_photo","record":{"id":22,"username":"boo","email":"boo@gmail.com","password_digest":"$2a$12$6zajARNnQDIhl91QknYsB.ja2GZbicGoRN7MDCoPhtfGtHqjE8BKG","created_at":"2023-11-08T04:34:04.490Z","updated_at":"2023-11-08T04:34:04.490Z","token":null,"token_expiration":null,"uid":null,"auth_token":null}},"token":null,"token_expiration":null,"auth_token":null,"campaigns":[{"id":4,"name":"boo''s
+        First Campaign","player_num":4,"themes":"[\"sci_fi\", \"low_magic\", \"space_opera\"]","created_at":"2023-11-08T04:34:08.029Z","updated_at":"2023-11-08T04:34:08.029Z","user_id":22},{"id":11,"name":"screaming","player_num":5,"themes":"[\"sci_fi\",
+        \"high_magic\"]","created_at":"2023-11-08T16:43:16.257Z","updated_at":"2023-11-08T16:43:16.257Z","user_id":22},{"id":12,"name":"yellin","player_num":6,"themes":"[\"space_opera\",
+        \"high_magic\"]","created_at":"2023-11-08T17:27:15.942Z","updated_at":"2023-11-08T17:27:15.942Z","user_id":22},{"id":13,"name":"cryin","player_num":7,"themes":"[\"space_opera\",
+        \"high_magic\", \"low_magic\"]","created_at":"2023-11-08T17:40:32.250Z","updated_at":"2023-11-08T17:40:32.250Z","user_id":22},{"id":15,"name":"sadclub","player_num":7,"themes":"[\"high_magic\",
+        \"space_opera\"]","created_at":"2023-11-08T17:48:23.462Z","updated_at":"2023-11-08T17:48:23.462Z","user_id":22},{"id":19,"name":"hollar","player_num":19,"themes":"[\"sci_fi\",
+        \"space_opera\"]","created_at":"2023-11-08T23:44:49.132Z","updated_at":"2023-11-08T23:44:49.132Z","user_id":22}]}}}'
+  recorded_at: Thu, 09 Nov 2023 04:03:27 GMT
+recorded_with: VCR 6.2.0

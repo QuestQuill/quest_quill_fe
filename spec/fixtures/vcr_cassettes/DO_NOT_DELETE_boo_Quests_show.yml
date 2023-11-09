@@ -1,0 +1,625 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://quest-quill-api.onrender.com/api/v1/users/login?email=boo@gmail.com&password=12345
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 04:06:57 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 82332f97692a51dc-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"401fc1a040cbfb9658b058062e3e1b66"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 61234b6a-eb40-45e2
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - d48e23de-e090-4695-8a33-891ed479d00b
+      X-Runtime:
+      - '1.413433'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Login successful","user_id":22}'
+  recorded_at: Thu, 09 Nov 2023 04:06:57 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 04:06:57 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 82332fa18d1c5341-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"377f13b55094a54595a1d583e37c3459"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 9db03661-c2fc-4798
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - ff1d9a7d-682b-455a-80f8-63e14db21201
+      X-Runtime:
+      - '0.008367'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"22","type":"user","attributes":{"uid":null,"username":"boo","email":"boo@gmail.com","user_photo":{"name":"user_photo","record":{"id":22,"username":"boo","email":"boo@gmail.com","password_digest":"$2a$12$6zajARNnQDIhl91QknYsB.ja2GZbicGoRN7MDCoPhtfGtHqjE8BKG","created_at":"2023-11-08T04:34:04.490Z","updated_at":"2023-11-08T04:34:04.490Z","token":null,"token_expiration":null,"uid":null,"auth_token":null}},"token":null,"token_expiration":null,"auth_token":null,"campaigns":[{"id":4,"name":"boo''s
+        First Campaign","player_num":4,"themes":"[\"sci_fi\", \"low_magic\", \"space_opera\"]","created_at":"2023-11-08T04:34:08.029Z","updated_at":"2023-11-08T04:34:08.029Z","user_id":22},{"id":11,"name":"screaming","player_num":5,"themes":"[\"sci_fi\",
+        \"high_magic\"]","created_at":"2023-11-08T16:43:16.257Z","updated_at":"2023-11-08T16:43:16.257Z","user_id":22},{"id":12,"name":"yellin","player_num":6,"themes":"[\"space_opera\",
+        \"high_magic\"]","created_at":"2023-11-08T17:27:15.942Z","updated_at":"2023-11-08T17:27:15.942Z","user_id":22},{"id":13,"name":"cryin","player_num":7,"themes":"[\"space_opera\",
+        \"high_magic\", \"low_magic\"]","created_at":"2023-11-08T17:40:32.250Z","updated_at":"2023-11-08T17:40:32.250Z","user_id":22},{"id":15,"name":"sadclub","player_num":7,"themes":"[\"high_magic\",
+        \"space_opera\"]","created_at":"2023-11-08T17:48:23.462Z","updated_at":"2023-11-08T17:48:23.462Z","user_id":22},{"id":19,"name":"hollar","player_num":19,"themes":"[\"sci_fi\",
+        \"space_opera\"]","created_at":"2023-11-08T23:44:49.132Z","updated_at":"2023-11-08T23:44:49.132Z","user_id":22}]}}}'
+  recorded_at: Thu, 09 Nov 2023 04:06:57 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 04:06:57 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 82332fa2cf1c51e2-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"377f13b55094a54595a1d583e37c3459"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 2f3c3b8e-8da4-4884
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - dcfa2292-0bf0-4ec6-94b3-d1470080d206
+      X-Runtime:
+      - '0.014724'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"22","type":"user","attributes":{"uid":null,"username":"boo","email":"boo@gmail.com","user_photo":{"name":"user_photo","record":{"id":22,"username":"boo","email":"boo@gmail.com","password_digest":"$2a$12$6zajARNnQDIhl91QknYsB.ja2GZbicGoRN7MDCoPhtfGtHqjE8BKG","created_at":"2023-11-08T04:34:04.490Z","updated_at":"2023-11-08T04:34:04.490Z","token":null,"token_expiration":null,"uid":null,"auth_token":null}},"token":null,"token_expiration":null,"auth_token":null,"campaigns":[{"id":4,"name":"boo''s
+        First Campaign","player_num":4,"themes":"[\"sci_fi\", \"low_magic\", \"space_opera\"]","created_at":"2023-11-08T04:34:08.029Z","updated_at":"2023-11-08T04:34:08.029Z","user_id":22},{"id":11,"name":"screaming","player_num":5,"themes":"[\"sci_fi\",
+        \"high_magic\"]","created_at":"2023-11-08T16:43:16.257Z","updated_at":"2023-11-08T16:43:16.257Z","user_id":22},{"id":12,"name":"yellin","player_num":6,"themes":"[\"space_opera\",
+        \"high_magic\"]","created_at":"2023-11-08T17:27:15.942Z","updated_at":"2023-11-08T17:27:15.942Z","user_id":22},{"id":13,"name":"cryin","player_num":7,"themes":"[\"space_opera\",
+        \"high_magic\", \"low_magic\"]","created_at":"2023-11-08T17:40:32.250Z","updated_at":"2023-11-08T17:40:32.250Z","user_id":22},{"id":15,"name":"sadclub","player_num":7,"themes":"[\"high_magic\",
+        \"space_opera\"]","created_at":"2023-11-08T17:48:23.462Z","updated_at":"2023-11-08T17:48:23.462Z","user_id":22},{"id":19,"name":"hollar","player_num":19,"themes":"[\"sci_fi\",
+        \"space_opera\"]","created_at":"2023-11-08T23:44:49.132Z","updated_at":"2023-11-08T23:44:49.132Z","user_id":22}]}}}'
+  recorded_at: Thu, 09 Nov 2023 04:06:57 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22/campaigns/4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 04:06:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 82332fa4eff35346-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"f146cc2a075cdc6f55cb00d9781da723"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - fba1216a-3082-45e9
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - f1f13209-ef65-4304-898e-6d1a15b58642
+      X-Runtime:
+      - '0.005597'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"4","type":"campaign","attributes":{"name":"boo''s First
+        Campaign","player_num":4,"themes":"[\"sci_fi\", \"low_magic\", \"space_opera\"]","user_id":22,"campaign_photo":{"name":"campaign_photo","record":{"id":4,"name":"boo''s
+        First Campaign","player_num":4,"themes":"[\"sci_fi\", \"low_magic\", \"space_opera\"]","created_at":"2023-11-08T04:34:08.029Z","updated_at":"2023-11-08T04:34:08.029Z","user_id":22}}}}}'
+  recorded_at: Thu, 09 Nov 2023 04:06:58 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 04:06:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 82332fa619121f45-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"377f13b55094a54595a1d583e37c3459"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - e70bc20d-17d8-4b85
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 500859fd-ff79-4b36-9898-693d987097ef
+      X-Runtime:
+      - '0.007781'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"22","type":"user","attributes":{"uid":null,"username":"boo","email":"boo@gmail.com","user_photo":{"name":"user_photo","record":{"id":22,"username":"boo","email":"boo@gmail.com","password_digest":"$2a$12$6zajARNnQDIhl91QknYsB.ja2GZbicGoRN7MDCoPhtfGtHqjE8BKG","created_at":"2023-11-08T04:34:04.490Z","updated_at":"2023-11-08T04:34:04.490Z","token":null,"token_expiration":null,"uid":null,"auth_token":null}},"token":null,"token_expiration":null,"auth_token":null,"campaigns":[{"id":4,"name":"boo''s
+        First Campaign","player_num":4,"themes":"[\"sci_fi\", \"low_magic\", \"space_opera\"]","created_at":"2023-11-08T04:34:08.029Z","updated_at":"2023-11-08T04:34:08.029Z","user_id":22},{"id":11,"name":"screaming","player_num":5,"themes":"[\"sci_fi\",
+        \"high_magic\"]","created_at":"2023-11-08T16:43:16.257Z","updated_at":"2023-11-08T16:43:16.257Z","user_id":22},{"id":12,"name":"yellin","player_num":6,"themes":"[\"space_opera\",
+        \"high_magic\"]","created_at":"2023-11-08T17:27:15.942Z","updated_at":"2023-11-08T17:27:15.942Z","user_id":22},{"id":13,"name":"cryin","player_num":7,"themes":"[\"space_opera\",
+        \"high_magic\", \"low_magic\"]","created_at":"2023-11-08T17:40:32.250Z","updated_at":"2023-11-08T17:40:32.250Z","user_id":22},{"id":15,"name":"sadclub","player_num":7,"themes":"[\"high_magic\",
+        \"space_opera\"]","created_at":"2023-11-08T17:48:23.462Z","updated_at":"2023-11-08T17:48:23.462Z","user_id":22},{"id":19,"name":"hollar","player_num":19,"themes":"[\"sci_fi\",
+        \"space_opera\"]","created_at":"2023-11-08T23:44:49.132Z","updated_at":"2023-11-08T23:44:49.132Z","user_id":22}]}}}'
+  recorded_at: Thu, 09 Nov 2023 04:06:58 GMT
+- request:
+    method: post
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22/campaigns/4/quests?campaign_id=4&message=create%20a%20new%20PG-13%20fantasy%20quest%20with%20the%20following%20unique%20attributes%20keep%20it%20short:%0A%20%20%20%20%20%20name:%0A%20%20%20%20%20%20description:%0A%20%20%20%20%20%20goal:&user_id=22
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 04:07:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 82332fa7b8cf5342-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"8d73e1a31ef1bd61d910e9a4ea6aada4"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 05b7c7ea-5dd3-4332
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - ae0a2e3e-c653-4c89-8046-2e638dbc1bbd
+      X-Runtime:
+      - '28.589435'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"3","type":"quest","attributes":{"name":"The Lost Scrolls","description":"In
+        the enchanting land of Aetheria, an ancient and powerful library has been
+        hidden away for centuries. Legends speak of the precious Lost Scrolls that
+        hold the key to unlocking magical knowledge and bringing balance to the realm.
+        However, the library''s location is shrouded in mystery, and only the chosen
+        few can embark on this perilous quest.","goal":"Join a group of brave heroes
+        as they journey through treacherous forests, treks across desolate deserts,
+        and traverse dangerous mountains in search of the Lost Scrolls. Along the
+        way, they must decipher hidden riddles, overcome puzzling obstacles, and conquer
+        cunning enemies. Their ultimate goal is to find the library and retrieve the
+        Lost Scrolls before an evil sorcerer can obtain them, as their power could
+        tip the delicate scales of Aetheria''s magic towards darkness. Success in
+        this quest would ensure the safety and prosperity of the realm for generations
+        to come.","quest_photo":{"name":"quest_photo","record":{"id":3,"name":"The
+        Lost Scrolls","description":"In the enchanting land of Aetheria, an ancient
+        and powerful library has been hidden away for centuries. Legends speak of
+        the precious Lost Scrolls that hold the key to unlocking magical knowledge
+        and bringing balance to the realm. However, the library''s location is shrouded
+        in mystery, and only the chosen few can embark on this perilous quest.","goal":"Join
+        a group of brave heroes as they journey through treacherous forests, treks
+        across desolate deserts, and traverse dangerous mountains in search of the
+        Lost Scrolls. Along the way, they must decipher hidden riddles, overcome puzzling
+        obstacles, and conquer cunning enemies. Their ultimate goal is to find the
+        library and retrieve the Lost Scrolls before an evil sorcerer can obtain them,
+        as their power could tip the delicate scales of Aetheria''s magic towards
+        darkness. Success in this quest would ensure the safety and prosperity of
+        the realm for generations to come.","campaign_id":4,"created_at":"2023-11-09T04:07:27.158Z","updated_at":"2023-11-09T04:07:27.158Z"}}}}}'
+  recorded_at: Thu, 09 Nov 2023 04:07:27 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22/campaigns/4/quests
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 04:07:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8233305bad05538d-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"fb2e72f8a29a3e2a4bc80df547b81c69"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - d48749ea-27bd-4eb3
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - c591d836-0d01-45ca-9fdb-860b492cece2
+      X-Runtime:
+      - '0.008786'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"2","type":"quest","attributes":{"name":"Quest for the
+        Whispering Blade","description":"In a mystical realm filled with creatures
+        of magic and wonder, an ancient artifact known as the Whispering Blade has
+        been taken by an enigmatic sorcerer. Legend has it that this blade possesses
+        the power to open portals to other dimensions, and its misuse could bring
+        chaos to the entire realm. The fate of the entire land hangs in the balance,
+        and it is up to a brave group of adventurers to retrieve the Whispering Blade
+        before it falls into the wrong hands.","goal":"Embark on a perilous journey
+        through treacherous terrains, encounter mythical creatures, and decipher cryptic
+        riddles to locate and reclaim the stolen Whispering Blade. Along the way,
+        the adventurers must face moral dilemmas, forge alliances, and harness their
+        unique abilities to overcome obstacles and outsmart the sorcerer''s minions.
+        Will they succeed in their quest and safeguard the delicate balance of the
+        realm, or will their failure plunge the mystical lands into darkness forever?
+        The fate of the realm rests in their hands.","quest_photo":{"name":"quest_photo","record":{"id":2,"name":"Quest
+        for the Whispering Blade","description":"In a mystical realm filled with creatures
+        of magic and wonder, an ancient artifact known as the Whispering Blade has
+        been taken by an enigmatic sorcerer. Legend has it that this blade possesses
+        the power to open portals to other dimensions, and its misuse could bring
+        chaos to the entire realm. The fate of the entire land hangs in the balance,
+        and it is up to a brave group of adventurers to retrieve the Whispering Blade
+        before it falls into the wrong hands.","goal":"Embark on a perilous journey
+        through treacherous terrains, encounter mythical creatures, and decipher cryptic
+        riddles to locate and reclaim the stolen Whispering Blade. Along the way,
+        the adventurers must face moral dilemmas, forge alliances, and harness their
+        unique abilities to overcome obstacles and outsmart the sorcerer''s minions.
+        Will they succeed in their quest and safeguard the delicate balance of the
+        realm, or will their failure plunge the mystical lands into darkness forever?
+        The fate of the realm rests in their hands.","campaign_id":4,"created_at":"2023-11-09T04:00:36.494Z","updated_at":"2023-11-09T04:00:36.494Z"}}}},{"id":"3","type":"quest","attributes":{"name":"The
+        Lost Scrolls","description":"In the enchanting land of Aetheria, an ancient
+        and powerful library has been hidden away for centuries. Legends speak of
+        the precious Lost Scrolls that hold the key to unlocking magical knowledge
+        and bringing balance to the realm. However, the library''s location is shrouded
+        in mystery, and only the chosen few can embark on this perilous quest.","goal":"Join
+        a group of brave heroes as they journey through treacherous forests, treks
+        across desolate deserts, and traverse dangerous mountains in search of the
+        Lost Scrolls. Along the way, they must decipher hidden riddles, overcome puzzling
+        obstacles, and conquer cunning enemies. Their ultimate goal is to find the
+        library and retrieve the Lost Scrolls before an evil sorcerer can obtain them,
+        as their power could tip the delicate scales of Aetheria''s magic towards
+        darkness. Success in this quest would ensure the safety and prosperity of
+        the realm for generations to come.","quest_photo":{"name":"quest_photo","record":{"id":3,"name":"The
+        Lost Scrolls","description":"In the enchanting land of Aetheria, an ancient
+        and powerful library has been hidden away for centuries. Legends speak of
+        the precious Lost Scrolls that hold the key to unlocking magical knowledge
+        and bringing balance to the realm. However, the library''s location is shrouded
+        in mystery, and only the chosen few can embark on this perilous quest.","goal":"Join
+        a group of brave heroes as they journey through treacherous forests, treks
+        across desolate deserts, and traverse dangerous mountains in search of the
+        Lost Scrolls. Along the way, they must decipher hidden riddles, overcome puzzling
+        obstacles, and conquer cunning enemies. Their ultimate goal is to find the
+        library and retrieve the Lost Scrolls before an evil sorcerer can obtain them,
+        as their power could tip the delicate scales of Aetheria''s magic towards
+        darkness. Success in this quest would ensure the safety and prosperity of
+        the realm for generations to come.","campaign_id":4,"created_at":"2023-11-09T04:07:27.158Z","updated_at":"2023-11-09T04:07:27.158Z"}}}}]}'
+  recorded_at: Thu, 09 Nov 2023 04:07:27 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 04:07:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8233305ccaac1f42-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"377f13b55094a54595a1d583e37c3459"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 0f5bff71-4f2a-446d
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - d3db5e28-6599-4837-8f1b-28af8d7ffc4f
+      X-Runtime:
+      - '0.008092'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"22","type":"user","attributes":{"uid":null,"username":"boo","email":"boo@gmail.com","user_photo":{"name":"user_photo","record":{"id":22,"username":"boo","email":"boo@gmail.com","password_digest":"$2a$12$6zajARNnQDIhl91QknYsB.ja2GZbicGoRN7MDCoPhtfGtHqjE8BKG","created_at":"2023-11-08T04:34:04.490Z","updated_at":"2023-11-08T04:34:04.490Z","token":null,"token_expiration":null,"uid":null,"auth_token":null}},"token":null,"token_expiration":null,"auth_token":null,"campaigns":[{"id":4,"name":"boo''s
+        First Campaign","player_num":4,"themes":"[\"sci_fi\", \"low_magic\", \"space_opera\"]","created_at":"2023-11-08T04:34:08.029Z","updated_at":"2023-11-08T04:34:08.029Z","user_id":22},{"id":11,"name":"screaming","player_num":5,"themes":"[\"sci_fi\",
+        \"high_magic\"]","created_at":"2023-11-08T16:43:16.257Z","updated_at":"2023-11-08T16:43:16.257Z","user_id":22},{"id":12,"name":"yellin","player_num":6,"themes":"[\"space_opera\",
+        \"high_magic\"]","created_at":"2023-11-08T17:27:15.942Z","updated_at":"2023-11-08T17:27:15.942Z","user_id":22},{"id":13,"name":"cryin","player_num":7,"themes":"[\"space_opera\",
+        \"high_magic\", \"low_magic\"]","created_at":"2023-11-08T17:40:32.250Z","updated_at":"2023-11-08T17:40:32.250Z","user_id":22},{"id":15,"name":"sadclub","player_num":7,"themes":"[\"high_magic\",
+        \"space_opera\"]","created_at":"2023-11-08T17:48:23.462Z","updated_at":"2023-11-08T17:48:23.462Z","user_id":22},{"id":19,"name":"hollar","player_num":19,"themes":"[\"sci_fi\",
+        \"space_opera\"]","created_at":"2023-11-08T23:44:49.132Z","updated_at":"2023-11-08T23:44:49.132Z","user_id":22}]}}}'
+  recorded_at: Thu, 09 Nov 2023 04:07:27 GMT
+recorded_with: VCR 6.2.0
