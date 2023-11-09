@@ -10,8 +10,7 @@
 </section>
 
 <section class="indexes">
-  <p><%= link_to "My Towns", user_campaign_towns_path(user_id: @user_id, campaign_id: @campaign.id) %></p>
-
-  <p><%= link_to "My NPCs", user_campaign_npcs_path(user_id: @user_id, campaign_id: @campaign.id) %></p>
-  <p><%= link_to "My Quests", user_campaign_quests_path(user_id: @user_id, campaign_id: @campaign.id) %></p>
+  <p><%= button_to "My Towns", user_campaign_towns_path(user_id: @user_id, campaign_id: @campaign.id) %></p>
+  <p><%= button_to "My NPCs", user_campaign_npcs_path(user_id: @user_id, campaign_id: @campaign.id) %></p>
+  <p><%= button_to "My Quests", user_campaign_quests_path(user_id: @user_id, campaign_id: @campaign.id) %></p>
 </section>
