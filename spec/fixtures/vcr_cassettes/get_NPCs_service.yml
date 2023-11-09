@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://quest-quill-api.onrender.com/api/v1/users/22/campaigns//npcs
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22/campaigns/4/npcs
     body:
       encoding: US-ASCII
       string: ''
@@ -15,37 +15,213 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 404
-      message: Not Found
+      code: 200
+      message: OK
     headers:
       Date:
-      - Thu, 09 Nov 2023 07:26:44 GMT
+      - Thu, 09 Nov 2023 07:38:49 GMT
       Content-Type:
-      - text/html; charset=UTF-8
-      Content-Length:
-      - '0'
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
       Cf-Ray:
-      - 82345449995b51a6-DEN
+      - 823465f95de91f25-DEN
       Cf-Cache-Status:
       - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"ba2a1d6bd497787a1faed06328e7bfde"
       Vary:
       - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
       Rndr-Id:
-      - f8bbd165-d093-4066
+      - c3c032c0-092d-4977
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
       X-Render-Origin-Server:
       - Render
       X-Request-Id:
-      - 893bd89f-865f-4e89-96f7-47088d4db523
+      - 82d8b0b4-82a7-4981-8072-2c5e05f99120
       X-Runtime:
-      - '0.004453'
+      - '0.052356'
+      X-Xss-Protection:
+      - '0'
       Server:
       - cloudflare
       Alt-Svc:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
-      string: ''
-  recorded_at: Thu, 09 Nov 2023 07:26:44 GMT
+      string: '{"data":[{"id":"3","type":"npc","attributes":{"name":"Astrid Frostfall","description":"Astrid
+        stands tall and slender with pale skin and long, flowing silver hair that
+        seems to shimmer like ice. Her piercing blue eyes hold a distant wisdom and
+        are often surrounded by an icy mist. She adorns herself in frost-embroidered
+        robes and carries a staff made of enchanted ice crystals, glowing with an
+        ethereal blue light.","gender":"Female","race":"Elf","klass":"Ice Mage","attitude":"Astrid
+        is reserved and mysterious. She has a calm and composed demeanor, often keeping
+        to herself and observing her surroundings. Though aloof at first, Astrid is
+        fiercely loyal to those she deems worthy. She is deeply in tune with nature
+        and the elements, and can often be found communing with them in quiet contemplation.
+        Her presence brings a sense of tranquility but also an unyielding power that
+        demands respect.","campaign_id":4,"npc_photo":{"name":"npc_photo","record":{"id":3,"name":"Astrid
+        Frostfall","gender":"Female","race":"Elf","klass":"Ice Mage","description":"Astrid
+        stands tall and slender with pale skin and long, flowing silver hair that
+        seems to shimmer like ice. Her piercing blue eyes hold a distant wisdom and
+        are often surrounded by an icy mist. She adorns herself in frost-embroidered
+        robes and carries a staff made of enchanted ice crystals, glowing with an
+        ethereal blue light.","attitude":"Astrid is reserved and mysterious. She has
+        a calm and composed demeanor, often keeping to herself and observing her surroundings.
+        Though aloof at first, Astrid is fiercely loyal to those she deems worthy.
+        She is deeply in tune with nature and the elements, and can often be found
+        communing with them in quiet contemplation. Her presence brings a sense of
+        tranquility but also an unyielding power that demands respect.","campaign_id":4,"created_at":"2023-11-09T03:59:25.689Z","updated_at":"2023-11-09T03:59:25.689Z"}}}},{"id":"4","type":"npc","attributes":{"name":"Aelinthria
+        Nightshade","description":"Aelinthria is a captivating and enigmatic figure,
+        with flowing silver hair and piercing violet eyes that seem to hold ancient
+        secrets. She wears a long, hooded cloak made of midnight-black feathers, which
+        shrouds her elven frame in an ethereal darkness. Her slender fingers bear
+        intricate silver rings embedded with magical gems that emit a soft glow. Aelinthria
+        moves with an otherworldly grace, her every step accompanied by a hushed whisper
+        on the wind.","gender":"Female","race":"Elven","klass":"Shadowmancer","attitude":"Aelinthria
+        exudes an enigmatic aura, often leaving others unsure of her true intentions.
+        She possesses a calm and composed demeanor, yet her eyes betray a hint of
+        mischief and a hunger for knowledge. She is knowledgeable in the ways of shadows
+        and prefers to observe and subtly manipulate events from the background. While
+        generally neutral, Aelinthria chooses her alliances carefully, favoring those
+        who can offer her the knowledge or artifacts she seeks. Though she can be
+        aloof, she occasionally displays unexpected acts of kindness and aids those
+        who capture her interest. Her moral compass leans towards whichever path best
+        aligns with her own interests, often causing her to walk the fine line between
+        light and darkness.","campaign_id":4,"npc_photo":{"name":"npc_photo","record":{"id":4,"name":"Aelinthria
+        Nightshade","gender":"Female","race":"Elven","klass":"Shadowmancer","description":"Aelinthria
+        is a captivating and enigmatic figure, with flowing silver hair and piercing
+        violet eyes that seem to hold ancient secrets. She wears a long, hooded cloak
+        made of midnight-black feathers, which shrouds her elven frame in an ethereal
+        darkness. Her slender fingers bear intricate silver rings embedded with magical
+        gems that emit a soft glow. Aelinthria moves with an otherworldly grace, her
+        every step accompanied by a hushed whisper on the wind.","attitude":"Aelinthria
+        exudes an enigmatic aura, often leaving others unsure of her true intentions.
+        She possesses a calm and composed demeanor, yet her eyes betray a hint of
+        mischief and a hunger for knowledge. She is knowledgeable in the ways of shadows
+        and prefers to observe and subtly manipulate events from the background. While
+        generally neutral, Aelinthria chooses her alliances carefully, favoring those
+        who can offer her the knowledge or artifacts she seeks. Though she can be
+        aloof, she occasionally displays unexpected acts of kindness and aids those
+        who capture her interest. Her moral compass leans towards whichever path best
+        aligns with her own interests, often causing her to walk the fine line between
+        light and darkness.","campaign_id":4,"created_at":"2023-11-09T04:06:55.135Z","updated_at":"2023-11-09T04:06:55.135Z"}}}},{"id":"6","type":"npc","attributes":{"name":"Lyria
+        Shadowfrost","description":"Lyria is a striking half-elf with ivory skin and
+        flowing silver hair. Her mismatched eyes, one blue and one green, give her
+        an air of mystery. She is dressed in pristine black leather armor, adorned
+        with intricate silver patterns. Her agile movements and confident demeanor
+        showcase her prowess as a rogue.","gender":"Female","race":"Half-elf","klass":"Rogue","attitude":"Lyria
+        has a complex personality, often switching between playful mischief and a
+        serious, no-nonsense attitude. She is quick-witted and cunning, always one
+        step ahead of her opponents. Though fiercely independent, Lyria values loyalty
+        and protective of those she deems worthy of her trust. While she may come
+        across as aloof, her actions reveal a strong sense of justice and a willingness
+        to go to great lengths to help those in need.","campaign_id":4,"npc_photo":{"name":"npc_photo","record":{"id":6,"name":"Lyria
+        Shadowfrost","gender":"Female","race":"Half-elf","klass":"Rogue","description":"Lyria
+        is a striking half-elf with ivory skin and flowing silver hair. Her mismatched
+        eyes, one blue and one green, give her an air of mystery. She is dressed in
+        pristine black leather armor, adorned with intricate silver patterns. Her
+        agile movements and confident demeanor showcase her prowess as a rogue.","attitude":"Lyria
+        has a complex personality, often switching between playful mischief and a
+        serious, no-nonsense attitude. She is quick-witted and cunning, always one
+        step ahead of her opponents. Though fiercely independent, Lyria values loyalty
+        and protective of those she deems worthy of her trust. While she may come
+        across as aloof, her actions reveal a strong sense of justice and a willingness
+        to go to great lengths to help those in need.","campaign_id":4,"created_at":"2023-11-09T05:59:03.510Z","updated_at":"2023-11-09T05:59:03.510Z"}}}},{"id":"7","type":"npc","attributes":{"name":"Thandolyn
+        Trueheart","description":"Thandolyn Trueheart is a graceful and alluring elf
+        with long, flowing silver hair and radiant golden eyes. She is adorned in
+        luxurious robes embroidered with intricate magical symbols. Her presence exudes
+        an aura of ancient wisdom and power.","gender":"Female","race":"Elf","klass":"Enchanter","attitude":"Thandolyn
+        Trueheart possesses a calm and composed demeanor. She is highly intelligent
+        and always maintains a rational approach to any situation. She is known for
+        being kind and understanding, often offering guidance and support to those
+        in need. However, Thandolyn is also fiercely protective of her fellow adventurers
+        and will stop at nothing to ensure their safety. She believes in the power
+        of magic and understands its responsibility, taking care to use her abilities
+        wisely and with great precision. Thandolyn is a loyal companion and an invaluable
+        ally in any fantasy quest.","campaign_id":4,"npc_photo":{"name":"npc_photo","record":{"id":7,"name":"Thandolyn
+        Trueheart","gender":"Female","race":"Elf","klass":"Enchanter","description":"Thandolyn
+        Trueheart is a graceful and alluring elf with long, flowing silver hair and
+        radiant golden eyes. She is adorned in luxurious robes embroidered with intricate
+        magical symbols. Her presence exudes an aura of ancient wisdom and power.","attitude":"Thandolyn
+        Trueheart possesses a calm and composed demeanor. She is highly intelligent
+        and always maintains a rational approach to any situation. She is known for
+        being kind and understanding, often offering guidance and support to those
+        in need. However, Thandolyn is also fiercely protective of her fellow adventurers
+        and will stop at nothing to ensure their safety. She believes in the power
+        of magic and understands its responsibility, taking care to use her abilities
+        wisely and with great precision. Thandolyn is a loyal companion and an invaluable
+        ally in any fantasy quest.","campaign_id":4,"created_at":"2023-11-09T06:20:11.928Z","updated_at":"2023-11-09T06:20:11.928Z"}}}},{"id":"8","type":"npc","attributes":{"name":"Morgana
+        Shadowglade","description":"Morgana is a strikingly beautiful elf with flowing
+        silver hair and piercing amethyst eyes. She wears a flowing gown made of ethereal
+        fabric, adorned with intricate patterns that seem to shimmer and change with
+        every movement. She always carries a staff with a crystal orb embedded at
+        its top, which glows with magical energy.","gender":"Female","race":"Elf","klass":"Enchantress","attitude":"Morgana
+        has a mysterious and enigmatic aura surrounding her. She possesses immense
+        knowledge and power in the arcane arts, making her both respected and feared
+        among other magical beings. While she tends to keep to herself, her overall
+        demeanor is calm and dignified, exuding a sense of wisdom and tranquility.
+        She is always willing to help those in need, but her assistance is always
+        given with a hidden agenda. Morgana is known for her mischievous nature and
+        playful manipulation, making her motivations and true intentions difficult
+        to discern.","campaign_id":4,"npc_photo":{"name":"npc_photo","record":{"id":8,"name":"Morgana
+        Shadowglade","gender":"Female","race":"Elf","klass":"Enchantress","description":"Morgana
+        is a strikingly beautiful elf with flowing silver hair and piercing amethyst
+        eyes. She wears a flowing gown made of ethereal fabric, adorned with intricate
+        patterns that seem to shimmer and change with every movement. She always carries
+        a staff with a crystal orb embedded at its top, which glows with magical energy.","attitude":"Morgana
+        has a mysterious and enigmatic aura surrounding her. She possesses immense
+        knowledge and power in the arcane arts, making her both respected and feared
+        among other magical beings. While she tends to keep to herself, her overall
+        demeanor is calm and dignified, exuding a sense of wisdom and tranquility.
+        She is always willing to help those in need, but her assistance is always
+        given with a hidden agenda. Morgana is known for her mischievous nature and
+        playful manipulation, making her motivations and true intentions difficult
+        to discern.","campaign_id":4,"created_at":"2023-11-09T06:22:05.279Z","updated_at":"2023-11-09T06:22:05.279Z"}}}},{"id":"9","type":"npc","attributes":{"name":"Aurora
+        Windrider","description":"Aurora Windrider is a slender and ethereal elf with
+        radiant silver hair that seems to glow and flow as if carried by a gentle
+        breeze. She possesses piercing ice-blue eyes that shimmer with ancient knowledge
+        and a calm yet determined expression. Adorned in flowing robes made of woven
+        moonlight, she seems to float rather than walk, leaving a trail of soft luminescence
+        in her wake.","gender":"Female","race":"Elf","klass":"Spellweaver","attitude":"Aurora
+        emanates an aura of serenity and wisdom, always maintaining a calm and composed
+        demeanor. She is fiercely dedicated to her craft as a Spellweaver, constantly
+        seeking to unravel the mysteries of magic and weave them together in harmonious
+        ways. While she tends to be reserved and observant, her heart is filled with
+        a deep sense of empathy and compassion for all living beings. Aurora is driven
+        by a desire to protect the fragile balance of the natural world and use her
+        powers to aid those in need. She is known for her patience and willingness
+        to listen, providing guidance and insight to adventurers who seek her wisdom.
+        However, she can also be formidable when threatened, unleashing the full force
+        of her magical abilities to defend herself and those she holds dear.","campaign_id":4,"npc_photo":{"name":"npc_photo","record":{"id":9,"name":"Aurora
+        Windrider","gender":"Female","race":"Elf","klass":"Spellweaver","description":"Aurora
+        Windrider is a slender and ethereal elf with radiant silver hair that seems
+        to glow and flow as if carried by a gentle breeze. She possesses piercing
+        ice-blue eyes that shimmer with ancient knowledge and a calm yet determined
+        expression. Adorned in flowing robes made of woven moonlight, she seems to
+        float rather than walk, leaving a trail of soft luminescence in her wake.","attitude":"Aurora
+        emanates an aura of serenity and wisdom, always maintaining a calm and composed
+        demeanor. She is fiercely dedicated to her craft as a Spellweaver, constantly
+        seeking to unravel the mysteries of magic and weave them together in harmonious
+        ways. While she tends to be reserved and observant, her heart is filled with
+        a deep sense of empathy and compassion for all living beings. Aurora is driven
+        by a desire to protect the fragile balance of the natural world and use her
+        powers to aid those in need. She is known for her patience and willingness
+        to listen, providing guidance and insight to adventurers who seek her wisdom.
+        However, she can also be formidable when threatened, unleashing the full force
+        of her magical abilities to defend herself and those she holds dear.","campaign_id":4,"created_at":"2023-11-09T06:27:40.388Z","updated_at":"2023-11-09T06:27:40.388Z"}}}}]}'
+  recorded_at: Thu, 09 Nov 2023 07:38:49 GMT
 recorded_with: VCR 6.2.0

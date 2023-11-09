@@ -310,12 +310,12 @@ describe DndService do
         VCR.use_cassette("get_NPCs_service") do
           params = {
             user_id: "22",
-            campagin_id: "4"
+            campaign_id: "4"
           }
 
           npcs = DndService.new.get_npcs(params)
 
-          expect(npcs).to be_an(Array)
+          expect(npcs[:data]).to be_an(Array)
 
           npc = npcs[:data].first
 
@@ -330,8 +330,20 @@ describe DndService do
           expect(npc[:attributes]).to have_key(:description)
           expect(npc[:attributes][:description]).to be_an(String)
 
-          expect(npc[:attributes]).to have_key(:goal)
-          expect(npc[:attributes][:goal]).to be_an(String)
+          expect(npc[:attributes]).to have_key(:gender)
+          expect(npc[:attributes][:gender]).to be_an(String)
+
+          expect(npc[:attributes]).to have_key(:race)
+          expect(npc[:attributes][:race]).to be_an(String)
+
+          expect(npc[:attributes]).to have_key(:klass)
+          expect(npc[:attributes][:klass]).to be_an(String)
+
+          expect(npc[:attributes]).to have_key(:attitude)
+          expect(npc[:attributes][:attitude]).to be_an(String)
+
+          expect(npc[:attributes]).to have_key(:campaign_id)
+          expect(npc[:attributes][:campaign_id]).to be_an(Integer)
         end
       end
     end
@@ -341,7 +353,7 @@ describe DndService do
         VCR.use_cassette("post_quest_service") do
           params = {
             user_id: "22",
-            campagin_id: "4"
+            campaign_id: "4"
           }
 
           quest = DndService.new.post_quest(params)

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://quest-quill-api.onrender.com/api/v1/users/22/campaigns//quests?campaign_id&message=create%20a%20new%20PG-13%20fantasy%20quest%20with%20the%20following%20unique%20attributes%20keep%20it%20short:%0A%20%20%20%20%20%20name:%0A%20%20%20%20%20%20description:%0A%20%20%20%20%20%20goal:&user_id=22
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22/campaigns/4/quests?campaign_id=4&message=create%20a%20new%20PG-13%20fantasy%20quest%20with%20the%20following%20unique%20attributes%20keep%20it%20short:%0A%20%20%20%20%20%20name:%0A%20%20%20%20%20%20description:%0A%20%20%20%20%20%20goal:&user_id=22
     body:
       encoding: UTF-8
       string: ''
@@ -17,37 +17,71 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 404
-      message: Not Found
+      code: 200
+      message: OK
     headers:
       Date:
-      - Thu, 09 Nov 2023 07:26:45 GMT
+      - Thu, 09 Nov 2023 07:43:26 GMT
       Content-Type:
-      - text/html; charset=UTF-8
-      Content-Length:
-      - '0'
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
       Cf-Ray:
-      - 8234544aadb4518e-DEN
+      - 82346c5b69241f3d-DEN
       Cf-Cache-Status:
       - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"95a713b1c807eb3fc29ce108be1a2f8f"
       Vary:
       - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
       Rndr-Id:
-      - ac3bd512-f9e8-48e0
+      - 5d0c4c4b-fce8-4f29
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
       X-Render-Origin-Server:
       - Render
       X-Request-Id:
-      - 7f2bfc98-1abe-4a79-92b0-a9fdcce5ecca
+      - c1120ef2-6f90-4f74-a6ee-c1c8fdff7c3a
       X-Runtime:
-      - '0.001454'
+      - '15.573721'
+      X-Xss-Protection:
+      - '0'
       Server:
       - cloudflare
       Alt-Svc:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
-      string: ''
-  recorded_at: Thu, 09 Nov 2023 07:26:45 GMT
+      string: '{"data":{"id":"13","type":"quest","attributes":{"name":"The Enchanted
+        Key","description":"In The Enchanted Key, you embark on a thrilling quest
+        through a magical realm filled with mystical creatures and ancient magic.
+        The realms have been separated by enchanted barriers, placing them under a
+        curse that can only be broken by a special key.","goal":"Your mission is to
+        find the scattered pieces of the Enchanted Key and reassemble it to open the
+        Veil of Shadows, the barrier that secludes the corrupted Kingdom of Tenebris.
+        Along the way, you will encounter riddles, puzzles, and formidable foes, testing
+        your courage and wits. Unleash your inner hero as you unlock the secrets of
+        the Enchanted Key and restore harmony to the realm.","campaign_id":4,"quest_photo":{"name":"quest_photo","record":{"id":13,"name":"The
+        Enchanted Key","description":"In The Enchanted Key, you embark on a thrilling
+        quest through a magical realm filled with mystical creatures and ancient magic.
+        The realms have been separated by enchanted barriers, placing them under a
+        curse that can only be broken by a special key.","goal":"Your mission is to
+        find the scattered pieces of the Enchanted Key and reassemble it to open the
+        Veil of Shadows, the barrier that secludes the corrupted Kingdom of Tenebris.
+        Along the way, you will encounter riddles, puzzles, and formidable foes, testing
+        your courage and wits. Unleash your inner hero as you unlock the secrets of
+        the Enchanted Key and restore harmony to the realm.","campaign_id":4,"created_at":"2023-11-09T07:43:26.221Z","updated_at":"2023-11-09T07:43:26.221Z"}}}}}'
+  recorded_at: Thu, 09 Nov 2023 07:43:26 GMT
 recorded_with: VCR 6.2.0
