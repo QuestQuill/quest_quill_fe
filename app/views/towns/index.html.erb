@@ -1,0 +1,13 @@
+<left><div class=" d-flex align-items-baseline border-bottom justify-content-center mb-5">
+  <h1>My Towns</h1>
+</div></left>
+
+<section class="towns_index">
+  <% @towns.each do |town| %>
+    <h3 class="border-bottom"><%= town.name %></h3>
+    <p><%= town.description %></p>
+    <p><%= town.leadership %></p>
+    <p><%= town.shops %></p>
+    <p class="mb-5"><%= town.taverns %></p>
+  <% end %>
+</section>

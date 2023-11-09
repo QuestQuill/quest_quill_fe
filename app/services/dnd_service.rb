@@ -61,9 +61,9 @@ class DndService
     end
   end
 
-  def get_campaign(campaign)
-    get_url("/api/v1/users/#{campaign[:user_id]}/campaigns/#{campaign[:id]}")
-  end
+    def get_campaign(campaign)
+      get_url("/api/v1/users/#{campaign[:user_id]}/campaigns/#{campaign[:id]}")
+    end
 
   def post_npc(params)
     response = conn.post("/api/v1/users/#{params[:user_id]}/campaigns/#{params[:campaign_id]}/npcs") do |req|
@@ -100,6 +100,25 @@ class DndService
 
   def get_quests(params)
     get_url("api/v1/users/#{params[:user_id]}/campaigns/#{params[:campaign_id]}/quests")
+  end
+
+  def post_town(params)
+    response = conn.post("/api/v1/users/#{params[:user_id]}/campaigns/#{params[:campaign_id]}/towns") do |req|
+      req.params["user_id"] = params[:user_id]
+      req.params["campaign_id"] = params[:campaign_id]
+      req.params["message"] = "create a new fantasy town with the following unique attributes:
+      name:
+      description:
+      leadership:
+      shops:
+      taverns:"
+    end
+
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def get_towns(params)
+    get_url("/api/v1/users/#{params[:user_id]}/campaigns/#{params[:campaign_id]}/towns")
   end
 
   def github_auth(params)

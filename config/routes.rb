@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   
   resources :users, only: [:show, :new, :create] do 
     resources :campaigns, only: [:show, :new, :create] do
+      resources :towns, only: [:create, :index]
       resources :npcs, only: [:create, :index]
       resources :quests, only: [:create, :index]
     end
