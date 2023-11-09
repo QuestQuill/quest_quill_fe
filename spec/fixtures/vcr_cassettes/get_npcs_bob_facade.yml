@@ -1,0 +1,94 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/1/campaigns/2/npcs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 05:24:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8233a1520c481f2e-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"796fecc6d38a077c95b9c29cd8020c59"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 1b7ae9b4-4ed1-48d5
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - e0857bf6-634e-4663-9d4f-50c7be595b54
+      X-Runtime:
+      - '0.035354'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"5","type":"npc","attributes":{"name":"Aria","description":"Aria
+        is a young and ethereal elf with flowing silver hair and piercing blue eyes.
+        She wears long flowing robes adorned with intricate celestial patterns, reflecting
+        her connection to the mystic energies of the universe. Her delicate yet confident
+        presence draws people towards her, and her soft voice is filled with mystique
+        and wisdom.","gender":"Female","race":"Elf","klass":"Oracle","attitude":"Aria
+        possesses a serene and calm demeanor, always offering a listening ear and
+        comforting presence to those in need. Her attunement to the spiritual realms
+        grants her immense empathy and understanding, making her an invaluable guide
+        and advisor to those seeking solace or insights. Despite the weight of her
+        knowledge, Aria remains optimistic and hopeful, always seeking the light in
+        the darkest of situations. Her nurturing nature extends to all living beings
+        and she is known to heal wounded animals and tend to neglected gardens. Aria
+        is highly respected among her peers and is regarded as a beacon of hope and
+        enlightenment in her community.","campaign_id":2,"npc_photo":{"name":"npc_photo","record":{"id":5,"name":"Aria","gender":"Female","race":"Elf","klass":"Oracle","description":"Aria
+        is a young and ethereal elf with flowing silver hair and piercing blue eyes.
+        She wears long flowing robes adorned with intricate celestial patterns, reflecting
+        her connection to the mystic energies of the universe. Her delicate yet confident
+        presence draws people towards her, and her soft voice is filled with mystique
+        and wisdom.","attitude":"Aria possesses a serene and calm demeanor, always
+        offering a listening ear and comforting presence to those in need. Her attunement
+        to the spiritual realms grants her immense empathy and understanding, making
+        her an invaluable guide and advisor to those seeking solace or insights. Despite
+        the weight of her knowledge, Aria remains optimistic and hopeful, always seeking
+        the light in the darkest of situations. Her nurturing nature extends to all
+        living beings and she is known to heal wounded animals and tend to neglected
+        gardens. Aria is highly respected among her peers and is regarded as a beacon
+        of hope and enlightenment in her community.","campaign_id":2,"created_at":"2023-11-09T05:17:47.928Z","updated_at":"2023-11-09T05:17:47.928Z"}}}}]}'
+  recorded_at: Thu, 09 Nov 2023 05:24:34 GMT
+recorded_with: VCR 6.2.0

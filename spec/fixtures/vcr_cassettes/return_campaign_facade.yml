@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/1/campaigns/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 05:06:09 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8233865859761f4a-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"14fbb7e8dbb09372a766913e39e79e8b"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - a57ce17b-a778-4531
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 7c47c5c6-148c-4864-aa91-7e5739c6502c
+      X-Runtime:
+      - '0.012611'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"1","type":"campaign","attributes":{"name":"\"Campaign
+        1\"","player_num":5,"themes":"\"spooky\"","user_id":1,"campaign_photo":{"name":"campaign_photo","record":{"id":1,"name":"\"Campaign
+        1\"","player_num":5,"themes":"\"spooky\"","created_at":"2023-11-06T20:15:02.528Z","updated_at":"2023-11-06T20:15:02.528Z","user_id":1}}}}}'
+  recorded_at: Thu, 09 Nov 2023 05:06:09 GMT
+recorded_with: VCR 6.2.0

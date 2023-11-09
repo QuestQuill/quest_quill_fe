@@ -1,0 +1,107 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://quest-quill-api.onrender.com/api/v1/users/1/campaigns/1/towns?campaign_id=1&message=create%20a%20new%20fantasy%20town%20with%20the%20following%20unique%20attributes:%0A%20%20%20%20%20%20name:%0A%20%20%20%20%20%20description:%0A%20%20%20%20%20%20leadership:%0A%20%20%20%20%20%20shops:%0A%20%20%20%20%20%20taverns:&user_id=1
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 06:15:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8233eaf10f791f25-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"52bb14614d10423d53ae403a75fd3e41"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - dd866ef5-7f8b-4187
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - b760e1b6-a4d9-4cea-9b83-969bb53467ea
+      X-Runtime:
+      - '56.107898'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"6","type":"town","attributes":{"name":"Mistwood","description":"Nestled
+        within a dense enchanted forest, Mistwood is a mystical and captivating fantasy
+        town that exudes an ethereal charm. The town is surrounded by a perpetual
+        mist that blankets the treetops, creating an otherworldly ambiance. The buildings
+        within Mistwood are constructed with a combination of natural elements and
+        magic, seamlessly blending into the enchanted forest.","leadership":"Mistwood
+        is led by a council of wise and ancient woodland creatures. The council is
+        comprised of mystical beings such as centaurs, fairies, talking animals, and
+        even a wise old tree spirit. They work in harmony to maintain the balance
+        between nature and the townspeople, ensuring the preservation of the forest''s
+        magic.","shops":"The shops in Mistwood offer a unique array of goods, catering
+        to the fantastical needs of its inhabitants. The Enchanted Emporium is a shop
+        filled with magical trinkets, potions, and spellbooks. The Forest Forge is
+        renowned for crafting weapons and armor infused with the powers of nature.
+        For those seeking mystical artifacts and rare treasures, the Arcane Attic
+        is the place to visit. Additionally, the town has an herb shop, Stones \u0026
+        Crystals, where residents can acquire mystical herbs, stones, and crystals
+        for their magical practices.","taverns":"Mistwood boasts two extraordinary
+        taverns, each with its own distinct charm. The Whispering Grove serves as
+        a gathering place for magical beings, fairies, and forest dwellers.","campaign_id":1,"town_photo":{"name":"town_photo","record":{"id":6,"name":"Mistwood","description":"Nestled
+        within a dense enchanted forest, Mistwood is a mystical and captivating fantasy
+        town that exudes an ethereal charm. The town is surrounded by a perpetual
+        mist that blankets the treetops, creating an otherworldly ambiance. The buildings
+        within Mistwood are constructed with a combination of natural elements and
+        magic, seamlessly blending into the enchanted forest.","leadership":"Mistwood
+        is led by a council of wise and ancient woodland creatures. The council is
+        comprised of mystical beings such as centaurs, fairies, talking animals, and
+        even a wise old tree spirit. They work in harmony to maintain the balance
+        between nature and the townspeople, ensuring the preservation of the forest''s
+        magic.","taverns":"Mistwood boasts two extraordinary taverns, each with its
+        own distinct charm. The Whispering Grove serves as a gathering place for magical
+        beings, fairies, and forest dwellers.","shops":"The shops in Mistwood offer
+        a unique array of goods, catering to the fantastical needs of its inhabitants.
+        The Enchanted Emporium is a shop filled with magical trinkets, potions, and
+        spellbooks. The Forest Forge is renowned for crafting weapons and armor infused
+        with the powers of nature. For those seeking mystical artifacts and rare treasures,
+        the Arcane Attic is the place to visit. Additionally, the town has an herb
+        shop, Stones \u0026 Crystals, where residents can acquire mystical herbs,
+        stones, and crystals for their magical practices.","campaign_id":1,"created_at":"2023-11-09T06:15:45.983Z","updated_at":"2023-11-09T06:15:45.983Z"}}}}}'
+  recorded_at: Thu, 09 Nov 2023 06:15:46 GMT
+recorded_with: VCR 6.2.0

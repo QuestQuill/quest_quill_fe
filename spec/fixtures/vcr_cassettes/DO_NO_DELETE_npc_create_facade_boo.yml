@@ -1,0 +1,100 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22/campaigns/4/npcs?campaign_id=4&message=create%20a%20new%20fantasy%20npc%20with%20the%20following%20unique%20attributes:%0A%20%20%20%20%20%20name:%0A%20%20%20%20%20%20gender:%0A%20%20%20%20%20%20race:%0A%20%20%20%20%20%20klass:%0A%20%20%20%20%20%20description:%0A%20%20%20%20%20%20attitude:&user_id=22
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 06:27:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8233fcc49d2651f4-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"b7900f59a53437e8eb63654042dc4eaf"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 7d945e10-ab58-4572
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 2ed7460e-c031-4657-95ff-a2453ab97c73
+      X-Runtime:
+      - '40.392838'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"9","type":"npc","attributes":{"name":"Aurora Windrider","description":"Aurora
+        Windrider is a slender and ethereal elf with radiant silver hair that seems
+        to glow and flow as if carried by a gentle breeze. She possesses piercing
+        ice-blue eyes that shimmer with ancient knowledge and a calm yet determined
+        expression. Adorned in flowing robes made of woven moonlight, she seems to
+        float rather than walk, leaving a trail of soft luminescence in her wake.","gender":"Female","race":"Elf","klass":"Spellweaver","attitude":"Aurora
+        emanates an aura of serenity and wisdom, always maintaining a calm and composed
+        demeanor. She is fiercely dedicated to her craft as a Spellweaver, constantly
+        seeking to unravel the mysteries of magic and weave them together in harmonious
+        ways. While she tends to be reserved and observant, her heart is filled with
+        a deep sense of empathy and compassion for all living beings. Aurora is driven
+        by a desire to protect the fragile balance of the natural world and use her
+        powers to aid those in need. She is known for her patience and willingness
+        to listen, providing guidance and insight to adventurers who seek her wisdom.
+        However, she can also be formidable when threatened, unleashing the full force
+        of her magical abilities to defend herself and those she holds dear.","campaign_id":4,"npc_photo":{"name":"npc_photo","record":{"id":9,"name":"Aurora
+        Windrider","gender":"Female","race":"Elf","klass":"Spellweaver","description":"Aurora
+        Windrider is a slender and ethereal elf with radiant silver hair that seems
+        to glow and flow as if carried by a gentle breeze. She possesses piercing
+        ice-blue eyes that shimmer with ancient knowledge and a calm yet determined
+        expression. Adorned in flowing robes made of woven moonlight, she seems to
+        float rather than walk, leaving a trail of soft luminescence in her wake.","attitude":"Aurora
+        emanates an aura of serenity and wisdom, always maintaining a calm and composed
+        demeanor. She is fiercely dedicated to her craft as a Spellweaver, constantly
+        seeking to unravel the mysteries of magic and weave them together in harmonious
+        ways. While she tends to be reserved and observant, her heart is filled with
+        a deep sense of empathy and compassion for all living beings. Aurora is driven
+        by a desire to protect the fragile balance of the natural world and use her
+        powers to aid those in need. She is known for her patience and willingness
+        to listen, providing guidance and insight to adventurers who seek her wisdom.
+        However, she can also be formidable when threatened, unleashing the full force
+        of her magical abilities to defend herself and those she holds dear.","campaign_id":4,"created_at":"2023-11-09T06:27:40.388Z","updated_at":"2023-11-09T06:27:40.388Z"}}}}}'
+  recorded_at: Thu, 09 Nov 2023 06:27:40 GMT
+recorded_with: VCR 6.2.0

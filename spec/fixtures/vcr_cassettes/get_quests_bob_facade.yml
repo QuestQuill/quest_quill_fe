@@ -1,0 +1,158 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/1/campaigns/1/quests
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 06:11:24 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8233e5ea5d105344-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"ee0f91b7ebfe144600740cabac884f0c"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - c628c445-17c1-45c8
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 34bea6fb-7ca0-4026-bbb0-775030e65e62
+      X-Runtime:
+      - '0.012710'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"1","type":"quest","attributes":{"name":"The Enchanted
+        Labyrinth","description":"In the realm of Arion, a mythical labyrinth has
+        suddenly appeared, trapping anyone who dares to enter. This labyrinth is unlike
+        any other, as it constantly morphs and changes, making it nearly impossible
+        to navigate. Legends say that hidden within the labyrinth lies a magical artifact
+        known as the Orbs of Time, which can grant the wielder the power to control
+        time itself. ","goal":"A group of unlikely heroes embarks on a perilous quest
+        to locate and retrieve the Orbs of Time from the heart of the enchanted labyrinth.
+        They must overcome treacherous traps, solve intricate puzzles, and face mystical
+        creatures that guard the ancient artifact. Their ultimate goal is to bring
+        the Orbs of Time back to their rightful place, ensuring balance and protection
+        for the realm of Arion. However, they must also be cautious, as the lure of
+        the orbs'' immense power can corrupt even the purest of hearts.","campaign_id":1,"quest_photo":{"name":"quest_photo","record":{"id":1,"name":"The
+        Enchanted Labyrinth","description":"In the realm of Arion, a mythical labyrinth
+        has suddenly appeared, trapping anyone who dares to enter. This labyrinth
+        is unlike any other, as it constantly morphs and changes, making it nearly
+        impossible to navigate. Legends say that hidden within the labyrinth lies
+        a magical artifact known as the Orbs of Time, which can grant the wielder
+        the power to control time itself. ","goal":"A group of unlikely heroes embarks
+        on a perilous quest to locate and retrieve the Orbs of Time from the heart
+        of the enchanted labyrinth. They must overcome treacherous traps, solve intricate
+        puzzles, and face mystical creatures that guard the ancient artifact. Their
+        ultimate goal is to bring the Orbs of Time back to their rightful place, ensuring
+        balance and protection for the realm of Arion. However, they must also be
+        cautious, as the lure of the orbs'' immense power can corrupt even the purest
+        of hearts.","campaign_id":1,"created_at":"2023-11-09T02:33:11.892Z","updated_at":"2023-11-09T02:33:11.892Z"}}}},{"id":"4","type":"quest","attributes":{"name":"The
+        Everlasting Key","description":"In a mystical world where magic and ancient
+        creatures roam, a young orphan named Luna discovers an enchanted key that
+        holds the power to open the gates to immortality. However, the key has been
+        shattered into fragments and scattered across the realms, guarded by powerful
+        beings.","goal":"Accompanied by a loyal group of misfit adventurers, Luna
+        embarks on a perilous quest to find and assemble the pieces of the Everlasting
+        Key. Along the way, they must overcome treacherous environments, solve cryptic
+        puzzles, and defeat formidable enemies to harness the key''s extraordinary
+        power. Can they unlock immortality and bring balance back to the realm before
+        it falls into eternal darkness?","campaign_id":1,"quest_photo":{"name":"quest_photo","record":{"id":4,"name":"The
+        Everlasting Key","description":"In a mystical world where magic and ancient
+        creatures roam, a young orphan named Luna discovers an enchanted key that
+        holds the power to open the gates to immortality. However, the key has been
+        shattered into fragments and scattered across the realms, guarded by powerful
+        beings.","goal":"Accompanied by a loyal group of misfit adventurers, Luna
+        embarks on a perilous quest to find and assemble the pieces of the Everlasting
+        Key. Along the way, they must overcome treacherous environments, solve cryptic
+        puzzles, and defeat formidable enemies to harness the key''s extraordinary
+        power. Can they unlock immortality and bring balance back to the realm before
+        it falls into eternal darkness?","campaign_id":1,"created_at":"2023-11-09T05:29:19.020Z","updated_at":"2023-11-09T05:29:19.020Z"}}}},{"id":"5","type":"quest","attributes":{"name":"The
+        Forgotten Amulet","description":"In a world filled with magical creatures
+        and mystical realms, a group of unlikely heroes embarks on a quest to find
+        a long-lost amulet of immense power. This amulet, thought to have vanished
+        into the depths of time, holds the key to restoring balance and peace in the
+        realm.","goal":"The heroes must journey through treacherous landscapes, facing
+        dangerous creatures and solving riddles along the way, to locate the hidden
+        temple where the amulet is said to be hidden. Once they find the temple, they
+        must overcome its intricate traps and challenges in order to retrieve the
+        legendary amulet and prevent it from falling into the hands of dark forces
+        seeking to harness its power for evil. Will they succeed in their quest and
+        restore harmony to the realm, or will the amulet''s power consume them?","campaign_id":1,"quest_photo":{"name":"quest_photo","record":{"id":5,"name":"The
+        Forgotten Amulet","description":"In a world filled with magical creatures
+        and mystical realms, a group of unlikely heroes embarks on a quest to find
+        a long-lost amulet of immense power. This amulet, thought to have vanished
+        into the depths of time, holds the key to restoring balance and peace in the
+        realm.","goal":"The heroes must journey through treacherous landscapes, facing
+        dangerous creatures and solving riddles along the way, to locate the hidden
+        temple where the amulet is said to be hidden. Once they find the temple, they
+        must overcome its intricate traps and challenges in order to retrieve the
+        legendary amulet and prevent it from falling into the hands of dark forces
+        seeking to harness its power for evil. Will they succeed in their quest and
+        restore harmony to the realm, or will the amulet''s power consume them?","campaign_id":1,"created_at":"2023-11-09T05:32:01.436Z","updated_at":"2023-11-09T05:32:01.436Z"}}}},{"id":"7","type":"quest","attributes":{"name":"The
+        Enchanted Medallion","description":"In a mystical realm called Eldoria, where
+        mythical creatures and elemental magic exist, a young hero named Alex embarks
+        on a quest to find the legendary Enchanted Medallion. Rumored to possess immense
+        power and the ability to restore balance to the realm, the medallion has been
+        lost for centuries.","goal":"Alex must gather a group of loyal companions
+        and navigate through treacherous forests, mystical caves, and ancient ruins
+        to find the scattered fragments of the medallion. Along their journey, they
+        will encounter dangerous creatures, solve riddles, and face deception from
+        cunning adversaries. Ultimately, their goal is to reunite the medallion''s
+        pieces and protect it from falling into the wrong hands. Only then can they
+        bring harmony back to Eldoria and prevent the rise of darkness that threatens
+        to engulf the realm forever.","campaign_id":1,"quest_photo":{"name":"quest_photo","record":{"id":7,"name":"The
+        Enchanted Medallion","description":"In a mystical realm called Eldoria, where
+        mythical creatures and elemental magic exist, a young hero named Alex embarks
+        on a quest to find the legendary Enchanted Medallion. Rumored to possess immense
+        power and the ability to restore balance to the realm, the medallion has been
+        lost for centuries.","goal":"Alex must gather a group of loyal companions
+        and navigate through treacherous forests, mystical caves, and ancient ruins
+        to find the scattered fragments of the medallion. Along their journey, they
+        will encounter dangerous creatures, solve riddles, and face deception from
+        cunning adversaries. Ultimately, their goal is to reunite the medallion''s
+        pieces and protect it from falling into the wrong hands. Only then can they
+        bring harmony back to Eldoria and prevent the rise of darkness that threatens
+        to engulf the realm forever.","campaign_id":1,"created_at":"2023-11-09T06:08:22.317Z","updated_at":"2023-11-09T06:08:22.317Z"}}}}]}'
+  recorded_at: Thu, 09 Nov 2023 06:11:24 GMT
+recorded_with: VCR 6.2.0

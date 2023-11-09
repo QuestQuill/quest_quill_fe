@@ -1,0 +1,634 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://quest-quill-api.onrender.com/api/v1/users/login?email=boo@gmail.com&password=12345
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 04:06:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 82332e9e386b5381-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"401fc1a040cbfb9658b058062e3e1b66"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 18fe68c8-b991-4b03
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 7c7bae4b-8a42-47e7-b2ea-1f8892052086
+      X-Runtime:
+      - '1.373066'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Login successful","user_id":22}'
+  recorded_at: Thu, 09 Nov 2023 04:06:17 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 04:06:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 82332ea7fbbe51f1-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"377f13b55094a54595a1d583e37c3459"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 39927bc7-b13c-4966
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 6d4b8896-bf0b-4491-9fb7-67f489aafe8d
+      X-Runtime:
+      - '0.016165'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"22","type":"user","attributes":{"uid":null,"username":"boo","email":"boo@gmail.com","user_photo":{"name":"user_photo","record":{"id":22,"username":"boo","email":"boo@gmail.com","password_digest":"$2a$12$6zajARNnQDIhl91QknYsB.ja2GZbicGoRN7MDCoPhtfGtHqjE8BKG","created_at":"2023-11-08T04:34:04.490Z","updated_at":"2023-11-08T04:34:04.490Z","token":null,"token_expiration":null,"uid":null,"auth_token":null}},"token":null,"token_expiration":null,"auth_token":null,"campaigns":[{"id":4,"name":"boo''s
+        First Campaign","player_num":4,"themes":"[\"sci_fi\", \"low_magic\", \"space_opera\"]","created_at":"2023-11-08T04:34:08.029Z","updated_at":"2023-11-08T04:34:08.029Z","user_id":22},{"id":11,"name":"screaming","player_num":5,"themes":"[\"sci_fi\",
+        \"high_magic\"]","created_at":"2023-11-08T16:43:16.257Z","updated_at":"2023-11-08T16:43:16.257Z","user_id":22},{"id":12,"name":"yellin","player_num":6,"themes":"[\"space_opera\",
+        \"high_magic\"]","created_at":"2023-11-08T17:27:15.942Z","updated_at":"2023-11-08T17:27:15.942Z","user_id":22},{"id":13,"name":"cryin","player_num":7,"themes":"[\"space_opera\",
+        \"high_magic\", \"low_magic\"]","created_at":"2023-11-08T17:40:32.250Z","updated_at":"2023-11-08T17:40:32.250Z","user_id":22},{"id":15,"name":"sadclub","player_num":7,"themes":"[\"high_magic\",
+        \"space_opera\"]","created_at":"2023-11-08T17:48:23.462Z","updated_at":"2023-11-08T17:48:23.462Z","user_id":22},{"id":19,"name":"hollar","player_num":19,"themes":"[\"sci_fi\",
+        \"space_opera\"]","created_at":"2023-11-08T23:44:49.132Z","updated_at":"2023-11-08T23:44:49.132Z","user_id":22}]}}}'
+  recorded_at: Thu, 09 Nov 2023 04:06:17 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 04:06:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 82332ea97b07519e-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"377f13b55094a54595a1d583e37c3459"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - b3d5437a-c938-45bf
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - ced447ed-50f5-4520-8b55-835f58085f04
+      X-Runtime:
+      - '0.015384'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"22","type":"user","attributes":{"uid":null,"username":"boo","email":"boo@gmail.com","user_photo":{"name":"user_photo","record":{"id":22,"username":"boo","email":"boo@gmail.com","password_digest":"$2a$12$6zajARNnQDIhl91QknYsB.ja2GZbicGoRN7MDCoPhtfGtHqjE8BKG","created_at":"2023-11-08T04:34:04.490Z","updated_at":"2023-11-08T04:34:04.490Z","token":null,"token_expiration":null,"uid":null,"auth_token":null}},"token":null,"token_expiration":null,"auth_token":null,"campaigns":[{"id":4,"name":"boo''s
+        First Campaign","player_num":4,"themes":"[\"sci_fi\", \"low_magic\", \"space_opera\"]","created_at":"2023-11-08T04:34:08.029Z","updated_at":"2023-11-08T04:34:08.029Z","user_id":22},{"id":11,"name":"screaming","player_num":5,"themes":"[\"sci_fi\",
+        \"high_magic\"]","created_at":"2023-11-08T16:43:16.257Z","updated_at":"2023-11-08T16:43:16.257Z","user_id":22},{"id":12,"name":"yellin","player_num":6,"themes":"[\"space_opera\",
+        \"high_magic\"]","created_at":"2023-11-08T17:27:15.942Z","updated_at":"2023-11-08T17:27:15.942Z","user_id":22},{"id":13,"name":"cryin","player_num":7,"themes":"[\"space_opera\",
+        \"high_magic\", \"low_magic\"]","created_at":"2023-11-08T17:40:32.250Z","updated_at":"2023-11-08T17:40:32.250Z","user_id":22},{"id":15,"name":"sadclub","player_num":7,"themes":"[\"high_magic\",
+        \"space_opera\"]","created_at":"2023-11-08T17:48:23.462Z","updated_at":"2023-11-08T17:48:23.462Z","user_id":22},{"id":19,"name":"hollar","player_num":19,"themes":"[\"sci_fi\",
+        \"space_opera\"]","created_at":"2023-11-08T23:44:49.132Z","updated_at":"2023-11-08T23:44:49.132Z","user_id":22}]}}}'
+  recorded_at: Thu, 09 Nov 2023 04:06:17 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22/campaigns/4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 04:06:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 82332eaadc545209-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"f146cc2a075cdc6f55cb00d9781da723"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - d7bffb9b-64b8-4ced
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - c059beca-6fe7-431d-9e44-ec99449d77b7
+      X-Runtime:
+      - '0.007013'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"4","type":"campaign","attributes":{"name":"boo''s First
+        Campaign","player_num":4,"themes":"[\"sci_fi\", \"low_magic\", \"space_opera\"]","user_id":22,"campaign_photo":{"name":"campaign_photo","record":{"id":4,"name":"boo''s
+        First Campaign","player_num":4,"themes":"[\"sci_fi\", \"low_magic\", \"space_opera\"]","created_at":"2023-11-08T04:34:08.029Z","updated_at":"2023-11-08T04:34:08.029Z","user_id":22}}}}}'
+  recorded_at: Thu, 09 Nov 2023 04:06:18 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 04:06:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 82332eac4b135346-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"377f13b55094a54595a1d583e37c3459"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 64dd3098-b91e-40ee
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - b5135549-323d-4af6-866b-1e862338ea8a
+      X-Runtime:
+      - '0.012105'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"22","type":"user","attributes":{"uid":null,"username":"boo","email":"boo@gmail.com","user_photo":{"name":"user_photo","record":{"id":22,"username":"boo","email":"boo@gmail.com","password_digest":"$2a$12$6zajARNnQDIhl91QknYsB.ja2GZbicGoRN7MDCoPhtfGtHqjE8BKG","created_at":"2023-11-08T04:34:04.490Z","updated_at":"2023-11-08T04:34:04.490Z","token":null,"token_expiration":null,"uid":null,"auth_token":null}},"token":null,"token_expiration":null,"auth_token":null,"campaigns":[{"id":4,"name":"boo''s
+        First Campaign","player_num":4,"themes":"[\"sci_fi\", \"low_magic\", \"space_opera\"]","created_at":"2023-11-08T04:34:08.029Z","updated_at":"2023-11-08T04:34:08.029Z","user_id":22},{"id":11,"name":"screaming","player_num":5,"themes":"[\"sci_fi\",
+        \"high_magic\"]","created_at":"2023-11-08T16:43:16.257Z","updated_at":"2023-11-08T16:43:16.257Z","user_id":22},{"id":12,"name":"yellin","player_num":6,"themes":"[\"space_opera\",
+        \"high_magic\"]","created_at":"2023-11-08T17:27:15.942Z","updated_at":"2023-11-08T17:27:15.942Z","user_id":22},{"id":13,"name":"cryin","player_num":7,"themes":"[\"space_opera\",
+        \"high_magic\", \"low_magic\"]","created_at":"2023-11-08T17:40:32.250Z","updated_at":"2023-11-08T17:40:32.250Z","user_id":22},{"id":15,"name":"sadclub","player_num":7,"themes":"[\"high_magic\",
+        \"space_opera\"]","created_at":"2023-11-08T17:48:23.462Z","updated_at":"2023-11-08T17:48:23.462Z","user_id":22},{"id":19,"name":"hollar","player_num":19,"themes":"[\"sci_fi\",
+        \"space_opera\"]","created_at":"2023-11-08T23:44:49.132Z","updated_at":"2023-11-08T23:44:49.132Z","user_id":22}]}}}'
+  recorded_at: Thu, 09 Nov 2023 04:06:18 GMT
+- request:
+    method: post
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22/campaigns/4/npcs?campaign_id=4&message=create%20a%20new%20fantasy%20npc%20with%20the%20following%20unique%20attributes:%0A%20%20%20%20%20%20name:%0A%20%20%20%20%20%20gender:%0A%20%20%20%20%20%20race:%0A%20%20%20%20%20%20klass:%0A%20%20%20%20%20%20description:%0A%20%20%20%20%20%20attitude:&user_id=22
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 04:06:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 82332ead9c425186-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"9104b221eb6c6054fbd765430c5620d5"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 999b82ff-7840-452a
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 414f06dc-5960-4089-871a-3f78af3d9224
+      X-Runtime:
+      - '36.592592'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"4","type":"npc","attributes":{"name":"Aelinthria Nightshade","description":"Aelinthria
+        is a captivating and enigmatic figure, with flowing silver hair and piercing
+        violet eyes that seem to hold ancient secrets. She wears a long, hooded cloak
+        made of midnight-black feathers, which shrouds her elven frame in an ethereal
+        darkness. Her slender fingers bear intricate silver rings embedded with magical
+        gems that emit a soft glow. Aelinthria moves with an otherworldly grace, her
+        every step accompanied by a hushed whisper on the wind.","gender":"Female","race":"Elven","klass":"Shadowmancer","attitude":"Aelinthria
+        exudes an enigmatic aura, often leaving others unsure of her true intentions.
+        She possesses a calm and composed demeanor, yet her eyes betray a hint of
+        mischief and a hunger for knowledge. She is knowledgeable in the ways of shadows
+        and prefers to observe and subtly manipulate events from the background. While
+        generally neutral, Aelinthria chooses her alliances carefully, favoring those
+        who can offer her the knowledge or artifacts she seeks. Though she can be
+        aloof, she occasionally displays unexpected acts of kindness and aids those
+        who capture her interest. Her moral compass leans towards whichever path best
+        aligns with her own interests, often causing her to walk the fine line between
+        light and darkness.","campaign_id":4,"npc_photo":{"name":"npc_photo","record":{"id":4,"name":"Aelinthria
+        Nightshade","gender":"Female","race":"Elven","klass":"Shadowmancer","description":"Aelinthria
+        is a captivating and enigmatic figure, with flowing silver hair and piercing
+        violet eyes that seem to hold ancient secrets. She wears a long, hooded cloak
+        made of midnight-black feathers, which shrouds her elven frame in an ethereal
+        darkness. Her slender fingers bear intricate silver rings embedded with magical
+        gems that emit a soft glow. Aelinthria moves with an otherworldly grace, her
+        every step accompanied by a hushed whisper on the wind.","attitude":"Aelinthria
+        exudes an enigmatic aura, often leaving others unsure of her true intentions.
+        She possesses a calm and composed demeanor, yet her eyes betray a hint of
+        mischief and a hunger for knowledge. She is knowledgeable in the ways of shadows
+        and prefers to observe and subtly manipulate events from the background. While
+        generally neutral, Aelinthria chooses her alliances carefully, favoring those
+        who can offer her the knowledge or artifacts she seeks. Though she can be
+        aloof, she occasionally displays unexpected acts of kindness and aids those
+        who capture her interest. Her moral compass leans towards whichever path best
+        aligns with her own interests, often causing her to walk the fine line between
+        light and darkness.","campaign_id":4,"created_at":"2023-11-09T04:06:55.135Z","updated_at":"2023-11-09T04:06:55.135Z"}}}}}'
+  recorded_at: Thu, 09 Nov 2023 04:06:55 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22/campaigns/4/npcs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 04:06:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 82332f93be3d51e8-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"95dc6f02eb1f610b894ae137b9e2e6c5"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - 0af74206-b5f8-42f6
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 6981cdab-18f3-46b2-b7bd-213832a16387
+      X-Runtime:
+      - '0.016838'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"3","type":"npc","attributes":{"name":"Astrid Frostfall","description":"Astrid
+        stands tall and slender with pale skin and long, flowing silver hair that
+        seems to shimmer like ice. Her piercing blue eyes hold a distant wisdom and
+        are often surrounded by an icy mist. She adorns herself in frost-embroidered
+        robes and carries a staff made of enchanted ice crystals, glowing with an
+        ethereal blue light.","gender":"Female","race":"Elf","klass":"Ice Mage","attitude":"Astrid
+        is reserved and mysterious. She has a calm and composed demeanor, often keeping
+        to herself and observing her surroundings. Though aloof at first, Astrid is
+        fiercely loyal to those she deems worthy. She is deeply in tune with nature
+        and the elements, and can often be found communing with them in quiet contemplation.
+        Her presence brings a sense of tranquility but also an unyielding power that
+        demands respect.","campaign_id":4,"npc_photo":{"name":"npc_photo","record":{"id":3,"name":"Astrid
+        Frostfall","gender":"Female","race":"Elf","klass":"Ice Mage","description":"Astrid
+        stands tall and slender with pale skin and long, flowing silver hair that
+        seems to shimmer like ice. Her piercing blue eyes hold a distant wisdom and
+        are often surrounded by an icy mist. She adorns herself in frost-embroidered
+        robes and carries a staff made of enchanted ice crystals, glowing with an
+        ethereal blue light.","attitude":"Astrid is reserved and mysterious. She has
+        a calm and composed demeanor, often keeping to herself and observing her surroundings.
+        Though aloof at first, Astrid is fiercely loyal to those she deems worthy.
+        She is deeply in tune with nature and the elements, and can often be found
+        communing with them in quiet contemplation. Her presence brings a sense of
+        tranquility but also an unyielding power that demands respect.","campaign_id":4,"created_at":"2023-11-09T03:59:25.689Z","updated_at":"2023-11-09T03:59:25.689Z"}}}},{"id":"4","type":"npc","attributes":{"name":"Aelinthria
+        Nightshade","description":"Aelinthria is a captivating and enigmatic figure,
+        with flowing silver hair and piercing violet eyes that seem to hold ancient
+        secrets. She wears a long, hooded cloak made of midnight-black feathers, which
+        shrouds her elven frame in an ethereal darkness. Her slender fingers bear
+        intricate silver rings embedded with magical gems that emit a soft glow. Aelinthria
+        moves with an otherworldly grace, her every step accompanied by a hushed whisper
+        on the wind.","gender":"Female","race":"Elven","klass":"Shadowmancer","attitude":"Aelinthria
+        exudes an enigmatic aura, often leaving others unsure of her true intentions.
+        She possesses a calm and composed demeanor, yet her eyes betray a hint of
+        mischief and a hunger for knowledge. She is knowledgeable in the ways of shadows
+        and prefers to observe and subtly manipulate events from the background. While
+        generally neutral, Aelinthria chooses her alliances carefully, favoring those
+        who can offer her the knowledge or artifacts she seeks. Though she can be
+        aloof, she occasionally displays unexpected acts of kindness and aids those
+        who capture her interest. Her moral compass leans towards whichever path best
+        aligns with her own interests, often causing her to walk the fine line between
+        light and darkness.","campaign_id":4,"npc_photo":{"name":"npc_photo","record":{"id":4,"name":"Aelinthria
+        Nightshade","gender":"Female","race":"Elven","klass":"Shadowmancer","description":"Aelinthria
+        is a captivating and enigmatic figure, with flowing silver hair and piercing
+        violet eyes that seem to hold ancient secrets. She wears a long, hooded cloak
+        made of midnight-black feathers, which shrouds her elven frame in an ethereal
+        darkness. Her slender fingers bear intricate silver rings embedded with magical
+        gems that emit a soft glow. Aelinthria moves with an otherworldly grace, her
+        every step accompanied by a hushed whisper on the wind.","attitude":"Aelinthria
+        exudes an enigmatic aura, often leaving others unsure of her true intentions.
+        She possesses a calm and composed demeanor, yet her eyes betray a hint of
+        mischief and a hunger for knowledge. She is knowledgeable in the ways of shadows
+        and prefers to observe and subtly manipulate events from the background. While
+        generally neutral, Aelinthria chooses her alliances carefully, favoring those
+        who can offer her the knowledge or artifacts she seeks. Though she can be
+        aloof, she occasionally displays unexpected acts of kindness and aids those
+        who capture her interest. Her moral compass leans towards whichever path best
+        aligns with her own interests, often causing her to walk the fine line between
+        light and darkness.","campaign_id":4,"created_at":"2023-11-09T04:06:55.135Z","updated_at":"2023-11-09T04:06:55.135Z"}}}}]}'
+  recorded_at: Thu, 09 Nov 2023 04:06:55 GMT
+- request:
+    method: get
+    uri: https://quest-quill-api.onrender.com/api/v1/users/22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Nov 2023 04:06:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 82332f955c39533c-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"377f13b55094a54595a1d583e37c3459"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Rndr-Id:
+      - cfd0610c-2c7e-468e
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 8a02856f-085b-453f-97cc-6100ef1604de
+      X-Runtime:
+      - '0.019227'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"22","type":"user","attributes":{"uid":null,"username":"boo","email":"boo@gmail.com","user_photo":{"name":"user_photo","record":{"id":22,"username":"boo","email":"boo@gmail.com","password_digest":"$2a$12$6zajARNnQDIhl91QknYsB.ja2GZbicGoRN7MDCoPhtfGtHqjE8BKG","created_at":"2023-11-08T04:34:04.490Z","updated_at":"2023-11-08T04:34:04.490Z","token":null,"token_expiration":null,"uid":null,"auth_token":null}},"token":null,"token_expiration":null,"auth_token":null,"campaigns":[{"id":4,"name":"boo''s
+        First Campaign","player_num":4,"themes":"[\"sci_fi\", \"low_magic\", \"space_opera\"]","created_at":"2023-11-08T04:34:08.029Z","updated_at":"2023-11-08T04:34:08.029Z","user_id":22},{"id":11,"name":"screaming","player_num":5,"themes":"[\"sci_fi\",
+        \"high_magic\"]","created_at":"2023-11-08T16:43:16.257Z","updated_at":"2023-11-08T16:43:16.257Z","user_id":22},{"id":12,"name":"yellin","player_num":6,"themes":"[\"space_opera\",
+        \"high_magic\"]","created_at":"2023-11-08T17:27:15.942Z","updated_at":"2023-11-08T17:27:15.942Z","user_id":22},{"id":13,"name":"cryin","player_num":7,"themes":"[\"space_opera\",
+        \"high_magic\", \"low_magic\"]","created_at":"2023-11-08T17:40:32.250Z","updated_at":"2023-11-08T17:40:32.250Z","user_id":22},{"id":15,"name":"sadclub","player_num":7,"themes":"[\"high_magic\",
+        \"space_opera\"]","created_at":"2023-11-08T17:48:23.462Z","updated_at":"2023-11-08T17:48:23.462Z","user_id":22},{"id":19,"name":"hollar","player_num":19,"themes":"[\"sci_fi\",
+        \"space_opera\"]","created_at":"2023-11-08T23:44:49.132Z","updated_at":"2023-11-08T23:44:49.132Z","user_id":22}]}}}'
+  recorded_at: Thu, 09 Nov 2023 04:06:55 GMT
+recorded_with: VCR 6.2.0
