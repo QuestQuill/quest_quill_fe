@@ -1,8 +1,16 @@
-<% @npcs.each do |npc| %>
-  <p><%= npc.name %></p>
-  <p><%= npc.description %></p>
-  <p><%= npc.gender %></p>
-  <p><%= npc.race %></p>
-  <p><%= npc.klass %></p>
-  <p><%= npc.attitude %></p>
-<% end %>
+<left><div class=" d-flex align-items-baseline border-bottom justify-content-center mb-5">
+  <h1>My NPCs</h1>
+</div></left>
+
+<section class="npcs_index">
+  <% @npcs.each do |npc| %>
+    <section class="npc-attributes d-flex border-bottom justify-content-between align-items-baseline">
+      <h3><%= npc.name %></h3><p><strong>Gender: </strong><%= npc.gender%><p><strong>Race: </strong><%= npc.race %><p><strong>Class: </strong><%= npc.klass %></p>
+    </section>
+    <p><%= npc.description %></p>
+
+    
+    
+    <p class="mb-5"><%= npc.attitude %></p>
+  <% end %>
+</section>
