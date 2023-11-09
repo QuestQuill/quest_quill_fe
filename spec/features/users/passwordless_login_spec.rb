@@ -14,7 +14,7 @@ RSpec.describe "Passwordless Login", type: :feature do
       end
 
       it "when I fill out the form with a correct email and click the button, I am taken to a page that tell me to check my email and an email is sent" do
-        VCR.use_cassette("bob_passwordless_login", :record => :new_episodes) do
+        VCR.use_cassette("bob_passwordless_login_dns", :record => :new_episodes) do
           visit login_path
 
           fill_in :email_passwordless, with: "bobsmith@gmail.com"
