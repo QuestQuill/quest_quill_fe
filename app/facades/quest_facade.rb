@@ -6,7 +6,7 @@ class QuestFacade
   def create_quest(params)
     json = service.post_quest(params)
 
-    Npc.new(json[:data])
+    Quest.new(json[:data])
   end
 
   def get_quests(params)
